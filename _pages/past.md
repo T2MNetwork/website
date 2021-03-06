@@ -2,6 +2,7 @@
 layout: page
 title: Past Conferences
 permalink: /past/
+order: 3
 ---
 
 - [Marseille 2020](https://t2m2020.sciencesconf.org/) (Cancelled)  

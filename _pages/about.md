@@ -2,6 +2,7 @@
 layout: page
 title: About T2M
 permalink: /about/
+order: 4
 ---
 
 <table style="width:100%" >

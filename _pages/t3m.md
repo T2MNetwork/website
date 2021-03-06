@@ -2,6 +2,7 @@
 layout: page
 title: T3M
 permalink: /t3m/
+order: 2
 ---
 
 | Institution                              | Date       | Speaker                 | Paper                                                                                    |
