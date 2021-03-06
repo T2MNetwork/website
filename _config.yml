@@ -24,6 +24,8 @@ url: "http://www.t2m.network" # the base hostname & protocol for your site, e.g.
 twitter_username: T2M_Conference
 github_username:  T2MNetwork
 
+include: ["_pages"]
+
 # Build settings
 markdown: kramdown
 theme: minima
