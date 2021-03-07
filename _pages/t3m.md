@@ -7,7 +7,7 @@ order: 2
 
 | Institution                              | Date       | Speaker                 | Paper                                                                                    |
 | ---------------------------------------- | ---------- | ----------------------- | ---------------------------------------------------------------------------------------- |
-| Aix-Marseille School of Economics (AMSE) | 15/03/2021 | Evi Pappa  (Carlos III) | *What are the likely macroeconomic effects of the EU Recovery plan?* (with Fabio Canova) |
+| Aix-Marseille School of Economics (AMSE) | 15/03/2021 | [Evi Pappa]({% link /_posts/2021-03-03-t3m-amse.md %})  (Carlos III) | *What are the likely macroeconomic effects of the EU Recovery plan?* (with Fabio Canova) |
 | CEPII                                    | 29/03/2021 | Gianluca Corsetti       | TBA                                                                                      |
 | OFCE                                     | 8/04/2021  | Giovanni Ricco          | TBA                                                                                      |
 | UQAM                                     | 30/04/2021 | Enghin Atalay           | TBA                                                                                      |

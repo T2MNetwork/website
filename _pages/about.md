@@ -5,7 +5,7 @@ permalink: /about/
 order: 4
 ---
 
-T2M is an association dedicated to foster the development and dissemination of research in Macroeconomics.
+T2M is an association dedicated to foster the development and dissemination of research in Macroeconomics. It organizes a yearly conference and some other events targeted at the macro community, especially young researchers.
 
 ## Board
 
