@@ -39,3 +39,7 @@ order: 4
   </tr>
 </table>
 
+
+## Sponsors
+<img src="{% link /assets/img/logos/cfm.jpg %}" height=100 > <img src="{% link /assets/img/logos/kcl.png %}" height=100 > 
+<img src="{% link /assets/img/logos/cepremap.svg %}" height=100 >
