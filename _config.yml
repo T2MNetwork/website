@@ -17,4 +17,4 @@ theme: minima
 plugins:
   - jekyll-feed
 
-google_analytics: G-Y7545LJENN
+google_analytics: UA-191461845-1
