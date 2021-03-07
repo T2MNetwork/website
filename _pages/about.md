@@ -5,6 +5,8 @@ permalink: /about/
 order: 4
 ---
 
+T2M is an association dedicated to foster the development and dissemination of research in Macroeconomics.
+
 ## Board
 
 <table style="width:100%" >
@@ -42,4 +44,5 @@ order: 4
 
 ## Sponsors
 <img src="{% link /assets/img/logos/cfm.jpg %}" height=100 > <img src="{% link /assets/img/logos/kcl.png %}" height=100 > 
+<img src="{% link /assets/img/logos/escp.png %}" height=100 >
 <img src="{% link /assets/img/logos/cepremap.svg %}" height=100 >

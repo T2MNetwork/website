@@ -5,6 +5,8 @@ permalink: /t2m/
 order: 1
 ---
 
+![](/assets/img/london_kcl.jpg)
+
 The next yearly T2M conference is scheduled for:
 
 ## November 4-5, 2021 in London
@@ -14,7 +16,7 @@ The next yearly T2M conference is scheduled for:
 
 Co-organized with Centre for Macroeconomics and Bank of England.
 
-<em>Call for paper will be issued, at the end of the spring, <mark>only if sanitary conditions allow for the conference to take place physically.</mark></em>
+<em>Call for paper will be issued, __at the end of the spring__, <mark>only if sanitary conditions allow for the conference to take place physically.</mark></em>
 
 __Local Committee__:
 - Rana Sajedi
