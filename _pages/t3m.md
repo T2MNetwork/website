@@ -16,7 +16,7 @@ T3M events will occur on [Gather Town](https://gather.town/), before, or after o
 | OFCE                                     | 29/03/2021 | TBA   | Giovanni Ricco                                                      | TBA                                                                                      |
 | CEPII                                    | 8/04/2021  | TBA   | Gianluca Corsetti                                                   | TBA                                                                                      |
 | UQAM                                     | 30/04/2021 | TBA   | Enghin Atalay                                                       | TBA                                                                                      |
-| Ecole Polytechnique                      | 10/05/2021 | TBA   | Frank Portier                                                       | TBA                                                                                      |
+| Ecole Polytechnique                      | 10/05/2021 | TBA   | Franck Portier                                                       | TBA                                                                                      |
 | Banque de France                         | 29/05/2021 | TBA   | Pablo Otonello                                                      | TBA                                                                                      | 
 | PSE                                      | 10/06/2021 | TBA   | Olivier Wang                                                        | TBA                                                                                      |
 
