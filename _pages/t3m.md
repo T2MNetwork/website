@@ -22,6 +22,4 @@ T3M events will occur on [Gather Town](https://gather.town/), before, or after o
 
 ---
 
-If you consider attending the T3M sessions, or would like to get the news, please fill the following form, so that we can gauge attendance, and get the size right for our virtual rooms.
-
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe-vxAWyuZH4KvE8jtPj9KzJuKTSDgIcCC4jJ2RIC9oWMul8w/viewform?embedded=true" width="640" height="1205" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+If you consider attending the T3M sessions, or would like to get the news, please fill the online [form](https://forms.gle/r4CaeMBBKRHB31kB7), so that we can gauge attendance, and get the size right for our virtual rooms.
