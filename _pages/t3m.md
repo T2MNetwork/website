@@ -17,7 +17,8 @@ T3M events will occur on [Gather Town](https://gather.town/), before, or after o
 | CEPII                                    | 8/04/2021  | TBA   | Gianluca Corsetti (University of Cambridge)                         | TBA                                                                                       |
 | UQAM                                     | 30/04/2021 | TBA   | Enghin Atalay (Federal Reserve Bank of Philadelphia)                | TBA                                                                                       |
 | Ecole Polytechnique                      | 10/05/2021 | TBA   | Franck Portier (University College London)                          | TBA                                                                                       |
-| Banque de France                         | 21/05/2021 | TBA   | Pablo Ottonello (University of Michigan)                            | *The Micro Anatomy of Macro Consumption Adjustments* (with Rafael Guntin and Diego Perez) | 
+| Banque de France                         | 21/05/2021 | TBA   | Pablo Ottonello (University of Michigan)                            | *The Micro Anatomy of Macro Consumption Adjustments* (with Rafael Guntin and Diego Perez) |
+| ESCP / T2M                               | 01/06/2021 | TBA   | Tom Sargent  (New York University)                                  | Special VR  Event                                                                         |
 | PSE                                      | 10/06/2021 | TBA   | Olivier Wang  (New York University)                                 | TBA                                                                                       |
 
 ---

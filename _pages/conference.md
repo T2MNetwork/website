@@ -5,8 +5,6 @@ permalink: /t2m/
 order: 1
 ---
 
-![](/assets/img/london_kcl.jpg)
-
 The next yearly T2M conference is scheduled for:
 
 ## November 4-5, 2021 in London
@@ -28,6 +26,9 @@ __Local Committee__:
 <table style="width:100%" >
 	<th style="background-color: white">
 		<img src="/assets/img/logos/boe.svg" height=150 alt="BOE" >
+	</th>
+    <th style="background-color: white">
+		<img src="/assets/img/logos/kcl.png" height=150 alt="KCL" >
 	</th>	
     <th style="background-color: white">
 		<img src="/assets/img/logos/cfm.jpg" height=150 alt="CfM ">
