@@ -13,12 +13,12 @@ T3M events will occur on [Gather Town](https://gather.town/), before, or after o
 | Institution                              | Date       | Time  | Speaker                                                             | Paper                                                                                     |
 | ---------------------------------------- | ---------- | ----- | ------------------------------------------------------------------- | ----------------------------------------------------------------------------------------- |
 | Aix-Marseille School of Economics (AMSE) | 15/03/2021 | 11:00 | [Evi Pappa]({% link _posts/2021-03-03-t3m-amse.md %})  (Carlos III) | *What are the likely macroeconomic effects of the EU Recovery plan?* (with Fabio Canova)  |
-| OFCE                                     | 29/03/2021 | TBA   | Giovanni Ricco                                                      | TBA                                                                                       |
-| CEPII                                    | 8/04/2021  | TBA   | Gianluca Corsetti                                                   | TBA                                                                                       |
-| UQAM                                     | 30/04/2021 | TBA   | Enghin Atalay                                                       | TBA                                                                                       |
-| Ecole Polytechnique                      | 10/05/2021 | TBA   | Franck Portier                                                      | TBA                                                                                       |
+| OFCE                                     | 29/03/2021 | TBA   | Giovanni Ricco  (University of Warwick)                             | TBA                                                                                       |
+| CEPII                                    | 8/04/2021  | TBA   | Gianluca Corsetti (University of Cambridge)                         | TBA                                                                                       |
+| UQAM                                     | 30/04/2021 | TBA   | Enghin Atalay (Federal Reserve Bank of Philadelphia)                | TBA                                                                                       |
+| Ecole Polytechnique                      | 10/05/2021 | TBA   | Franck Portier (University College London)                          | TBA                                                                                       |
 | Banque de France                         | 21/05/2021 | TBA   | Pablo Ottonello (University of Michigan)                            | *The Micro Anatomy of Macro Consumption Adjustments* (with Rafael Guntin and Diego Perez) | 
-| PSE                                      | 10/06/2021 | TBA   | Olivier Wang                                                        | TBA                                                                                       |
+| PSE                                      | 10/06/2021 | TBA   | Olivier Wang  (New York University)                                 | TBA                                                                                       |
 
 ---
 
