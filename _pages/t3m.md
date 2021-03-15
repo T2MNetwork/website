@@ -8,7 +8,7 @@ order: 2
 T3M is an experimental series of online research events for macroeconomists (coffee randomizers, poster sessions, small videos, ...). 
 
 Goal is to restore some of the random social interactions that we usually experiment at conferences.
-T3M events will occur on [Gather Town](https://gather.town/), before, or after online seminars organized by partner institutions (check the meeting point in the announcement email).
+Most T3M events will occur on [Gather Town](https://gather.town/), before, or after online seminars organized by partner institutions (check the meeting point in the announcement email).
 
 | Institution                              | Date                    | Time  | Speaker                                                                          | Paper                                                                                     |
 | ---------------------------------------- | ----------------------- | ----- | -------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------- |
