@@ -20,7 +20,7 @@ The schedule is indicative, and might be adjusted as we go.
 
 ### Practicalities
 
-The adress for attending the meeting is: [https://cutt.ly/UcUDbxv](https://cutt.ly/UcUDbxv). It should be already preconfigured in the headsets supplied by ESCP. As a last resort, a fallback option consists in using a modern webbrowser on a recent computer.
+The adress for attending the meeting is: [https://cutt.ly/UcUDbxv](https://cutt.ly/UcUDbxv) or [https://vr.t2m.network](vr.t2m.network) It should be already preconfigured in the headsets supplied by ESCP. As a last resort, a fallback option consists in using a modern webbrowser on a recent computer.
 
 During the workshop, do not hesitate to take short breaks to get rid of VR fatigue
 
