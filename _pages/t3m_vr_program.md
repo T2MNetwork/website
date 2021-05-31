@@ -42,7 +42,7 @@ We are using the opensource platform Mozilla Hubs and if needed you can find add
 | Cristiano Cantore    | Bank of England               |              |
 | Edouard Challe       | European University Institute | * (5min)     |
 | Nuno Coimbra         | Banque de France              | * (5min)     |
-| Axelle Ferrière ?    | Paris School of Economics     |              |
+| Axelle Ferrière      | Paris School of Economics     |              |
 | Karine Gente         | AMSE                          |              |
 | Noémie Lisack        | Banque de France              |              |
 | Antonio Mele         | London School of Economics    |              |
