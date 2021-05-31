@@ -48,13 +48,14 @@ We are using the opensource platform Mozilla Hubs and if needed you can find add
 | Antonio Mele         | London School of Economics    |              |
 | Anton Nakov          | European Central Bank         | *  (5min)    |
 | Sophie Osotimehin    | UQAM                          | *            |
+| Céline Poilly        | AMSE                          |              | 
 | Anna Rogantini Picco | Sveriges Riksbank             |              |
 | Elisabeth Proehl     | Amsterdam School of Economics |              |
 | Rana Sajedi          | Bank of England               |              |
 | Tom Sargent          | NYU                           | ** (<20min)  |
+| Fabien Tripier       | Université Paris-Saclay       |              |
 | Pablo Winant         | ESCP / Ecole Polytechnique    | * (5min)     |
 | Shengxing Zhang      | London School of Economics    | *            |
-
 
 ### Sponsors
 
