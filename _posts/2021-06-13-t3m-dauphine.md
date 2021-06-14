@@ -16,7 +16,7 @@ Last event in the T3M series (program [here]({% link _pages/t3m.md %})) will tak
 | 12h00        | Seminar: [Roland Rathelot](http://rolandrathelot.com/) (University of Warwick): <u>How do women and men search for jobs?</u> with Lena Hensvik and Thomas Le Barbanchon  |
 | 12h30        | End                                                                            |
  
-Before the seminar, there will be __two sessions__, with 4 lightning talks in each room. Talks will last 10 min followed by a short discussion.
+Before the seminar, there will be 4 short talks. They will last 10 min each followed by a short discussion.
 
 | Parallel Sessions | Speaker                                                                            |
 | ----------------- | ---------------------------------------------------------------------------------- |
