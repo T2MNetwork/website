@@ -20,7 +20,7 @@ Most T3M events will occur on [Gather Town](https://gather.town/), before, or af
 | Banque de France                         | 21/05/2021              | 14:00 | [Pablo Ottonello]({% link _posts/2021-16-05-t3m-bdf.md %}) (University of Michigan)              | *The Micro Anatomy of Macro Consumption Adjustments* (with Rafael Guntin and Diego Perez)            |
 | ESCP / T2M                               | 01/06/2021              | 16:00 | Tom Sargent  (New York University)                                                               | <mark style="background-color: orange">Special VR Event<mark>                                        |
 | PSE                                      | 10/06/2021              | 14:50 | [Olivier Wang]({% link _posts/2021-06-03-t3m-pse.md %})  (New York University)                   | *Dynamic Oligopoly and Price Stickiness*                                                             |
-| <mark>Université Paris Dauphine</mark>   | <mark>21/06/2021</mark> | 11:00 | [Roland Rathelot]({ %link _posts/../../_posts/2021-06-13-t3m-dauphine.md})  (University of Warwick)                                                         | *TBA*                                                                                                |
+| <mark>Université Paris Dauphine</mark>   | <mark>21/06/2021</mark> | 11:00 | [Roland Rathelot]({ %link _posts/../../_posts/2021-06-13-t3m-dauphine.md %})  (University of Warwick)                                                         | *TBA*                                                                                                |
 
 ---
 

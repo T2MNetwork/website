@@ -18,9 +18,9 @@ Last event in the T3M series (program [here]({% link _pages/t3m.md %})) will tak
  
 Before the seminar, there will be __two sessions__, with 4 lightning talks in each room. Talks will last 10 min followed by a short discussion.
 
-| Parallel Sessions | Speaker                                                            |
-| ----------------- | ------------------------------------------------------------------ |
-| 15h00             | Matthias Klein (Riks Bank) <u>The political costs of austerity</u> |
-| 15h15             | Baptiste Massenot (TSE) <u>tba</u>                                 |
-| 15h30             | Johana Tyrowicz (Universtity of Warsaw) <u>tba</u>                 |
-| 15h45             | Pedro Gomes (Carlos III)     <u>Pain of paying in consumption-saving decisions</u>                            |
+| Parallel Sessions | Speaker                                                                            |
+| ----------------- | ---------------------------------------------------------------------------------- |
+| 15h00             | Matthias Klein (Riks Bank) <u>The political costs of austerity</u>                 |
+| 15h15             | Baptiste Massenot (TSE) <u>Pain of paying in consumption-saving decisions</u>      |
+| 15h30             | Johana Tyrowicz (Universtity of Warsaw) <u>tba</u>                                 |
+| 15h45             | Pedro Gomes (Carlos III)     <u>Pain of paying in consumption-saving decisions</u> |
