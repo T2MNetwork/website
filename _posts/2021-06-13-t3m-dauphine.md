@@ -20,7 +20,7 @@ Before the seminar, there will be 4 short talks. They will last 10 min each foll
 
 | Parallel Sessions | Speaker                                                                            |
 | ----------------- | ---------------------------------------------------------------------------------- |
-| 15h00             | Matthias Klein (Riks Bank) <u>The political costs of austerity</u>                 |
-| 15h15             | Baptiste Massenot (TSE) <u>Pain of paying in consumption-saving decisions</u>      |
-| 15h30             | Johana Tyrowicz (Universtity of Warsaw) <u>tba</u>                                 |
-| 15h45             | Pedro Gomes (Carlos III)     <u>Pain of paying in consumption-saving decisions</u> |
+| 11h00             | Matthias Klein (Riks Bank) <u>The political costs of austerity</u>                 |
+| 11h15             | Baptiste Massenot (TSE) <u>Pain of paying in consumption-saving decisions</u>      |
+| 11h30             | Johana Tyrowicz (Universtity of Warsaw) <u>tba</u>                                 |
+| 11h45             | Pedro Gomes (Carlos III)     <u>Pain of paying in consumption-saving decisions</u> |
