@@ -5,9 +5,9 @@ permalink: /t2m/
 order: 1
 ---
 
-The next yearly T2M conference is scheduled for:
+The next yearly T2M conference is currently scheduled for:
 
-## November 4-5, 2021 in London
+## April 11-12, 2021 in London
 
 
 ### at King's College
