@@ -14,7 +14,7 @@ The next yearly T2M conference is currently scheduled for:
 
 Co-organized with Centre for Macroeconomics and Bank of England.
 
-<em>Call for paper will be issued, __at the end of the spring__, <mark>only if sanitary conditions allow for the conference to take place physically.</mark></em>
+<em>Call for paper will be issued, <mark>soon</mark></em>
 
 __Local Committee__:
 - Rana Sajedi
