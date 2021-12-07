@@ -1,13 +1,13 @@
 ---
 layout: page
-title: Conference 2021
+title: Conference 2022
 permalink: /t2m/
 order: 1
 ---
 
 The next yearly T2M conference is scheduled for:
 
-## April 21-22, 2021 in London
+## April 21-22, 2022 in London
 
 
 ### at King's College
