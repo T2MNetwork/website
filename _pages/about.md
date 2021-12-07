@@ -14,13 +14,13 @@ T2M is an association dedicated to foster the development and dissemination of r
 	<th style="background-color: white; width: 33%; text-align: center">
 		<h3 class="team-list-title">Aurélien Eyquem</h3>
 		<img src="/assets/img/ids/AE.jpg" width="60%" alt=">Aurélien Eyquem">
-		<h4>Treasurer </h4>		
+		<h4>Vice-President </h4>		
 	</th>
 
 	<th style="background-color: white; width: 33%;text-align: center">
 		<h3 class="team-list-title">Céline Poilly</h3>
 		<img src="/assets/img/ids/CP.jpg"  width="60%" alt="Céline Poilly">
-		<h4>Vice-President </h4>		
+		<h4>Treasurer </h4>		
 	</th>
 	<th style="background-color: white; width: 33%; text-align: center">
 		<h3 class="team-list-title">Mariana Rojas Breu</h3>
