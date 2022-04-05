@@ -28,10 +28,10 @@ __Local Committee__:
 		<img src="/assets/img/logos/boe.svg" height=150 alt="BOE" >
 	</th>
     <th style="background-color: white">
-		<img src="/assets/img/logos/kcl.png" height=150 width=150 alt="KCL" >
+		<img src="/assets/img/logos/kcl.png" height=150 width=200 alt="KCL" >
 	</th>	
     <th style="background-color: white">
-		<img src="/assets/img/logos/QCGBF.png" height=150 width=150 alt="QCGBF" >
+		<img src="/assets/img/logos/QCGBF.png" height=150 width=200 alt="QCGBF" >
 	</th>	
     <th style="background-color: white">
 		<img src="/assets/img/logos/cfm.jpg" height=150 alt="CfM ">
