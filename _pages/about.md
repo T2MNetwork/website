@@ -2,7 +2,7 @@
 layout: page
 title: About T2M
 permalink: /about/
-order: 4
+order: 1
 ---
 
 T2M is an association dedicated to foster the development and dissemination of research in Macroeconomics. It organizes a yearly conference and some other events targeted at the macro community, especially young researchers.
@@ -41,6 +41,34 @@ T2M is an association dedicated to foster the development and dissemination of r
 	</th>
   </tr>
 </table>
+
+## Scientific Committee
+
+- Aurélien Eyquem (Université Lumière Lyon 2)
+- Axelle Ferrière (PSE)
+- Céline Poilly (AMSE)
+- Dmitry Mukhin (LSE)
+- Edouard Challe (European University Institute)
+- Eleni Iliopulos (University of Paris-Saclay)
+- Eric Mengus (HEC)
+- Erwan Gautier (BdF)
+- Fabien Tripier (Université Paris Dauphine)
+- Hervé Le Bihan (Banque de France)
+- Hubert Kempf (ENS Saclay)
+- Isabelle Méjean (SciencesPo)
+- Jean Imbs (NYU/AD)
+- Jean-Guillaume Sahuc (Banque de France)
+- Julien Albertini (Lyon 2)
+- Lise Patureau (Université Paris-Dauphine)
+- Mariana Rojas-Breu (Paris II - Panthéon Assas)
+- Marteen de Ridder (LSE)
+- Matthieu Lemoine (BdF)
+- Olivier Loisel (Polytechnique)
+- Pablo Winant (ESCP Business School / Polytechnique)
+- Patrick Fève (TSE)
+- Stephane Auray (ENSAI)
+- Theptida Sopraseuth (CY Cergy Paris Université)
+- Xavier Ragot (OFCE)
 
 
 ## Sponsors

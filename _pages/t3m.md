@@ -2,7 +2,7 @@
 layout: page
 title: T3M
 permalink: /t3m/
-order: 2
+hidden: true
 ---
 
 T3M is an experimental series of online research events for macroeconomists (coffee randomizers, poster sessions, small videos, ...). 

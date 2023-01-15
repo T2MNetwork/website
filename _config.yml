@@ -1,15 +1,21 @@
-title: Theories and Methods in Macro
+title: Theories and Methods in Macro (T2M)
 email: organizers@t2m.network
 # description: >- # this means to ignore newlines until "baseurl:"
 #   Write an awesome description for your new site here. You can edit this
 #   line in _config.yml. It will appear in your document head meta (for
 #   Google search results) and in your feed.xml site description.
 baseurl: "/" # the subpath of your site, e.g. /blog
-url: "http://www.t2m.network" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://www.t2m.network"
 twitter_username: T2M_Conference
 github_username:  T2MNetwork
 
 include: ["_pages"]
+
+header_pages:
+  - _pages/about.md
+  - _pages/cfp_2023.md
+  - _pages/submit.md
+  - _pages/past.md
 
 # Build settings
 markdown: kramdown

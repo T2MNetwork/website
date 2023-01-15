@@ -2,6 +2,7 @@
 layout: page
 permalink: /vr_program/
 order: 3
+hidden: true
 ---
 
 ## T3M Conference in VR
