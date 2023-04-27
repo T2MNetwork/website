@@ -6,6 +6,11 @@ order: 3
 ---
 
 
+## Registration
+
+All presenters have until May 10th to buy a registration ticket on [eventbrite](https://www.eventbrite.com/e/t2m-conference-paris-tickets-625202807427). Invited speakers are not required to do so and will receive a special link to register.
+Program including all confirmed speakers will be published shortly after.
+
 ## Dates
 
 Conference will start to welcome participants on June 1st at 8:30.
@@ -35,8 +40,3 @@ A cocktail dinner with all conference participants will take place on Thursday e
 *102 Bd du Montparnasse, 75014 Paris*
 
 It is a 15 min walk from where the school is located.
-
-
-## Registration
-
-All presenters have until May 10th to buy a registration ticket on [eventbrite](https://www.eventbrite.com/e/t2m-conference-paris-tickets-625202807427). Invited speakers are not required to do so and will receive a special link to register.
