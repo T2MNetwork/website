@@ -8,7 +8,10 @@ order: 3
 
 ## Registration
 
-All presenters have until May 10th to buy a registration ticket on [eventbrite](https://www.eventbrite.com/e/t2m-conference-paris-tickets-625202807427). Invited speakers are not required to do so and will receive a special link to register.
+All presenters have until May 10th to buy a registration ticket on ➡️[eventbrite](https://www.eventbrite.com/e/t2m-conference-paris-tickets-625202807427)⬅️.
+
+Invited speakers are not required to do so and will receive a special link to register.
+
 Program including all confirmed speakers will be published shortly after.
 
 ## Dates
