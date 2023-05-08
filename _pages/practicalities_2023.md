@@ -32,7 +32,7 @@ The conference will take place in the ESCP building close to Montparnasse:
 
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2625.822156632339!2d2.314878176015093!3d48.84253087132997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e670339b680e2f%3A0x52e665ec20f7585e!2sESCP%20Business%20School%20Paris%20Campus%20%2F%20Montparnasse!5e0!3m2!1sfr!2sfr!4v1682628667982!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-A list of nearby hotels can be downloaded [here](assets/ESCPHotelsMontparnasse.pdf).
+A list of nearby hotels can be downloaded [here]({% link assets/ESCPHotelsMontparnasse.pdf %}).
 
 ## Dinner
 
