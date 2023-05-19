@@ -14,6 +14,7 @@ include: ["_pages"]
 header_pages:
   - _pages/about.md
   - _pages/cfp_2023.md
+  - _pages/schedule_2023.md
   - _pages/program_2023.md
   - _pages/practicalities_2023.md
   - _pages/past.md
