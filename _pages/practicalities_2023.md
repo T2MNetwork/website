@@ -5,6 +5,9 @@ permalink: /practicalities_2023/
 order: 3
 ---
 
+## Following the conference online
+
+All sessions will be broadcast online using the zoom platform. Links will be made available in the program page. If you are presenting online, we suggest you get in touch with your session chair a bit in advance.
 
 ## Registration
 
@@ -38,7 +41,7 @@ A list of nearby hotels can be downloaded [here]({% link assets/ESCPHotelsMontpa
 
 ![Dancing of La Coupole](assets/../../assets/img/coupole.jpg)
 
-A cocktail dinner with all conference participants will take place on Thursday evening at la [La Coupole](https://www.lacoupole-paris.com/)
+A cocktail dinner with all conference participants will take place on Thursday evening at [La Coupole](https://www.lacoupole-paris.com/)
 
 *102 Bd du Montparnasse, 75014 Paris*
 

@@ -9,7 +9,7 @@ order: 4
 __Thursday, 1st__
 
 |-----------|-----------|------------------------|
-| 8:30	    | 9:00	    |Welcome / Coffee	     |
+| 8:30	    | 9:00	    | Welcome / Coffee	     |
 | 9:00	    | 10:30     |	Parallel Sessions A	 |
 | 10:30	    | 10:50     |	Coffee Break	     |
 | 10:50	    | 12:20     |	Parallel Sessions B	 |
