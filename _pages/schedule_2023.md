@@ -25,7 +25,7 @@ __Friday, 2nd__
 
 |-----------|-----------|--------------------------------------------------------------------------------------------------------------------|
 | 8:30	    | 9:00	    | Welcome / Coffee	                                                                                                 |
-| 9:00	    | 10:30     | *Modelling and measuring the data economy* by Laura Veldkamp <br>Plenary Session, sponsored by Banque de France     |
+| 9:00	    | 10:30     | *Modelling and measuring the data economy* (<a href="https://plenary.t2m.network"><img src="../assets/zoom_icon.png" height="20px">) by Laura Veldkamp <br>Plenary Session, sponsored by Banque de France     |
 | 10:30	    | 10:50     |	                    Coffee Break	                                                                             |
 | 10:50	    | 12:20     |	                    Parallel Sessions F	                                                                         |
 | 12:20	    | 13:20     |	                    Lunch Break	                                                                                 |
