@@ -21,7 +21,7 @@ Parallel sessions will be scheduled to last 100 min for 4 speakers each. In addi
 | [Christian Bayer](https://www.wiwi.uni-bonn.de/bayer/)               (University of Bonn)  |  *Inequality*      |
 | [Lilia Maliar](City University of New York)                        (CUNY Graduate Center)                   |  *Reinforcement Learning in Economics*           |
 | [Rick van der Ploeg ](https://rickvanderploeg.wordpress.com/)                        (University of Amsterdam)                       |  *Climate and Macroeconomics* |
-| [Tim Landvoigt](https://sites.google.com/view/timlandvoigt)                        (University of Pennsylvania)          |  *University of Pennsylvania*          |
+| [Tim Landvoigt](https://sites.google.com/view/timlandvoigt)                        (University of Pennsylvania)          |  *Advances in Macro-Finance*          |
 
 Economists from all fields relevant to macroeconomics are encouraged to submit.
 
