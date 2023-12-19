@@ -70,8 +70,8 @@ T2M is an association dedicated to fostering the development and dissemination o
 - Theptida Sopraseuth (CY Cergy Paris Université)
 - Xavier Ragot (OFCE)
 
-
+<!-- 
 ## Sponsors
 <img src="{% link /assets/img/logos/cfm.jpg %}" height=100 > <img src="{% link /assets/img/logos/kcl.png %}" height=100 > 
 <img src="{% link /assets/img/logos/escp.png %}" height=100 >
-<img src="{% link /assets/img/logos/cepremap.svg %}" height=100 >
+<img src="{% link /assets/img/logos/cepremap.svg %}" height=100 > -->
