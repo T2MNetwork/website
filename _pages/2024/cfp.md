@@ -37,12 +37,10 @@ __Organization Committee__
 - [Christian Stoltenberg](https://sites.google.com/site/christianastoltenberg/home) (Université of Amsterdam)
 - [Elisabeth Pröhl](https://www.elisabethproehl.com/) (University of Amsterdam)
 - [Fabien Greimel](https://www.greimel.eu/) (University of Amsterdam)
-- [Pablo Winant](https://www.mosphere.fr) (T2M)
+- [Pablo Winant](https://www.mosphere.fr) (ESCP Business School & École Polytechnique)
 
 __Sponsors__
 
 | ![DNB](/assets/2024/sponsors/DNB.png) | ![UVA](/assets/2024/sponsors/uva.jpg) | 
 | ![TI](/assets/2024/sponsors/ti.jpg) | ![ESCP](/assets/2024/sponsors/escp.jpg) |
 
-<!-- 
-- ESCP Business School -->
