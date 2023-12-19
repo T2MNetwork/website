@@ -49,18 +49,18 @@ T2M is an association dedicated to fostering the development and dissemination o
   <tr>
 	<th style="background-color: white; width: 33%; text-align: center">
 		<img src="/assets/2024/ProfilePics/christian.jpeg" width="60%" alt="Christian Stoltenberg">
-		<h3 class="team-list-title">Christian Stoltenberg (UVA)</h3>
+		<h3 class="team-list-title">Christian Stoltenberg (UvA)</h3>
 		<!-- <h4>UVA </h4>		 -->
 	</th>
 
 	<th style="background-color: white; width: 33%;text-align: center">
 		<img src="/assets/2024/ProfilePics/elisabeth.jpg"  width="60%" alt="Elisabeth Pröhl">
-		<h3 class="team-list-title">Elisabeth Pröhl (UVA)</h3>
+		<h3 class="team-list-title">Elisabeth Pröhl (UvA)</h3>
 		<!-- <h4>UVA </h4>		 -->
 	</th>
 	<th style="background-color: white; width: 33%; text-align: center">
 		<img src="/assets/2024/ProfilePics/fabian.jpg"  width="60%" alt="Fabian Greimel">
-		<h3 class="team-list-title">Fabian Greimel</h3>
+		<h3 class="team-list-title">Fabian Greimel (UvA)</h3>
 		<!-- <h4>UVA </h4> -->
 	</th>
   </tr>

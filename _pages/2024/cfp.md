@@ -11,7 +11,7 @@ __the 2nd and 3rd of May 2024__ hosted by University of Amsterdam
 
 The keynote speakers will be:
 
-| [Michele Tertilt](https://tertilt.vwl.uni-mannheim.de/) |  University of Mannheim |
+| [Michèle Tertilt](https://tertilt.vwl.uni-mannheim.de/) |  University of Mannheim |
 | [Fatih Guvenen](https://www.fatihguvenen.com/) |  University of Minnesota |
 
 Parallel sessions will be scheduled to last 100 min for 4 speakers each. In addition, there will be several invited sessions organized by leading economists:
@@ -34,7 +34,7 @@ For additional informations don't hesitate to get in touch at [organizers@t2m.ne
 
 __Organization Committee__
 
-- [Christian Stoltenberg](https://sites.google.com/site/christianastoltenberg/home) (Université of Amsterdam)
+- [Christian Stoltenberg](https://sites.google.com/site/christianastoltenberg/home) (University of Amsterdam)
 - [Elisabeth Pröhl](https://www.elisabethproehl.com/) (University of Amsterdam)
 - [Fabien Greimel](https://www.greimel.eu/) (University of Amsterdam)
 - [Pablo Winant](https://www.mosphere.fr) (ESCP Business School & École Polytechnique)
