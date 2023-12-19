@@ -17,12 +17,12 @@ The keynote speakers will be:
 Parallel sessions will be scheduled to last 100 min for 4 speakers each. In addition, there will be several invited sessions organized by leading economists:
 
 
-| [Béatrice Cherrier](https://beatricecherrier.wordpress.com/about/)                                   (École Polytechnique)                        |  *Historical Perspective on Macroeconomics*          |
-| [Christian Bayer](https://www.wiwi.uni-bonn.de/bayer/)               (University of Bonn)  |  *Inequality*      |
-| [Lilia Maliar](City University of New York)                        (CUNY Graduate Center)                   |  *Reinforcement Learning in Economics*           |
-| [Rick van der Ploeg ](https://rickvanderploeg.wordpress.com/)                        (University of Oxford)                       |  *Climate and Macroeconomics* |
-| [Tim Landvoigt](https://sites.google.com/view/timlandvoigt)                        (University of Pennsylvania)          |  *Advances in Macro-Finance*          |
-| T2M Team          |  *Young Economists Session*          |
+| *Historical Perspective on Macroeconomics* | [Béatrice Cherrier](https://beatricecherrier.wordpress.com/about/)    (École Polytechnique) |
+| *Inequality*                               | [Christian Bayer](https://www.wiwi.uni-bonn.de/bayer/)               (University of Bonn)   |
+| *Reinforcement Learning in Economics*      | [Lilia Maliar](City University of New York)                        (CUNY Graduate Center)   |
+| *Climate and Macroeconomics*               | [Rick van der Ploeg ](https://rickvanderploeg.wordpress.com/)       (University of Oxford)  |
+| *Advances in Macro-Finance*                | [Tim Landvoigt](https://sites.google.com/view/timlandvoigt)  (University of Pennsylvania)   |
+| *Young Economists Session*                 | T2M Team                                                                                    |
 
 Economists from all fields relevant to macroeconomics are encouraged to submit.
 
