@@ -86,7 +86,7 @@ T2M is an association dedicated to fostering the development and dissemination o
 - Jean-Guillaume Sahuc (Banque de France)
 - Julien Albertini (Lyon 2)
 - Lise Patureau (Université Paris-Dauphine)
-  Lorenza Rossi (University of Lancaster)
+- Lorenza Rossi (University of Lancaster)
 - Mariana Rojas-Breu (Paris II - Panthéon Assas)
 - Marteen de Ridder (LSE)
 - Matthieu Lemoine (BdF)
