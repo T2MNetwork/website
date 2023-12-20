@@ -30,7 +30,7 @@ The conference will take place  __onsite__.
 
 Full papers can be ➡️[submitted]({% link _pages/submit.md %})⬅️ until the 15th of February. Only one paper per presenter will considered. Acceptance decisions will be sent by mid March.
 
-For additional informations don't hesitate to get in touch at [organizers@t2m.network](organizers@t2m.network)
+For additional informations don't hesitate to get in touch at [organizers@t2m.network](mailto:organizers@t2m.network)
 
 __Organization Committee__
 
