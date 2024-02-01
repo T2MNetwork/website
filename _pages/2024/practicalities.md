@@ -12,7 +12,7 @@ The conference will take place in **Building A** of the University of Amsterdam'
 
 [(*Nieuwe Achtergracht 166, 1018 WV Amsterdam*)](https://maps.app.goo.gl/eX9SskRgBhQobpaD8)
 
-![Entrance of the A Building](https://drive.google.com/file/d/10upIyNWpsInFl1HuCalKeUHQtd8LY_q3/view?usp=drive_link)
+![Entrance of the A Building](https://github.com/T2MNetwork/website/assets/6280307/6edb27c0-1073-4df1-8033-e01c4233a09a)
 
 ## Boat Tour and Dinner
 
