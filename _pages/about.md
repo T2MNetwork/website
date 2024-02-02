@@ -70,6 +70,7 @@ T2M is an association dedicated to fostering the development and dissemination o
 
 ## Scientific Committee
 
+- Antonia Diaz (Universidad Complutense de Madrid) 
 - Aurélien Eyquem (Université Lumière Lyon 2)
 - Axelle Ferrière (PSE)
 - Céline Poilly (AMSE)
@@ -82,7 +83,7 @@ T2M is an association dedicated to fostering the development and dissemination o
 - Hervé Le Bihan (Banque de France)
 - Hubert Kempf (ENS Saclay)
 - Isabelle Méjean (SciencesPo)
-- Jean Imbs (NYU/AD)
+- Jean Imbs (NYUAD)
 - Jean-Guillaume Sahuc (Banque de France)
 - Julien Albertini (Lyon 2)
 - Lise Patureau (Université Paris-Dauphine)
@@ -90,11 +91,13 @@ T2M is an association dedicated to fostering the development and dissemination o
 - Mariana Rojas-Breu (Paris II - Panthéon Assas)
 - Marteen de Ridder (LSE)
 - Matthieu Lemoine (BdF)
+- Nicolas Coeurdacier (SciencesPo)
 - Olivier Loisel (Polytechnique)
 - Pablo Winant (ESCP Business School / Polytechnique)
 - Patrick Fève (TSE)
 - Stephane Auray (ENSAI)
 - Theptida Sopraseuth (CY Cergy Paris Université)
+- Thomas Douenne (UVA)
 - Xavier Ragot (OFCE)
 
 <!-- 
