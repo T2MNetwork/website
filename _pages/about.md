@@ -80,6 +80,7 @@ T2M is an association dedicated to fostering the development and dissemination o
 - Eric Mengus (HEC)
 - Erwan Gautier (BdF)
 - Fabien Tripier (Université Paris Dauphine)
+- Facundo Piguillem (EIEF)
 - Hervé Le Bihan (Banque de France)
 - Hubert Kempf (ENS Saclay)
 - Isabelle Méjean (SciencesPo)
