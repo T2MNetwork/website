@@ -41,6 +41,7 @@ __Organization Committee__
 
 __Sponsors__
 
-| ![DNB](/assets/2024/sponsors/DNB.png) | ![UVA](/assets/2024/sponsors/uva.jpg) | 
-| ![TI](/assets/2024/sponsors/ti.jpg) | ![ESCP](/assets/2024/sponsors/escp.jpg) |
+| ![UVA](/assets/2024/sponsors/uva.jpg)   | ![ASF](/assets/2024/sponsors/asf.jpg) |
+| ![DNB](/assets/2024/sponsors/DNB.png)   | ![TI](/assets/2024/sponsors/ti.jpg)   |
+| ![ESCP](/assets/2024/sponsors/escp.jpg) |                                       |
 
