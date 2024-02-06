@@ -41,7 +41,23 @@ __Organization Committee__
 
 __Sponsors__
 
-| ![UVA](/assets/2024/sponsors/uva.jpg)   | ![ASF](/assets/2024/sponsors/asf.jpg) |
-| ![DNB](/assets/2024/sponsors/DNB.png)   | ![TI](/assets/2024/sponsors/ti.jpg)   |
-| ![ESCP](/assets/2024/sponsors/escp.jpg) |                                       |
+<table style="line: 0px">
 
+  <tbody>
+
+<tr>
+<th style="width: 40%;"> <img src="{% link /assets/2024/sponsors/asf.jpg %}" width="100%"> </th>
+<th style="width: 60%;"> <img src="{% link /assets/2024/sponsors/ti.jpg %}" width="100%">  </th>
+</tr>
+
+<tr>
+<th style="width: 40%;"> <img src="{% link /assets/2024/sponsors/DNB.png %}" width="100%"> </th>
+<th style="width: 60%;"> <img src="{% link /assets/2024/sponsors/uva.jpg %}" width="100%"> </th>
+</tr>
+<tr>
+<th style="text-align: center;"> <img src="{% link /assets/2024/sponsors/escp.jpg %}" width="60%" class="center"> </th>
+</tr>
+
+  </tbody>
+
+</table>
