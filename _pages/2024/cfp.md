@@ -28,9 +28,10 @@ Economists from all fields relevant to macroeconomics are encouraged to submit.
 
 The conference will take place  __onsite__.
 
-Full papers can be ➡️[submitted]({% link _pages/submit.md %})⬅️ until the 15th of February. Only one paper per presenter will considered. Acceptance decisions will be sent by mid March.
 
-For additional informations don't hesitate to get in touch at [organizers@t2m.network](mailto:organizers@t2m.network)
+Submissions are now closed. Acceptance decisions will be sent by mid-March.
+
+For additional information don't hesitate to get in touch at [organizers@t2m.network](mailto:organizers@t2m.network)
 
 __Organization Committee__
 
