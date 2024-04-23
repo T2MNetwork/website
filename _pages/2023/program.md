@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Program
+title: Program 2023
 permalink: /program_2023/
 order: 5
 ---

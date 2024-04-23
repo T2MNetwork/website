@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Schedule
+title: Schedule 2023
 permalink: /schedule_2023/
 order: 4
 ---

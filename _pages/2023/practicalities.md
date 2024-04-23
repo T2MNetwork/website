@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Practicalities
+title: Practicalities 2023
 permalink: /practicalities_2023/
 order: 3
 ---
