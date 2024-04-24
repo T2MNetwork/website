@@ -28,15 +28,14 @@ Economists from all fields relevant to macroeconomics are encouraged to submit.
 
 The conference will take place  __onsite__.
 
-
 Submissions are now closed. Acceptance decisions will be sent by mid-March.
 
 For additional information don't hesitate to get in touch at [organizers@t2m.network](mailto:organizers@t2m.network)
 
 __Organization Committee__
 
-- [Christian Stoltenberg](https://sites.google.com/site/christianastoltenberg/home) (University of Amsterdam)
 - [Elisabeth Pröhl](https://www.elisabethproehl.com/) (University of Amsterdam)
+- [Christian Stoltenberg](https://sites.google.com/site/christianastoltenberg/home) (University of Amsterdam)
 - [Fabian Greimel](https://www.greimel.eu/) (University of Amsterdam)
 - [Pablo Winant](https://www.mosphere.fr) (ESCP Business School & École Polytechnique)
 
