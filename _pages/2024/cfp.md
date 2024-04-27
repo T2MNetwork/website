@@ -11,8 +11,8 @@ __the 2nd and 3rd of May 2024__ hosted by University of Amsterdam
 
 The keynote speakers will be:
 
-| [Michèle Tertilt](https://tertilt.vwl.uni-mannheim.de/) |  University of Mannheim |
-| [Fatih Guvenen](https://www.fatihguvenen.com/) |  University of Minnesota |
+| [Michèle Tertilt](https://tertilt.vwl.uni-mannheim.de/) (University of Mannheim) | *The Economics of Women's Rights* |
+| [Fatih Guvenen](https://www.fatihguvenen.com/) (University of Minnesota) | *On the Mechanics of Top Wealth Inequality: With an Application to Wealth Taxation* |
 
 Parallel sessions will be scheduled to last 100 min for 4 speakers each. In addition, there will be several invited sessions organized by leading economists:
 
@@ -28,15 +28,14 @@ Economists from all fields relevant to macroeconomics are encouraged to submit.
 
 The conference will take place  __onsite__.
 
-
 Submissions are now closed. Acceptance decisions will be sent by mid-March.
 
 For additional information don't hesitate to get in touch at [organizers@t2m.network](mailto:organizers@t2m.network)
 
 __Organization Committee__
 
-- [Christian Stoltenberg](https://sites.google.com/site/christianastoltenberg/home) (University of Amsterdam)
 - [Elisabeth Pröhl](https://www.elisabethproehl.com/) (University of Amsterdam)
+- [Christian Stoltenberg](https://sites.google.com/site/christianastoltenberg/home) (University of Amsterdam)
 - [Fabian Greimel](https://www.greimel.eu/) (University of Amsterdam)
 - [Pablo Winant](https://www.mosphere.fr) (ESCP Business School & École Polytechnique)
 

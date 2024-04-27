@@ -8,27 +8,30 @@ order: 4
 
 __Thursday, 2nd__
 
-|-----------|-----------|---------------------------------|
-| 8:30	    | 9:00	    | Registration and Coffee Break	              |
-| 9:00	    | 10:40     |	Parallel Sessions A	          |
-| 10:40	    | 11:00     |	Coffee Break	              |
-| 11:00	    | 12:30     |	Keynote I - Michèle Tertilt	          |
-| 12:30	    | 13:30     |	Lunch	                  |
-| 13:30	    | 15:10     |	Parallel Sessions B	          |
-| 15:10	    | 15:30     |	Coffee Break	              |
-| 15:30	    | 17:10     |	Parallel Sessions C	          |
-| 17:45	    | 18:45     |	Boat Tour	              |
-| 19:00	    | 22:00     |	Conference Dinner @ Capital Kitchen	          |
+|-----------|-----------|-------------------------------|-------------|
+| 8:30	    | 9:00	    | Registration and Coffee Break | A-hall |
+| 9:00	    | 10:40     | Parallel Sessions A           | Rooms A2.XX |
+| 10:40	    | 11:00     | Coffee Break                  | A-hall |
+| 11:00	    | 12:30     | Keynote I - Michèle Tertilt	| Room A1.02 |
+| 12:30	    | 13:30     | Lunch                         | A-hall |
+| 13:30	    | 15:10     | Parallel Sessions B	        | Rooms A2.XX |
+| 15:10	    | 15:30     | Coffee Break                  | A-hall |
+| 15:30	    | 17:10     | Parallel Sessions C           | Rooms A2.XX |
+| 17:45	    | 18:45     | Boat Tour                     |  |
+| 19:00	    | 22:00     | Conference Dinner             | Capital Kitchen |
 
 __Friday, 3rd__
 
+|-----------|-----------|---------------------------------|-------------|
+| 9:00	    | 10:40     |	Parallel Sessions D	          | Rooms A2.XX |
+| 10:40	    | 11:00     |	Coffee Break	              | A-hall |
+| 11:00	    | 12:40     |	Parallel Sessions E	          | Rooms A2.XX |
+| 12:40	    | 13:40     |	Lunch	                      | A-hall |
+| 13:40	    | 15:10     |	Keynote II - Fatih Guvenen	  | Room A1.02  |
+| 15:10	    | 15:30     |	Coffee Break	              | A-hall |
+| 15:30	    | 17:10     |	Parallel Sessions F          | Rooms A2.XX |
+| 17:30	    | 18:45     |	Inofficial Drinks          | CREA |
 
-|-----------|-----------|---------------------------------|
-| 9:00	    | 10:40     |	Parallel Sessions D	          |
-| 10:40	    | 11:00     |	Coffee Break	              |
-| 11:00	    | 12:40     |	Parallel Sessions E	          |
-| 12:40	    | 13:40     |	Lunch	                      |
-| 13:40	    | 15:10     |	Keynote II - Fatih Guvenen	  |
-| 15:10	    | 15:30     |	Coffee Break	              |
-| 15:30	    | 17:10     |	Parallel Sessions F          |
-| 17:30	    | 18:45     |	Inofficial Drinks...          |
+
+![Where to find the rooms](/assets/2024/Signage.png)
+
