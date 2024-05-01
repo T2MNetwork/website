@@ -20,7 +20,7 @@ The first conference day (Thursday) will be concluded with a boat tour and a sea
 
 ![Boat tour](https://booot.nl/wp-content/uploads/sites/3/2022/02/WhatsApp-Image-2020-06-19-at-11.58.47-800x450.jpeg)
 
-We will hop on (and off) the boat at [**Carré** (maps)](https://maps.app.goo.gl/PR67PQpDn2EQEA2C9).
+We will hop on (and off) the boat at [**Hermitage** (maps)](https://maps.app.goo.gl/1c8jkjxpVTMTfRG28).
 It is a 10 minutes' walk from the conference location. On the boat, drinks will be served.
 
 ![Capital Kitchen at Capital C](https://capitalc.amsterdam/wp-content/uploads/2023/10/Capital-C-Exterior-1-1024x621.jpg)
