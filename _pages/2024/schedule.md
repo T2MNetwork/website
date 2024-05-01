@@ -17,8 +17,8 @@ __Thursday, 2nd__
 | 13:30	    | 15:10     | Parallel Sessions B	        | Rooms A2.XX |
 | 15:10	    | 15:30     | Coffee Break                  | A-hall |
 | 15:30	    | 17:10     | Parallel Sessions C           | Rooms A2.XX |
-| 17:45	    | 18:45     | Boat Tour                     |  |
-| 19:00	    | 22:00     | Conference Dinner             | Capital Kitchen |
+| 17:45	    | 18:45     | Boat Tour                     | [Hermitage](https://maps.app.goo.gl/1c8jkjxpVTMTfRG28) |
+| 19:00	    | 22:00     | Conference Dinner             | [Capital C](https://capitalc.amsterdam/kitchen/) |
 
 __Friday, 3rd__
 
@@ -30,7 +30,7 @@ __Friday, 3rd__
 | 13:40	    | 15:10     |	Keynote II - Fatih Guvenen	  | Room A1.02  |
 | 15:10	    | 15:30     |	Coffee Break	              | A-hall |
 | 15:30	    | 17:10     |	Parallel Sessions F          | Rooms A2.XX |
-| 17:30	    | 18:45     |	Inofficial Drinks          | CREA |
+| 17:30	    | 18:45     |	Inofficial Drinks          | [CREA](https://maps.app.goo.gl/aH9GxSvaBRAQAPHB8) |
 
 
 ![Where to find the rooms](/assets/2024/Signage.png)
