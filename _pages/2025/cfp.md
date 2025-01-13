@@ -18,7 +18,7 @@ Parallel sessions will be scheduled to last 100 min for 4 speakers each. In addi
 
 
 | *tbc* | [François Legrand](https://beatricecherrier.wordpress.com/about/)    (École Polytechnique) |
-| *tbc*                               | [Michael Devereux](https://www.wiwi.uni-bonn.de/bayer/)      (University of Bonn) and [Stéphane Auray](https://sites.google.com/site/stephaneauray/) (ENSAI)   |
+| *tbc* | [Michael Devereux](https://www.wiwi.uni-bonn.de/bayer/)      (University of Bonn) and [Stéphane Auray](https://sites.google.com/site/stephaneauray/) (ENSAI)   |
 | *Young Economists Session*                 | T2M Team                                                                                    |
 
 Economists from all fields relevant to macroeconomics are encouraged to submit.
