@@ -17,18 +17,13 @@ The keynote speakers will be:
 Parallel sessions will be scheduled to last 100 min for 4 speakers each. In addition, there will be several invited sessions organized by leading economists:
 
 
-| *Historical Perspective on Macroeconomics* | [Béatrice Cherrier](https://beatricecherrier.wordpress.com/about/)    (École Polytechnique) |
-| *Inequality*                               | [Christian Bayer](https://www.wiwi.uni-bonn.de/bayer/)               (University of Bonn)   |
-| *Reinforcement Learning in Economics*      | [Lilia Maliar](City University of New York)                        (CUNY Graduate Center)   |
-| *Climate and Macroeconomics*               | [Rick van der Ploeg ](https://rickvanderploeg.wordpress.com/)       (University of Oxford)  |
-| *Advances in Macro-Finance*                | [Tim Landvoigt](https://sites.google.com/view/timlandvoigt)  (University of Pennsylvania)   |
+| *tbc* | [François Legrand](https://beatricecherrier.wordpress.com/about/)    (École Polytechnique) |
+| *tbc*                               | [Michael Devereux](https://www.wiwi.uni-bonn.de/bayer/)      (University of Bonn) and [Stéphane Auray](https://sites.google.com/site/stephaneauray/) (ENSAI)   |
 | *Young Economists Session*                 | T2M Team                                                                                    |
 
 Economists from all fields relevant to macroeconomics are encouraged to submit.
 
 The conference will take place  __onsite__.
-
-Submissions are now closed. Acceptance decisions will be sent by mid-March.
 
 For additional information don't hesitate to get in touch at [organizers@t2m.network](mailto:organizers@t2m.network)
 
