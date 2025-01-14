@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Call for Papers 2024
-permalink: /2024/cfp/
+permalink: /2025/cfp/
 order: 2
 ---
 
