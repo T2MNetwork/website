@@ -24,9 +24,10 @@ Parallel sessions will be scheduled to last 100 min for 4 speakers each. In addi
 | *Young Economists Session*                 | T2M Team                                                 |
 
 
-Economists from all fields relevant to macroeconomics are encouraged to submit. 
 
 The conference will take place  __onsite__.
+
+Economists from all fields relevant to macroeconomics are encouraged to submit. 
 
 A small poster session will be organized and submitters can opt on to be considered for it in the submission form.
 
