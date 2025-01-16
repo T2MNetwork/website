@@ -42,28 +42,66 @@ T2M is an association dedicated to fostering the development and dissemination o
   </tr>
 </table>
 
-## Organizing Committee 2024
+## Organizing Committee 2025
 
 
 <table style="width:100%" >
   <tr>
-	<th style="background-color: white; width: 33%; text-align: center">
-		<img src="/assets/2024/ProfilePics/christian.jpeg" width="60%" alt="Christian Stoltenberg">
-		<h3 class="team-list-title">Christian Stoltenberg (UvA)</h3>
-		<!-- <h4>UVA </h4>		 -->
+
+	<th style="background-color: white; width: 200;text-align: center">
+		<img src="/assets/2025/team/SB.jpg"   width="80%" alt="Suzanne Bellue">
+		<!-- <h3 class="team-list-title">Suzanne Bellue (ENSAE / CREST)</h3> -->
 	</th>
 
-	<th style="background-color: white; width: 33%;text-align: center">
-		<img src="/assets/2024/ProfilePics/elisabeth.jpg"  width="60%" alt="Elisabeth Pröhl">
-		<h3 class="team-list-title">Elisabeth Pröhl (UvA)</h3>
-		<!-- <h4>UVA </h4>		 -->
+
+	<th style="background-color: white; width: 200; text-align: center">
+		<img src="/assets/2025/team/OL.jpg"  width="80%" alt="Olivier Loisel">
+		<!-- <h3 class="team-list-title">Olivier Loisel (ENSAE / CREST)</h3> -->
+	
 	</th>
-	<th style="background-color: white; width: 33%; text-align: center">
-		<img src="/assets/2024/ProfilePics/fabian.jpg"  width="60%" alt="Fabian Greimel">
-		<h3 class="team-list-title">Fabian Greimel (UvA)</h3>
-		<!-- <h4>UVA </h4> -->
+
+	<th style="background-color: white; width: 200; text-align: center">
+		<img src="/assets/2025/team/GR.jpg"  width="80%" alt="Giovani Ricci">
+		<!-- <h3 class="team-list-title">Giovani Ricci (Polytechnique / CREST)</h3> -->
 	</th>
+
+
+	<th style="background-color: white; width: 25%; text-align: center">
+		<img src="/assets/2025/team/GV.jpg" width="80%" alt="Gauthier Vermandel">
+		<!-- <h3 class="team-list-title">Gauthier Vermandel (École Polytechnique)</h3> -->
+	</th>
+
+	
   </tr>
+
+<tr>
+
+	<th style="background-color: white; width: 25%;text-align: center">
+		<!-- <img src="/assets/2025/team/SB.jpg"  height="60%" alt="Suzanne Bellue"> -->
+		<h4 class="team-list-title">Suzanne Bellue (ENSAE / CREST)</h4>
+	</th>
+
+
+	<th style="background-color: white; width: 25%; text-align: center">
+		<!-- <img src="/assets/2025/team/OL.jpg" height="60%" alt="Olivier Loisel"> -->
+		<h4 class="team-list-title">Olivier Loisel (ENSAE / CREST)</h4>
+	
+	</th>
+
+	<th style="background-color: white; width: 25%; text-align: center">
+		<!-- <img src="/assets/2025/team/GR.jpg" height="60%" alt="Giovani Ricci"> -->
+		<h4 class="team-list-title">Giovani Ricci (Polytechnique / CREST)</h4>
+	</th>
+
+
+	<th style="background-color: white; width: 25%; text-align: center">
+		<!-- <img src="/assets/2025/team/GV.jpg" height="60%" alt="Gauthier Vermandel"> -->
+		<h4 class="team-list-title">Gauthier Vermandel (École Polytechnique)</h4>
+	</th>
+
+	
+  </tr>
+
 
 </table>
 

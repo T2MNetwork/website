@@ -13,11 +13,7 @@ include: ["_pages"]
 
 header_pages:
   - _pages/about.md
-  - _pages/2024/cfp.md
-  - _pages/2024/submit.md
-  - _pages/2024/schedule.md
-  - _pages/2024/program.md
-  - _pages/2024/practicalities.md
+  - _pages/2025/cfp.md
   - _pages/past.md
 
 # Build settings
