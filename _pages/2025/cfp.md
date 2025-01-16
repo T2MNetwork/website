@@ -38,7 +38,3 @@ __Organization Committee__
 - [Olivier Loisel](https://olivierloisel.com//) (ENSAE/CREST)
 - [Giovani Ricco](https://www.giovanni-ricco.com/) (École Polytechnique/CREST)
 - [Pablo Winant](https://www.mosphere.fr) (ESCP Business School & École Polytechnique/CREST)
-
-  </tbody>
-
-</table>
