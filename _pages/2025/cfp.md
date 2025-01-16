@@ -17,11 +17,12 @@ The keynote speakers will be:
 Parallel sessions will be scheduled to last 100 min for 4 speakers each. In addition, there will be several invited sessions organized by leading economists:
 
 
-| *tbc* | [François Legrand](https://beatricecherrier.wordpress.com/about/)    (École Polytechnique) |
-| *tbc* | [Michael Devereux](https://economics.ubc.ca/profile/michael-devereux/)      (Vancouver School of Economics) and [Stéphane Auray](https://sites.google.com/site/stephaneauray/) (ENSAI)   |
+| *Macroeconomics and public finance* | [François Legrand](https://beatricecherrier.wordpress.com/about/)    (École Polytechnique) |
+| *Non cooperative policies in the global economy* | [Michael Devereux](https://economics.ubc.ca/profile/michael-devereux/)      (Vancouver School of Economics), [Stéphane Auray](https://sites.google.com/site/stephaneauray/) (ENSAI) and [Aurélien Eyquem](http://aeyq.free.fr/)  |
+| *Behavioural macroeconomics* | [Isabelle Salle](https://www.isabellesalle.net/)      (University of Ottawa)  |
 | *Young Economists Session*                 | T2M Team                                                 |
 
-Economists from all fields relevant to macroeconomics are encouraged to submit.
+Economists from all fields relevant to macroeconomics are encouraged to submit.  case your
 
 The conference will take place  __onsite__.
 
