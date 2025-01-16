@@ -131,7 +131,7 @@ T2M is an association dedicated to fostering the development and dissemination o
 - Marteen de Ridder (LSE)
 - Matthieu Lemoine (BdF)
 - Nicolas Coeurdacier (SciencesPo)
-- Olivier Loisel (Polytechnique)
+- Olivier Loisel (ENSAE)
 - Pablo Winant (ESCP Business School / Polytechnique)
 - Patrick Fève (TSE)
 - Stephane Auray (ENSAI)
