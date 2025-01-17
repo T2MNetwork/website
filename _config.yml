@@ -14,6 +14,7 @@ include: ["_pages"]
 header_pages:
   - _pages/about.md
   - _pages/2025/cfp.md
+  - _pages/submit.md
   - _pages/past.md
 
 # Build settings

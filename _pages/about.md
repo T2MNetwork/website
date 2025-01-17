@@ -78,25 +78,25 @@ T2M is an association dedicated to fostering the development and dissemination o
 
 	<th style="background-color: white; width: 25%;text-align: center">
 		<!-- <img src="/assets/2025/team/SB.jpg"  height="60%" alt="Suzanne Bellue"> -->
-		<h4 class="team-list-title">Suzanne Bellue (ENSAE / CREST)</h4>
+		<h4 class="team-list-title">Suzanne Bellue (CREST - ENSAE)</h4>
 	</th>
 
 
 	<th style="background-color: white; width: 25%; text-align: center">
 		<!-- <img src="/assets/2025/team/OL.jpg" height="60%" alt="Olivier Loisel"> -->
-		<h4 class="team-list-title">Olivier Loisel (ENSAE / CREST)</h4>
+		<h4 class="team-list-title">Olivier Loisel (CREST - ENSAE)</h4>
 	
 	</th>
 
 	<th style="background-color: white; width: 25%; text-align: center">
 		<!-- <img src="/assets/2025/team/GR.jpg" height="60%" alt="Giovani Ricci"> -->
-		<h4 class="team-list-title">Giovani Ricci (Polytechnique / CREST)</h4>
+		<h4 class="team-list-title">Giovani Ricco (CREST - Polytechnique)</h4>
 	</th>
 
 
 	<th style="background-color: white; width: 25%; text-align: center">
 		<!-- <img src="/assets/2025/team/GV.jpg" height="60%" alt="Gauthier Vermandel"> -->
-		<h4 class="team-list-title">Gauthier Vermandel (École Polytechnique)</h4>
+		<h4 class="team-list-title">Gauthier Vermandel (Polytechnique)</h4>
 	</th>
 
 	

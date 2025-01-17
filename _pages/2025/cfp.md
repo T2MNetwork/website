@@ -23,19 +23,19 @@ Parallel sessions will be scheduled to last 100 min for 4 speakers each. In addi
 | *Non Cooperative Policies in the Global Economy* | [Michael Devereux](https://economics.ubc.ca/profile/michael-devereux/)      (Vancouver School of Economics), [Stéphane Auray](https://sites.google.com/site/stephaneauray/) (ENSAI) and [Aurélien Eyquem](http://aeyq.free.fr/) (HEC Lausanne) |
 | *Young Economists Session*                 | T2M Team                                                 |
 
-
-
 The conference will take place  __onsite__.
 
-Economists from all fields relevant to macroeconomics are encouraged to submit. 
+Economists from all fields relevant to macroeconomics are encouraged to submit (<a href="{% link _pages/submit.md %}">here ✉</a>)
 
 A small poster session will be organized and submitters can opt on to be considered for it in the submission form.
 
 For additional information don't hesitate to get in touch at [organizers@t2m.network](mailto:organizers@t2m.network)
 
+
+
 __Organization Committee__
 
-- [Suzanne Bellue](https://suzannebellue.github.io/) (École Polytechnique/CREST)
-- [Olivier Loisel](https://olivierloisel.com//) (ENSAE/CREST)
-- [Giovani Ricco](https://www.giovanni-ricco.com/) (École Polytechnique/CREST)
-- [Pablo Winant](https://www.mosphere.fr) (ESCP Business School & École Polytechnique/CREST)
+- [Suzanne Bellue](https://suzannebellue.github.io/) (CREST - Polytechnique)
+- [Olivier Loisel](https://olivierloisel.com//) (CREST - ENSAE)
+- [Giovani Ricco](https://www.giovanni-ricco.com/) (CREST - Polytechnique)
+- [Pablo Winant](https://www.mosphere.fr) (ESCP Business School & CREST - Polytechnique)
