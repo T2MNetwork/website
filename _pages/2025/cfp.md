@@ -38,4 +38,5 @@ __Organization Committee__
 - [Suzanne Bellue](https://suzannebellue.github.io/) (École Polytechnique/CREST)
 - [Olivier Loisel](https://olivierloisel.com//) (ENSAE/CREST)
 - [Giovani Ricco](https://www.giovanni-ricco.com/) (École Polytechnique/CREST)
+- [Gauthier Vermandel](https://vermandel.fr/the-author/) (École Polytechnique)
 - [Pablo Winant](https://www.mosphere.fr) (ESCP Business School & École Polytechnique/CREST)
