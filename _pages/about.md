@@ -90,7 +90,7 @@ T2M is an association dedicated to fostering the development and dissemination o
 
 	<th style="background-color: white; width: 25%; text-align: center">
 		<!-- <img src="/assets/2025/team/GR.jpg" height="60%" alt="Giovani Ricci"> -->
-		<h4 class="team-list-title">Giovani Ricco (CREST - Polytechnique)</h4>
+		<h4 class="team-list-title">Giovanni Ricco (CREST - Polytechnique)</h4>
 	</th>
 
 
