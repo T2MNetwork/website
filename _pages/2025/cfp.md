@@ -27,7 +27,7 @@ The conference will take place  __onsite__.
 
 Economists from all fields relevant to macroeconomics are encouraged to submit (<a href="{% link _pages/submit.md %}">here ✉</a>)
 
-A poster session will be organized and submitters can opt on to be considered for it in the submission form.
+A poster session will be organized and submitters can opt in to be considered for it in the submission form.
 
 For additional information don't hesitate to get in touch at [organizers@t2m.network](mailto:organizers@t2m.network)
 
