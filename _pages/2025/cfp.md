@@ -25,7 +25,7 @@ Parallel sessions will be scheduled to last 100 min for 4 speakers each. In addi
 
 The conference will take place  __onsite__.
 
-Economists from all fields relevant to macroeconomics are encouraged to submit (<a href="{% link _pages/submit.md %}">here ✉</a>)
+Economists from all fields relevant to macroeconomics are encouraged to submit (<a href="{% link _pages/submit.md %}">here ✉</a>). The deadline is on February 15th and 
 
 A poster session will be organized and submitters can opt on to be considered for it in the submission form.
 
