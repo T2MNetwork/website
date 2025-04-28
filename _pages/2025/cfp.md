@@ -12,7 +12,7 @@ __the 22nd and 23rd of May 2025__ hosted by [CREST](https://crest.science/), clo
 The keynote speakers will be:
 
 | [Anton Korinek](https://www.korinek.com/) (University of Virginia) | *AI Scenario Planning* |
-| [Antonella Trigari](https://sites.google.com/view/antonellatrigari/home) (Bocconi University) | *Fiscal Policy and Sectoral Reallocation According to HANK-SAM-IO* |
+| [Antonella Trigari](https://sites.google.com/view/antonellatrigari/home) (Bocconi University) | *Temporary Layoffs, Loss-of-Recall, and Cyclical Unemployment Dynamics* |
 
 Parallel sessions will be scheduled to last 100 min for 4 speakers each. In addition, there will be several invited sessions organized by leading economists:
 
