@@ -28,7 +28,7 @@ __Friday, 23rd__
 |-----------|-----------|------------------------------------|-------------|
 | 9:45	    | 10:00     |	Morning Coffee  	             |             |
 | 10:00	    | 11:15     |	Parallel Sessions D	             |             |
-| 11:00	    | 11:20     |	Coffee Break	                 | Hall        |
+| 11:15	    | 11:35     |	Coffee Break	                 | Hall        |
 | 11:35	    | 12:55     |	Keynote II - Antonella Trigari	 |             |
 | 12:55	    | 14:25     |	Lunch	                         | Hall        |
 | 14:25	    | 15:40     |	Parallel Sessions E	             |             |
