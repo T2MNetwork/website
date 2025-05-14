@@ -1,31 +1,31 @@
 ---
 layout: page
-title: Practicalities 2024
-permalink: /2024/practicalities/
+title: Practicalities 2025
+permalink: /2025/practicalities/
 order: 3
 ---
 
-![Work in Progress](/assets/wip.png)
 
 ## Venue
 
-The conference will take place in **Building A** of the University of Amsterdam's **Roeterseilandcampus**
+The conference will take place in **Teaching Building BEM** 
+[(*BEM*, maps)](https://maps.app.goo.gl/Fcht925J3WW357LLA) of the *IP Paris Campus*.
 
-[(*Nieuwe Achtergracht 166, 1018 WV Amsterdam*, maps)](https://maps.app.goo.gl/eX9SskRgBhQobpaD8)
+Depending on the weather, lunches will take place either in the BEM or close to the nearby lake. 
 
-![Entrance of the A Building](https://github.com/T2MNetwork/website/assets/6280307/6edb27c0-1073-4df1-8033-e01c4233a09a)
+![Lake](/assets/2025/lake.jpg)
 
-## Boat Tour and Dinner
+## Travel from Paris
 
-The first conference day (Thursday) will be concluded with a boat tour and a seated dinner for all conference participants.
+Two buses have been booked to transfer all participants, back and forth from the station "Cité Universitaire" RER to the conference venue.
 
-![Boat tour](https://booot.nl/wp-content/uploads/sites/3/2022/02/WhatsApp-Image-2020-06-19-at-11.58.47-800x450.jpeg)
+In Paris, the exact meeting spot (see on [map](https://maps.app.goo.gl/TeHYLJZpG5W8Cp6B7)) is on the other side of the street with respect to the station, 50m to the west. Buses will depart at _8h45_ on both days.
 
-We will hop on (and off) the boat at [**Hermitage** (maps)](https://maps.app.goo.gl/1c8jkjxpVTMTfRG28).
-It is a 10 minutes' walk from the conference location. On the boat, drinks will be served.
+It is also possible to reach the conference place using RER B (stopping at Lozere station), but this involves a little (scenic) walk in the woods from the station to the conference building.
 
-![Capital Kitchen at Capital C](https://capitalc.amsterdam/wp-content/uploads/2023/10/Capital-C-Exterior-1-1024x621.jpg)
+One of our most dedicated organizers will stay near Cité Universitaire after the buses have departed, to help those who have chosen this route (and a few latecomers).
 
-The dinner will take place on Thursday evening at [Capital C Amsterdam](https://capitalc.amsterdam/kitchen/).
+## Dinner
 
-It is a 5 minutes' walk from the conference location. [(*Weesperplein 4A, 1018 XA Amsterdam*)](https://maps.app.goo.gl/xeCY8dPppFeCTc3q6)
+The dinner will take place on Thursday evening at [Le Pavillon Montsouris](https://pavillon-montsouris.paris/). Buses will go there directly after the first conference day.
+

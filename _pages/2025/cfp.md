@@ -21,7 +21,7 @@ Parallel sessions will be scheduled to last 100 min for 4 speakers each. In addi
 | *Behavioural Macroeconomics* | [Isabelle Salle](https://www.isabellesalle.net/)      (University of Ottawa)  |
 | *Housing and the Macroeconomy* | [Rachel Ngai](https://sites.google.com/view/rachelngai/home) (London School of Economics)  | 
 | *Non Cooperative Policies in the Global Economy* | [Michael Devereux](https://sites.google.com/site/michaelbdevereux/home)      (Vancouver School of Economics), [Stéphane Auray](https://sites.google.com/site/stephaneauray/) (ENSAI) and [Aurélien Eyquem](http://aeyq.free.fr/) (HEC Lausanne) |
-| *Young Economists Session*                 | T2M Team                                                 |
+<!-- | *Young Economists Session*                 | T2M Team                                                 | -->
 
 The conference will take place  __onsite__.
 
