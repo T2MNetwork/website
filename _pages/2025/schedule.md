@@ -18,7 +18,7 @@ __Thursday, 22nd__
 | 15:10	    | 16:50     | Parallel Sessions B	        | Cf Sessions Matrix |
 | 16:50	    | 17:10     | Coffee Break                  | Hall |
 | 17:10	    | 18:25     | Parallel Sessions C           | Cf Sessions Matrix |
-| 18:45     |           | Bus Departure (to Paris)      | Outside BEM | 
+| 18:45     |           | Bus Departure (to Paris)      | Outside CREST | 
 | 19:30	    | 22:00     | Conference Dinner             | [Pavillon Montsouris](https://pavillon-montsouris.paris/) |
 
 __Friday, 23rd__
@@ -33,7 +33,7 @@ __Friday, 23rd__
 | 14:25	    | 15:40     |	Parallel Sessions E	            | Cf Sessions Matrix            |
 | 15:40	    | 16:00     |	Coffee Break	                | Hall           |
 | 16:00	    | 17:15     |	Parallel Sessions F             | Cf Sessions Matrix        |
-| 17:35     |           | Bus Departure (to Paris)          | Outside BEM | 
+| 17:35     |           | Bus Departure (to Paris)          | Outside CREST | 
 
 
 <!-- ![Where to find the rooms](/assets/2024/Signage.png) -->
