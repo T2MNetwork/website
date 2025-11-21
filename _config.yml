@@ -13,7 +13,7 @@ include: ["_pages"]
 
 header_pages:
   - _pages/about.md
-  # - _pages/2026/cfp.md
+  - _pages/2026/cfp.md
   # - _pages/2026/practicalities.md
   # - _pages/2026/schedule.md
   # - _pages/2026/program.md
