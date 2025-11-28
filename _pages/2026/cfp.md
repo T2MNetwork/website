@@ -7,10 +7,10 @@ order: 2
 
 
 The 29th Conference "Theories and Methods in Macroeconomics" (T2M) will take place on 
-__the 2nd and 3rd of June 2026__ hosted by [HEC Montreal](https://www.hec.ca/en/), close to Paris.
+__the 2nd and 3rd of June 2026__ hosted by [HEC Montreal](https://www.hec.ca/en/).
 
 We invite submissions from all areas of macroeconomics. The program will feature multiple parallel sessions, two keynote lectures and several topical invited sessions organized by leading economists.  
-This edition will also feature a special lightning round session in which graduate student will present their work.  
+This edition will also feature a special lightning round session in which graduate students will present their work.  
 
 __Keynote speakers__:
 
