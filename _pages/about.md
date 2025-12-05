@@ -49,20 +49,20 @@ T2M is an association dedicated to fostering the development and dissemination o
   <tr>
 
 	<th style="background-color: white; width: 200px;text-align: center">
+		<h3 class="team-list-title">Giacomo Candian</h3>
 		<img src="/assets/2026/giacomo_candian.jpg"   width="80%" alt="Giacomo Candian">
-		<h3 class="team-list-title">Giacomo Candian (HEC Montreal)</h3>
 	</th>
 
 
 	<th style="background-color: white; width: 200px; text-align: center">
+		<h3 class="team-list-title">Nora Traum</h3>
 		<img src="/assets/2026/nora_traum.jpg"  width="80%" alt="Nora Traum">
-		<h3 class="team-list-title">Nora Traum (HEC Montreal)</h3>
 	
 	</th>
 
 	<th style="background-color: white; width: 200px; text-align: center">
+		<h3 class="team-list-title">Sophie Osotimehin</h3>
 		<img src="/assets/2026/sophie_osotimehin.jpg" width="80%" alt="Sophie Osotimehin">
-		<h3 class="team-list-title">Sophie Osotimehin (University of Quebec)</h3>
 	</th>
 
 	
