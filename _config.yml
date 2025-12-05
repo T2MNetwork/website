@@ -17,7 +17,7 @@ header_pages:
   # - _pages/2026/practicalities.md
   # - _pages/2026/schedule.md
   # - _pages/2026/program.md
-  # - _pages/submit.md
+  - _pages/submit.md
   - _pages/past.md
 
 # Build settings
