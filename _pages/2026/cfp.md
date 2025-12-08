@@ -28,7 +28,7 @@ __Invited sessions organized by__:
 
 __Submission__: 
 
-Please submit your paper before (stay tuned: 🚧) with this link (I'm the link: 🚧). Papers will be selected by the [T2M scientific commitee](http://0.0.0.0:4000/about/).
+Please submit your paper before February 15th with this [link](/submit/). Papers will be selected by the [T2M scientific commitee](/about/).
 
 Information about the conference will be available on the conference webpage. For any additional information, don't hesitate to contact us at [organizers@t2m.network](mailto:organizers@t2m.network).
 
@@ -49,8 +49,6 @@ __Sponsors__:
 - Jacques Parizeau Research Chair in Economic Policy, HEC Montréal
 - Chair in Macroeconomic and Stabilization Policies, HEC Montreal
 - CIRANO -->
-![](/assets/2026/HECMontreal.png)  ![](/assets/2026/CIRANO.png) ![](/assets/2026/HECMontreal_chair2.png)
+![](/assets/2026/HECMontreal.png)  ![](/assets/2026/CIRANO.png){:width="25%"} ![](/assets/2026/HECMontreal_chair2.png){:width="30%"}
 
-![](/assets/2026/Logo_macro.png)
-
-![](/assets/2026/jacques.png)
+![](/assets/2026/Logo_macro.png){:width="48%"} ![](/assets/2026/jacques.png){:width="48%"}
