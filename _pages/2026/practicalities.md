@@ -17,6 +17,7 @@ The entrance to the building is across the street on Beaver Hall (📍: [map](ht
 ![](/assets/2026/hec_2.jpg)
 
 ## Dinner
+
 The conference dinner will take place at Le Molière Brasserie Française on Tuesday June 2nd . The restaurant is a short 2-minute walk from the orange metro exit Berri – UQAM or a 25-minute walk
 from the conference building (📍: [map](https://maps.app.goo.gl/HpEJ7YN7KvtGLx9d6) ).
 

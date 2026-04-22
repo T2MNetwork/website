@@ -5,8 +5,11 @@ permalink: /2026/schedule/
 order: 4
 ---
 
+__Monday, 1st__
 
-__Thursday, 2nd__
+Phd-Workshop: meet at 11am, HEC Montreal.
+
+__Tuesday, 2nd__
 
 |-----------|-----------|----------------------------------------|-------------|
 | 8:30	    | 9:00	    | Registration and Coffee Break          |          .  |
@@ -17,9 +20,9 @@ __Thursday, 2nd__
 | 13:30	    | 15:10     | Parallel Sessions B	                 |          .  |
 | 15:10	    | 15:30     | Coffee Break                           |          .  |
 | 15:30	    | 17:10     | Parallel Sessions C                    |          .  |
-| 19:00	    | 22:00     | Conference Dinner                      | [Le Molière](https://capitalc.amsterdam/kitchen/) |
+| 19:00	    | 22:00     | Conference Dinner                      | [Le Molière](https://lemoliere.com/) |
 
-__Friday, 3rd__
+__Wednesday, 3rd__
 
 |-----------|-----------|---------------------------------|-------------|
 | 9:00	    | 10:40     |	Parallel Sessions D	          | .           |
