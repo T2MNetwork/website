@@ -1,5 +1,123 @@
+<style>
+  .program-matrix { display: table; }
+  .program-mobile { display: none; }
+  .mobile-day { margin: 0 0 18px 0; }
+  .mobile-time { margin: 10px 0 8px; padding: 8px 10px; background: #f1f1f1; border-radius: 8px; font-weight: 600; }
+  .mobile-session { display: block; padding: 8px 10px; border: 1px solid #ddd; border-radius: 10px; margin: 8px 0; background: #fff; }
+  .mobile-session.highlight { background: orange; }
+  .mobile-session .room { font-weight: 700; }
+  .mobile-session .title { display: block; margin-top: 2px; }
+  @media (max-width: 760px) {
+    .program-matrix { display: none; }
+    .program-mobile { display: block; }
+    .program-mobile h2 { margin-top: 0.8rem; }
+  }
+</style>
+<div class="program-mobile">
+<h2>Program overview</h2>
+<div class="mobile-day">
+  <h3>June 2nd</h3>
+  <div class="mobile-time">9:00-10:40</div>
+  <a class="mobile-session" href="#s_A5">
+    <span class="room">A.414 — Expectations and Beliefs</span>
+  </a>
+  <a class="mobile-session" href="#s_A3">
+    <span class="room">A.449 — Firm Dynamics</span>
+  </a>
+  <a class="mobile-session" href="#s_A4">
+    <span class="room">A.451 — Housing Markets</span>
+  </a>
+  <a class="mobile-session" href="#s_A2">
+    <span class="room">C.403 — Labour Search and Matching</span>
+  </a>
+  <a class="mobile-session" href="#s_A1">
+    <span class="room">C.409 — Automation, AI, and Labour Markets</span>
+  </a>
+  <div class="mobile-time">13:30-15:10</div>
+  <a class="mobile-session" href="#s_B5">
+    <span class="room">A.414 — Labour Markets</span>
+  </a>
+  <a class="mobile-session" href="#s_B3">
+    <span class="room">A.449 — Inflation Dynamics</span>
+  </a>
+  <a class="mobile-session" href="#s_B4">
+    <span class="room">A.451 — Fiscal Policy and Household Behavior</span>
+  </a>
+  <a class="mobile-session" href="#s_B2">
+    <span class="room">C.403 — Monetary Policy Transmission</span>
+  </a>
+  <a class="mobile-session" href="#s_B1">
+    <span class="room">C.409 — Macroeconomic Development</span>
+  </a>
+  <div class="mobile-time">15:30-17:10</div>
+  <a class="mobile-session highlight" href="#s_C5">
+    <span class="room">A.414 — Exchange Rates and Open Economy</span>
+  </a>
+  <a class="mobile-session" href="#s_C3">
+    <span class="room">A.449 — Inequality and Wealth Dynamics</span>
+  </a>
+  <a class="mobile-session" href="#s_C4">
+    <span class="room">A.451 — Innovation, Market Power, and Growth</span>
+  </a>
+  <a class="mobile-session" href="#s_C2">
+    <span class="room">C.403 — Sovereign Debt and Default</span>
+  </a>
+  <a class="mobile-session" href="#s_C1">
+    <span class="room">C.409 — Dynamic Trade</span>
+  </a>
+</div>
+<div class="mobile-day">
+  <h3>June 3rd</h3>
+  <div class="mobile-time">9:00-10:40</div>
+  <a class="mobile-session" href="#s_D4">
+    <span class="room">A.449 — Taxation and Labour Supply</span>
+  </a>
+  <a class="mobile-session" href="#s_D5">
+    <span class="room">A.451 — Production Networks</span>
+  </a>
+  <a class="mobile-session" href="#s_D3">
+    <span class="room">C.403 — Heterogeneous Agents and Household Decisions</span>
+  </a>
+  <a class="mobile-session" href="#s_D1">
+    <span class="room">C.406 — Young Economists Session</span>
+  </a>
+  <a class="mobile-session" href="#s_D2">
+    <span class="room">C.409 — Monetary Policy Communication</span>
+  </a>
+  <div class="mobile-time">11:00-12:40</div>
+  <a class="mobile-session" href="#s_E3">
+    <span class="room">A.449 — Climate, Disasters, and Macroeconomic Stability</span>
+  </a>
+  <a class="mobile-session" href="#s_E4">
+    <span class="room">A.451 — International Finance and Capital Flows</span>
+  </a>
+  <a class="mobile-session" href="#s_E2">
+    <span class="room">C.403 — Asset Prices and Financial Markets</span>
+  </a>
+  <a class="mobile-session" href="#s_E5">
+    <span class="room">C.406 — Misallocation and Aggregate Productivity</span>
+  </a>
+  <a class="mobile-session" href="#s_E1">
+    <span class="room">C.409 — Information and Business Cycles</span>
+  </a>
+  <div class="mobile-time">15:30-17:10</div>
+  <a class="mobile-session" href="#s_F3">
+    <span class="room">A.449 — Household Finance and Credit Markets</span>
+  </a>
+  <a class="mobile-session" href="#s_F2">
+    <span class="room">C.403 — Financial Frictions and Business Cycles</span>
+  </a>
+  <a class="mobile-session" href="#s_F4">
+    <span class="room">C.406 — Monetary Policy: Rules and Transmission</span>
+  </a>
+  <a class="mobile-session" href="#s_F1">
+    <span class="room">C.409 — Optimal Monetary Policy</span>
+  </a>
+</div>
+</div>
+
 <h2>Sessions Matrix</h2>
-<table border="1" class="dataframe">
+<table border="1" class="dataframe program-matrix">
   <thead>
     <tr style="text-align: right;">
       <th></th>
@@ -95,7 +213,7 @@
 
     <div class="session">
 
-    <div style="background-color:lightgrey">
+    <div style="background-color:lightgrey" class="session-card">
         <a name="s_A5"></a>
         <tr>
             <th align="left">
@@ -138,7 +256,7 @@
 
     <div class="session">
 
-    <div style="background-color:lightgrey">
+    <div style="background-color:lightgrey" class="session-card">
         <a name="s_A3"></a>
         <tr>
             <th align="left">
@@ -181,7 +299,7 @@
 
     <div class="session">
 
-    <div style="background-color:lightgrey">
+    <div style="background-color:lightgrey" class="session-card">
         <a name="s_A4"></a>
         <tr>
             <th align="left">
@@ -224,7 +342,7 @@
 
     <div class="session">
 
-    <div style="background-color:lightgrey">
+    <div style="background-color:lightgrey" class="session-card">
         <a name="s_A2"></a>
         <tr>
             <th align="left">
@@ -267,7 +385,7 @@
 
     <div class="session">
 
-    <div style="background-color:lightgrey">
+    <div style="background-color:lightgrey" class="session-card">
         <a name="s_A1"></a>
         <tr>
             <th align="left">
@@ -317,7 +435,7 @@
 
     <div class="session">
 
-    <div style="background-color:lightgrey">
+    <div style="background-color:lightgrey" class="session-card">
         <a name="s_B5"></a>
         <tr>
             <th align="left">
@@ -360,7 +478,7 @@
 
     <div class="session">
 
-    <div style="background-color:lightgrey">
+    <div style="background-color:lightgrey" class="session-card">
         <a name="s_B3"></a>
         <tr>
             <th align="left">
@@ -403,7 +521,7 @@
 
     <div class="session">
 
-    <div style="background-color:lightgrey">
+    <div style="background-color:lightgrey" class="session-card">
         <a name="s_B4"></a>
         <tr>
             <th align="left">
@@ -446,7 +564,7 @@
 
     <div class="session">
 
-    <div style="background-color:lightgrey">
+    <div style="background-color:lightgrey" class="session-card">
         <a name="s_B2"></a>
         <tr>
             <th align="left">
@@ -489,7 +607,7 @@
 
     <div class="session">
 
-    <div style="background-color:lightgrey">
+    <div style="background-color:lightgrey" class="session-card">
         <a name="s_B1"></a>
         <tr>
             <th align="left">
@@ -587,7 +705,7 @@
 
     <div class="session">
 
-    <div style="background-color:lightgrey">
+    <div style="background-color:lightgrey" class="session-card">
         <a name="s_C3"></a>
         <tr>
             <th align="left">
@@ -630,7 +748,7 @@
 
     <div class="session">
 
-    <div style="background-color:lightgrey">
+    <div style="background-color:lightgrey" class="session-card">
         <a name="s_C4"></a>
         <tr>
             <th align="left">
@@ -673,7 +791,7 @@
 
     <div class="session">
 
-    <div style="background-color:lightgrey">
+    <div style="background-color:lightgrey" class="session-card">
         <a name="s_C2"></a>
         <tr>
             <th align="left">
@@ -716,7 +834,7 @@
 
     <div class="session">
 
-    <div style="background-color:lightgrey">
+    <div style="background-color:lightgrey" class="session-card">
         <a name="s_C1"></a>
         <tr>
             <th align="left">
@@ -766,7 +884,7 @@
 
     <div class="session">
 
-    <div style="background-color:lightgrey">
+    <div style="background-color:lightgrey" class="session-card">
         <a name="s_D4"></a>
         <tr>
             <th align="left">
@@ -809,7 +927,7 @@
 
     <div class="session">
 
-    <div style="background-color:lightgrey">
+    <div style="background-color:lightgrey" class="session-card">
         <a name="s_D5"></a>
         <tr>
             <th align="left">
@@ -852,7 +970,7 @@
 
     <div class="session">
 
-    <div style="background-color:lightgrey">
+    <div style="background-color:lightgrey" class="session-card">
         <a name="s_D3"></a>
         <tr>
             <th align="left">
@@ -895,7 +1013,7 @@
 
     <div class="session">
 
-    <div style="background-color:lightgrey">
+    <div style="background-color:lightgrey" class="session-card">
         <a name="s_D1"></a>
         <tr>
             <th align="left">
@@ -933,7 +1051,7 @@
 
     <div class="session">
 
-    <div style="background-color:lightgrey">
+    <div style="background-color:lightgrey" class="session-card">
         <a name="s_D2"></a>
         <tr>
             <th align="left">
@@ -983,7 +1101,7 @@
 
     <div class="session">
 
-    <div style="background-color:lightgrey">
+    <div style="background-color:lightgrey" class="session-card">
         <a name="s_E3"></a>
         <tr>
             <th align="left">
@@ -1026,7 +1144,7 @@
 
     <div class="session">
 
-    <div style="background-color:lightgrey">
+    <div style="background-color:lightgrey" class="session-card">
         <a name="s_E4"></a>
         <tr>
             <th align="left">
@@ -1069,7 +1187,7 @@
 
     <div class="session">
 
-    <div style="background-color:lightgrey">
+    <div style="background-color:lightgrey" class="session-card">
         <a name="s_E2"></a>
         <tr>
             <th align="left">
@@ -1112,7 +1230,7 @@
 
     <div class="session">
 
-    <div style="background-color:lightgrey">
+    <div style="background-color:lightgrey" class="session-card">
         <a name="s_E5"></a>
         <tr>
             <th align="left">
@@ -1150,7 +1268,7 @@
 
     <div class="session">
 
-    <div style="background-color:lightgrey">
+    <div style="background-color:lightgrey" class="session-card">
         <a name="s_E1"></a>
         <tr>
             <th align="left">
@@ -1200,7 +1318,7 @@
 
     <div class="session">
 
-    <div style="background-color:lightgrey">
+    <div style="background-color:lightgrey" class="session-card">
         <a name="s_F3"></a>
         <tr>
             <th align="left">
@@ -1243,7 +1361,7 @@
 
     <div class="session">
 
-    <div style="background-color:lightgrey">
+    <div style="background-color:lightgrey" class="session-card">
         <a name="s_F2"></a>
         <tr>
             <th align="left">
@@ -1286,7 +1404,7 @@
 
     <div class="session">
 
-    <div style="background-color:lightgrey">
+    <div style="background-color:lightgrey" class="session-card">
         <a name="s_F4"></a>
         <tr>
             <th align="left">
@@ -1324,7 +1442,7 @@
 
     <div class="session">
 
-    <div style="background-color:lightgrey">
+    <div style="background-color:lightgrey" class="session-card">
         <a name="s_F1"></a>
         <tr>
             <th align="left">
