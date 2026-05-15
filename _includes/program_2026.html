@@ -1,1512 +1,616 @@
+<div id="top"></div>
+<div class="program-page">
 <style>
-  .program-matrix { display: table; }
-  .program-mobile { display: none; }
-  .mobile-day { margin: 0 0 18px 0; }
-  .mobile-time { margin: 10px 0 8px; padding: 8px 10px; background: #f1f1f1; border-radius: 8px; font-weight: 600; }
-  .mobile-session { display: block; padding: 8px 10px; border: 1px solid #ddd; border-radius: 10px; margin: 8px 0; background: #fff; }
-  .mobile-session.highlight { background: orange; }
-  .mobile-session .room { font-weight: 700; }
-  .mobile-session .title { display: block; margin-top: 2px; }
-  @media (max-width: 760px) {
-    .program-matrix { display: none; }
-    .program-mobile { display: block; }
-    .program-mobile h2 { margin-top: 0.8rem; }
-  }
+  .program-page { max-width: 1100px; margin: 0 auto; }
+  .program-overview, .session-section, .participants-section { margin: 0 0 28px 0; }
+  .day-block { margin: 0 0 18px 0; }
+  .day-title { margin: 8px 0 10px; font-size: 1.15rem; }
+  .time-row { margin: 0 0 10px; }
+  .time-pill { display: inline-block; padding: 7px 10px; margin: 0 0 8px; background: #f1f1f1; border-radius: 999px; font-weight: 700; }
+  .overview-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 10px; }
+  .session-chip { display: block; padding: 10px 12px; border: 1px solid #ddd; border-radius: 12px; background: #fff; text-decoration: none; color: inherit; box-shadow: 0 1px 0 rgba(0,0,0,.03); }
+  .session-chip:hover { border-color: #bbb; background: #fafafa; }
+  .session-chip.highlight { background: #ffbe55; border-color: #f0a000; }
+  .session-chip .room { display:block; font-weight: 700; }
+  .parallel-title { background: #b7dce8; padding: 8px 10px; border-radius: 8px; font-weight: 700; margin: 18px 0 10px; }
+  .session-card { border: 1px solid #ddd; border-radius: 14px; background: #fff; overflow: hidden; margin: 0 0 14px 0; }
+  .session-card.highlight { border-color: #f0a000; box-shadow: 0 0 0 2px rgba(255,190,85,.25) inset; }
+  .session-head { display:flex; justify-content:space-between; gap:12px; align-items:flex-start; padding: 10px 12px; background: #e8e8e8; font-weight: 700; }
+  .session-card.highlight .session-head { background: #ffbe55; }
+  .top-link { white-space: nowrap; font-size: .95rem; text-decoration: none; }
+  .session-card ul { margin: 10px 0 12px; padding: 0 18px 0 34px; }
+  .session-card li { margin: 7px 0; }
+  .participants-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 10px; }
+  .participant-card { border: 1px solid #ddd; border-radius: 12px; background: #fff; padding: 10px 12px; }
+  .participant-name { font-weight: 700; }
+  .participant-sessions { margin-top: 6px; color: #1a4f8b; }
+  .back-to-top { position: fixed; right: 16px; bottom: 16px; z-index: 999; background: #111; color: #fff; padding: 10px 12px; border-radius: 999px; text-decoration: none; box-shadow: 0 6px 20px rgba(0,0,0,.18); }
+  .back-to-top:hover { background: #000; }
+  @media (max-width: 760px) { .program-page { padding: 0 2px; } .session-head { flex-direction: column; } .back-to-top { bottom: 12px; right: 12px; font-size: .95rem; } }
 </style>
-<div class="program-mobile">
+<a class="back-to-top" href="#top">↑ Top</a>
+<section class="program-overview">
 <h2>Program overview</h2>
-<div class="mobile-day">
-  <h3>June 2nd</h3>
-  <div class="mobile-time">9:00-10:40</div>
-  <a class="mobile-session" href="#s_A5">
-    <span class="room">A.414 — Expectations and Beliefs</span>
-  </a>
-  <a class="mobile-session" href="#s_A3">
-    <span class="room">A.449 — Firm Dynamics</span>
-  </a>
-  <a class="mobile-session" href="#s_A4">
-    <span class="room">A.451 — Housing Markets</span>
-  </a>
-  <a class="mobile-session" href="#s_A2">
-    <span class="room">C.403 — Labour Search and Matching</span>
-  </a>
-  <a class="mobile-session" href="#s_A1">
-    <span class="room">C.409 — Automation, AI, and Labour Markets</span>
-  </a>
-  <div class="mobile-time">13:30-15:10</div>
-  <a class="mobile-session" href="#s_B5">
-    <span class="room">A.414 — Labour Markets</span>
-  </a>
-  <a class="mobile-session" href="#s_B3">
-    <span class="room">A.449 — Inflation Dynamics</span>
-  </a>
-  <a class="mobile-session" href="#s_B4">
-    <span class="room">A.451 — Fiscal Policy and Household Behavior</span>
-  </a>
-  <a class="mobile-session" href="#s_B2">
-    <span class="room">C.403 — Monetary Policy Transmission</span>
-  </a>
-  <a class="mobile-session" href="#s_B1">
-    <span class="room">C.409 — Macroeconomic Development</span>
-  </a>
-  <div class="mobile-time">15:30-17:10</div>
-  <a class="mobile-session highlight" href="#s_C5">
-    <span class="room">A.414 — Exchange Rates and Open Economy</span>
-  </a>
-  <a class="mobile-session" href="#s_C3">
-    <span class="room">A.449 — Inequality and Wealth Dynamics</span>
-  </a>
-  <a class="mobile-session" href="#s_C4">
-    <span class="room">A.451 — Innovation, Market Power, and Growth</span>
-  </a>
-  <a class="mobile-session" href="#s_C2">
-    <span class="room">C.403 — Sovereign Debt and Default</span>
-  </a>
-  <a class="mobile-session" href="#s_C1">
-    <span class="room">C.409 — Dynamic Trade</span>
-  </a>
+<div class="day-block">
+  <h3 class="day-title">June 2nd</h3>
+  <div class="time-row"><span class="time-pill">9:00-10:40</span>
+    <div class="overview-grid">
+      <a class="session-chip" href="#s_A5">
+        <span class="room">A.414 · A · Expectations and Beliefs</span>
+      </a>
+      <a class="session-chip" href="#s_A3">
+        <span class="room">A.449 · A · Firm Dynamics</span>
+      </a>
+      <a class="session-chip" href="#s_A4">
+        <span class="room">A.451 · A · Housing Markets</span>
+      </a>
+      <a class="session-chip" href="#s_A2">
+        <span class="room">C.403 · A · Labour Search and Matching</span>
+      </a>
+      <a class="session-chip" href="#s_A1">
+        <span class="room">C.409 · A · Automation, AI, and Labour Markets</span>
+      </a>
+    </div>
+  </div>
+  <div class="time-row"><span class="time-pill">13:30-15:10</span>
+    <div class="overview-grid">
+      <a class="session-chip" href="#s_B5">
+        <span class="room">A.414 · B · Labour Markets</span>
+      </a>
+      <a class="session-chip" href="#s_B3">
+        <span class="room">A.449 · B · Inflation Dynamics</span>
+      </a>
+      <a class="session-chip" href="#s_B4">
+        <span class="room">A.451 · B · Fiscal Policy and Household Behavior</span>
+      </a>
+      <a class="session-chip" href="#s_B2">
+        <span class="room">C.403 · B · Monetary Policy Transmission</span>
+      </a>
+      <a class="session-chip" href="#s_B1">
+        <span class="room">C.409 · B · Macroeconomic Development</span>
+      </a>
+    </div>
+  </div>
+  <div class="time-row"><span class="time-pill">15:30-17:10</span>
+    <div class="overview-grid">
+      <a class="session-chip highlight" href="#s_C5">
+        <span class="room">A.414 · C · Exchange Rates and Open Economy • 5 talks</span>
+      </a>
+      <a class="session-chip" href="#s_C3">
+        <span class="room">A.449 · C · Inequality and Wealth Dynamics</span>
+      </a>
+      <a class="session-chip" href="#s_C4">
+        <span class="room">A.451 · C · Innovation, Market Power, and Growth</span>
+      </a>
+      <a class="session-chip" href="#s_C2">
+        <span class="room">C.403 · C · Sovereign Debt and Default</span>
+      </a>
+      <a class="session-chip" href="#s_C1">
+        <span class="room">C.409 · C · Dynamic Trade</span>
+      </a>
+    </div>
+  </div>
 </div>
-<div class="mobile-day">
-  <h3>June 3rd</h3>
-  <div class="mobile-time">9:00-10:40</div>
-  <a class="mobile-session" href="#s_D4">
-    <span class="room">A.449 — Taxation and Labour Supply</span>
-  </a>
-  <a class="mobile-session" href="#s_D5">
-    <span class="room">A.451 — Production Networks</span>
-  </a>
-  <a class="mobile-session" href="#s_D3">
-    <span class="room">C.403 — Heterogeneous Agents and Household Decisions</span>
-  </a>
-  <a class="mobile-session" href="#s_D1">
-    <span class="room">C.406 — Young Economists Session</span>
-  </a>
-  <a class="mobile-session" href="#s_D2">
-    <span class="room">C.409 — Monetary Policy Communication</span>
-  </a>
-  <div class="mobile-time">11:00-12:40</div>
-  <a class="mobile-session" href="#s_E3">
-    <span class="room">A.449 — Climate, Disasters, and Macroeconomic Stability</span>
-  </a>
-  <a class="mobile-session" href="#s_E4">
-    <span class="room">A.451 — International Finance and Capital Flows</span>
-  </a>
-  <a class="mobile-session" href="#s_E2">
-    <span class="room">C.403 — Asset Prices and Financial Markets</span>
-  </a>
-  <a class="mobile-session" href="#s_E5">
-    <span class="room">C.406 — Misallocation and Aggregate Productivity</span>
-  </a>
-  <a class="mobile-session" href="#s_E1">
-    <span class="room">C.409 — Information and Business Cycles</span>
-  </a>
-  <div class="mobile-time">15:30-17:10</div>
-  <a class="mobile-session" href="#s_F3">
-    <span class="room">A.449 — Household Finance and Credit Markets</span>
-  </a>
-  <a class="mobile-session" href="#s_F2">
-    <span class="room">C.403 — Financial Frictions and Business Cycles</span>
-  </a>
-  <a class="mobile-session" href="#s_F4">
-    <span class="room">C.406 — Monetary Policy: Rules and Transmission</span>
-  </a>
-  <a class="mobile-session" href="#s_F1">
-    <span class="room">C.409 — Optimal Monetary Policy</span>
-  </a>
+<div class="day-block">
+  <h3 class="day-title">June 3rd</h3>
+  <div class="time-row"><span class="time-pill">9:00-10:40</span>
+    <div class="overview-grid">
+      <a class="session-chip" href="#s_D4">
+        <span class="room">A.449 · D · Taxation and Labour Supply</span>
+      </a>
+      <a class="session-chip" href="#s_D5">
+        <span class="room">A.451 · D · Production Networks</span>
+      </a>
+      <a class="session-chip" href="#s_D3">
+        <span class="room">C.403 · D · Heterogeneous Agents and Household Decisions</span>
+      </a>
+      <a class="session-chip" href="#s_D1">
+        <span class="room">C.406 · D · Young Economists Session</span>
+      </a>
+      <a class="session-chip" href="#s_D2">
+        <span class="room">C.409 · D · Monetary Policy Communication</span>
+      </a>
+    </div>
+  </div>
+  <div class="time-row"><span class="time-pill">11:00-12:40</span>
+    <div class="overview-grid">
+      <a class="session-chip" href="#s_E3">
+        <span class="room">A.449 · E · Climate, Disasters, and Macroeconomic Stability</span>
+      </a>
+      <a class="session-chip" href="#s_E4">
+        <span class="room">A.451 · E · International Finance and Capital Flows</span>
+      </a>
+      <a class="session-chip" href="#s_E2">
+        <span class="room">C.403 · E · Asset Prices and Financial Markets</span>
+      </a>
+      <a class="session-chip" href="#s_E5">
+        <span class="room">C.406 · E · Misallocation and Aggregate Productivity</span>
+      </a>
+      <a class="session-chip" href="#s_E1">
+        <span class="room">C.409 · E · Information and Business Cycles</span>
+      </a>
+    </div>
+  </div>
+  <div class="time-row"><span class="time-pill">15:30-17:10</span>
+    <div class="overview-grid">
+      <a class="session-chip" href="#s_F3">
+        <span class="room">A.449 · F · Household Finance and Credit Markets</span>
+      </a>
+      <a class="session-chip" href="#s_F2">
+        <span class="room">C.403 · F · Financial Frictions and Business Cycles</span>
+      </a>
+      <a class="session-chip" href="#s_F4">
+        <span class="room">C.406 · F · Monetary Policy: Rules and Transmission</span>
+      </a>
+      <a class="session-chip" href="#s_F1">
+        <span class="room">C.409 · F · Optimal Monetary Policy</span>
+      </a>
+    </div>
+  </div>
 </div>
-</div>
-
-<h2>Sessions Matrix</h2>
-<table border="1" class="dataframe program-matrix">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>Room</th>
-      <th>A.414</th>
-      <th>A.449</th>
-      <th>A.451</th>
-      <th>C.403</th>
-      <th>C.406</th>
-      <th>C.409</th>
-    </tr>
-    <tr>
-      <th>Day</th>
-      <th>Time</th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th rowspan="3" valign="top">02/06</th>
-      <th>9:00-10:40</th>
-      <td><a href="#s_A5">Expectations and Beliefs</a></td>
-      <td><a href="#s_A3">Firm Dynamics</a></td>
-      <td><a href="#s_A4">Housing Markets</a></td>
-      <td><a href="#s_A2">Labour Search and Matching</a></td>
-      <td></td>
-      <td><a href="#s_A1">Automation, AI, and Labour Markets</a></td>
-    </tr>
-    <tr>
-      <th>13:30-15:10</th>
-      <td><a href="#s_B5">Labour Markets</a></td>
-      <td><a href="#s_B3">Inflation Dynamics</a></td>
-      <td><a href="#s_B4">Fiscal Policy and Household Behavior</a></td>
-      <td><a href="#s_B2">Monetary Policy Transmission</a></td>
-      <td></td>
-      <td><a href="#s_B1">Macroeconomic Development</a></td>
-    </tr>
-    <tr>
-      <th>15:30-17:10</th>
-      <td style="background-color:orange;"><a href="#s_C5">Exchange Rates and Open Economy</a></td>
-      <td><a href="#s_C3">Inequality and Wealth Dynamics</a></td>
-      <td><a href="#s_C4">Innovation, Market Power, and Growth</a></td>
-      <td><a href="#s_C2">Sovereign Debt and Default</a></td>
-      <td></td>
-      <td><a href="#s_C1">Dynamic Trade</a></td>
-    </tr>
-    <tr>
-      <th rowspan="3" valign="top">03/06</th>
-      <th>9:00-10:40</th>
-      <td></td>
-      <td><a href="#s_D4">Taxation and Labour Supply</a></td>
-      <td><a href="#s_D5">Production Networks</a></td>
-      <td><a href="#s_D3">Heterogeneous Agents and Household Decisions</a></td>
-      <td><a href="#s_D1">Young Economists Session</a></td>
-      <td><a href="#s_D2">Monetary Policy Communication</a></td>
-    </tr>
-    <tr>
-      <th>11:00-12:40</th>
-      <td></td>
-      <td><a href="#s_E3">Climate, Disasters, and Macroeconomic Stability</a></td>
-      <td><a href="#s_E4">International Finance and Capital Flows</a></td>
-      <td><a href="#s_E2">Asset Prices and Financial Markets</a></td>
-      <td><a href="#s_E5">Misallocation and Aggregate Productivity</a></td>
-      <td><a href="#s_E1">Information and Business Cycles</a></td>
-    </tr>
-    <tr>
-      <th>15:30-17:10</th>
-      <td></td>
-      <td><a href="#s_F3">Household Finance and Credit Markets</a></td>
-      <td></td>
-      <td><a href="#s_F2">Financial Frictions and Business Cycles</a></td>
-      <td><a href="#s_F4">Monetary Policy: Rules and Transmission</a></td>
-      <td><a href="#s_F1">Optimal Monetary Policy</a></td>
-    </tr>
-  </tbody>
-</table>
-
-<p>
-
+</section>
+<section class="session-section">
 <h2>Sessions</h2>
-
-
-    <div style="background-color:lightblue">
-        Parallel Sessions A
-    </div>
-
-    <p></p>
-
-    <div class="session">
-
-    <div style="background-color:lightgrey" class="session-card">
-        <a name="s_A5"></a>
-        <tr>
-            <th align="left">
-
-            9:00-10:40 | Room A.414 | Expectations and Beliefs
-
-            </th>
-
-        </tr>
-    </div>
-
-
-
-    <ul>
-    
-        <li>
-        <em>News, Noise, and Uncertainty</em>  &nbsp; by Elena Afanasyeva, Ivana Komunjer, and Molin Zhong
-        </li>
-
-    
-        <li>
-        <em>A Behavioral Foundation for the Investment Wedge</em>  &nbsp; by Jean-Paul L&#x27;Huillier and Pierlauro Lopez and Sanjay R. Singh
-        </li>
-
-    
-        <li>
-        <em>Behavioral Expectations</em>  &nbsp; by Miguel Santana
-        </li>
-
-    
-        <li>
-        <em>Kalshi and the Rise of Macro Markets</em>  &nbsp; by Anthony M. Diercks and Jared Dean Katz and Jonathan Wright
-        </li>
-
-    
-    </ul>
-
-    </div>
-
-
-    <div class="session">
-
-    <div style="background-color:lightgrey" class="session-card">
-        <a name="s_A3"></a>
-        <tr>
-            <th align="left">
-
-            9:00-10:40 | Room A.449 | Firm Dynamics
-
-            </th>
-
-        </tr>
-    </div>
-
-
-
-    <ul>
-    
-        <li>
-        <em>Ownership Changes and Firm Dynamics</em>  &nbsp; by Bettina Brueggemann and Zachary Mahone and Thomas Palmer
-        </li>
-
-    
-        <li>
-        <em>Demand-Driven Stagnation: Customer Acquisition and Persistent Firm Growth Slowdowns</em>  &nbsp; by Thomas Lazarowicz
-        </li>
-
-    
-        <li>
-        <em>Born Different: Entrepreneurship through Inventor Mobility, Innovation, and Growth</em>  &nbsp; by Salome Baslandze and Ia Vardishvili
-        </li>
-
-    
-        <li>
-        <em>Communication Friction, Managerial Expectation, and Firm Dynamics</em>  &nbsp; by Haoran Wang
-        </li>
-
-    
-    </ul>
-
-    </div>
-
-
-    <div class="session">
-
-    <div style="background-color:lightgrey" class="session-card">
-        <a name="s_A4"></a>
-        <tr>
-            <th align="left">
-
-            9:00-10:40 | Room A.451 | Housing Markets
-
-            </th>
-
-        </tr>
-    </div>
-
-
-
-    <ul>
-    
-        <li>
-        <em>Mortgage interest rate risk and the propagation of shocks</em>  &nbsp; by Matias Vieyra
-        </li>
-
-    
-        <li>
-        <em>Matching People to Properties: A Matching Function for the Housing Market</em>  &nbsp; by Rachel Ngai and Felix Iglhaut and Kevin Sheedy and Fei Wu and Shuang Zhang
-        </li>
-
-    
-        <li>
-        <em>Some Apples Fall Far: Skill Premium, Housing Indivisibility, and the Rising Price-to-Rent Ratio</em>  &nbsp; by Eran B Hoffmann, Alexey Khazanov
-        </li>
-
-    
-        <li>
-        <em>United in Booms, Divided in Busts: Regional House Price Cycles and Monetary Policy</em>  &nbsp; by Hannes Twieling, Ulrich Roschitsch
-        </li>
-
-    
-    </ul>
-
-    </div>
-
-
-    <div class="session">
-
-    <div style="background-color:lightgrey" class="session-card">
-        <a name="s_A2"></a>
-        <tr>
-            <th align="left">
-
-            9:00-10:40 | Room C.403 | Labour Search and Matching
-
-            </th>
-
-        </tr>
-    </div>
-
-
-
-    <ul>
-    
-        <li>
-        <em>The Micro and Macro Implications of Early Career Skills Mismatch</em>  &nbsp; by Piero De Dominicis
-        </li>
-
-    
-        <li>
-        <em>Signals, Interviews, and Hiring in Labor Market Equilibrium</em>  &nbsp; by Ronald Wolthoff
-        </li>
-
-    
-        <li>
-        <em>Job Search, Job Finding and the Role of Unemployment Insurance History</em>  &nbsp; by Similan Rujiwattanapong
-        </li>
-
-    
-        <li>
-        <em>Networks, Sorting, and the Productivity Implications of Immigrant Assimilation</em>  &nbsp; by Luke Rawling
-        </li>
-
-    
-    </ul>
-
-    </div>
-
-
-    <div class="session">
-
-    <div style="background-color:lightgrey" class="session-card">
-        <a name="s_A1"></a>
-        <tr>
-            <th align="left">
-
-            9:00-10:40 | Room C.409 | Automation, AI, and Labour Markets
-
-            </th>
-
-        </tr>
-    </div>
-
-
-
-    <ul>
-    
-        <li>
-        <em>From Farm to Factory: Agricultural Mechanization and Occupational Outcomes in Early Twentieth Century America</em>  &nbsp; by Henry Siu
-        </li>
-
-    
-        <li>
-        <em>Will AI Adoption Intensify or Weaken Market Competition?</em>  &nbsp; by Zheng Liu
-        </li>
-
-    
-        <li>
-        <em>The Demand for Tasks in the Age of AI</em>  &nbsp; by Paul Gaggl
-        </li>
-
-    
-        <li>
-        <em>AI in the Office and the Factory: Evidence from Administrative Software Registry Data</em>  &nbsp; by Gustavo da Souza
-        </li>
-
-    
-    </ul>
-
-    </div>
-
-
-
-    <div style="background-color:lightblue">
-        Parallel Sessions B
-    </div>
-
-    <p></p>
-
-    <div class="session">
-
-    <div style="background-color:lightgrey" class="session-card">
-        <a name="s_B5"></a>
-        <tr>
-            <th align="left">
-
-            13:30-15:10 | Room A.414 | Labour Markets
-
-            </th>
-
-        </tr>
-    </div>
-
-
-
-    <ul>
-    
-        <li>
-        <em>When Neighbors Stop Knocking: The Impact of Canada&#x27;s 2025 Tourism Decline on U.S. Local Labor Markets</em>  &nbsp; by Andr√© Kurmann and Etienne Lal√© and Julien Martin
-        </li>
-
-    
-        <li>
-        <em>Furloughs, Employment, and Worker Reallocation in Normal Times</em>  &nbsp; by Niku Määttänen and Eero Mäkynen and Oskari Vähämaa
-        </li>
-
-    
-        <li>
-        <em>Waiting to Hire and the Business Cycle</em>  &nbsp; by Anastasiia Antonova, Edouard Challe, Mykhailo Matvieiev
-        </li>
-
-    
-        <li>
-        <em>Non-Competes, Worker Mobility, and Productivity Growth: Theory and Evidence</em>  &nbsp; by Hyejin Park
-        </li>
-
-    
-    </ul>
-
-    </div>
-
-
-    <div class="session">
-
-    <div style="background-color:lightgrey" class="session-card">
-        <a name="s_B3"></a>
-        <tr>
-            <th align="left">
-
-            13:30-15:10 | Room A.449 | Inflation Dynamics
-
-            </th>
-
-        </tr>
-    </div>
-
-
-
-    <ul>
-    
-        <li>
-        <em>A Decomposition of the Phillips Curve&#x27;s Flattening</em>  &nbsp; by Bill Dupor and Marie Hogan and Jingchao Li
-        </li>
-
-    
-        <li>
-        <em>The Cost shocks pass-through and the aggregate price volatility</em>  &nbsp; by Lucia Veraldi and Fabien Tripier
-        </li>
-
-    
-        <li>
-        <em>State-dependent pass-through with heterogeneous exposure to common shocks</em>  &nbsp; by Raphael Lafrogne-Joussier and Isabelle M√©jean
-        </li>
-
-    
-        <li>
-        <em>Retail inventories and inflation dynamics: The price margin channel</em>  &nbsp; by Neil Mehrotra and Hyunseung Oh and Julio Ortiz
-        </li>
-
-    
-    </ul>
-
-    </div>
-
-
-    <div class="session">
-
-    <div style="background-color:lightgrey" class="session-card">
-        <a name="s_B4"></a>
-        <tr>
-            <th align="left">
-
-            13:30-15:10 | Room A.451 | Fiscal Policy and Household Behavior
-
-            </th>
-
-        </tr>
-    </div>
-
-
-
-    <ul>
-    
-        <li>
-        <em>Inflation vs Inclusion: Stabilization Policy in the Wake of the Pandemic</em>  &nbsp; by Felipe Alves Giovanni L. Violante
-        </li>
-
-    
-        <li>
-        <em>Welfare and Spending Effects of Consumption Stimulus Policies</em>  &nbsp; by Christopher Carroll, Edmund Crawley, Hakon Tretvoll, Ivan Francovic, Will Du
-        </li>
-
-    
-        <li>
-        <em>How Ricardian Are We?</em>  &nbsp; by Jonathan Adams and Christian Mattes
-        </li>
-
-    
-        <li>
-        <em>Fiscal Uncertainty in Habit-Forming and Lumpy Economies</em>  &nbsp; by Matteo F. Ghilardi and Roy Zilberman
-        </li>
-
-    
-    </ul>
-
-    </div>
-
-
-    <div class="session">
-
-    <div style="background-color:lightgrey" class="session-card">
-        <a name="s_B2"></a>
-        <tr>
-            <th align="left">
-
-            13:30-15:10 | Room C.403 | Monetary Policy Transmission
-
-            </th>
-
-        </tr>
-    </div>
-
-
-
-    <ul>
-    
-        <li>
-        <em>Structural Changes in Investment and the Waning Power of Monetary Policy</em>  &nbsp; by Justin Bloesch and Jacob Weber
-        </li>
-
-    
-        <li>
-        <em>Do Capacity Constraints Affect the Pass-Through of Monetary Policy to Prices?</em>  &nbsp; by Edvin Ahlander
-        </li>
-
-    
-        <li>
-        <em>The Power of Persistence</em>  &nbsp; by FABRICE COLLARD, PATRICK F√àVE and PHILIPP WANGNER
-        </li>
-
-    
-        <li>
-        <em>Decomposing the Investment Channel of Monetary Policy</em>  &nbsp; by Mathis Momm and Lennart Niermann
-        </li>
-
-    
-    </ul>
-
-    </div>
-
-
-    <div class="session">
-
-    <div style="background-color:lightgrey" class="session-card">
-        <a name="s_B1"></a>
-        <tr>
-            <th align="left">
-
-            13:30-15:10 | Room C.409 | Macroeconomic Development
-
-            </th>
-
-        </tr>
-    </div>
-
-
-
-    <ul>
-    
-        <li>
-        <em>The Role of Services as a Driver of Cross-Country Aggregate Productivity Dynamics</em>  &nbsp; by Diego Restuccia
-        </li>
-
-    
-        <li>
-        <em>Why AI Reduces Human Capital: Choosing Paychecks Over Diplomas</em>  &nbsp; by Santiago Caicedo
-        </li>
-
-    
-        <li>
-        <em>The Macroeconomics of Poverty across Countries</em>  &nbsp; by Duc Nguyen
-        </li>
-
-    
-        <li>
-        <em>Land Property Rights, Financial Frictions, and Resource Allocation in Developing Countries</em>  &nbsp; by Kristina Manysheva
-        </li>
-
-    
-    </ul>
-
-    </div>
-
-
-
-    <div style="background-color:lightblue">
-        Parallel Sessions C
-    </div>
-
-    <p></p>
-
-    <div class="session">
-
-    <div style="background-color:orange">
-        <a name="s_C5"></a>
-        <tr>
-            <th align="left">
-
-            15:30-17:10 | Room A.414 | Exchange Rates and Open Economy
-
-            </th>
-
-        </tr>
-    </div>
-
-
-
-    <ul>
-    
-        <li>
-        <em>Productivity and Wedges: Economic Convergence and the Real Exchange Rate</em>  &nbsp; by Michael Devereux
-        </li>
-
-    
-        <li>
-        <em>Insurability and Premia in Foreign Exchange Markets</em>  &nbsp; by Suman Basu
-        </li>
-
-    
-        <li>
-        <em>Trade, specialization and inflation</em>  &nbsp; by Andreas Westermark
-        </li>
-
-    
-        <li>
-        <em>Monetary and Financial Spillovers: New Historical Evidence from Germany</em>  &nbsp; by James Cloyne, Alan M. Taylor, Patrick H√ºrtgen
-        </li>
-
-    
-        <li>
-        <em>Productivity and Wedges: Economic Convergence and the Real Exchange Rate</em>  &nbsp; by Michael B. Devereux and Ippei Fujiwara and Camilo Granados
-        </li>
-
-    
-    </ul>
-
-    </div>
-
-
-    <div class="session">
-
-    <div style="background-color:lightgrey" class="session-card">
-        <a name="s_C3"></a>
-        <tr>
-            <th align="left">
-
-            15:30-17:10 | Room A.449 | Inequality and Wealth Dynamics
-
-            </th>
-
-        </tr>
-    </div>
-
-
-
-    <ul>
-    
-        <li>
-        <em>Serial Entrepreneurship: Rethinking Top Wealth Dynamics</em>  &nbsp; by Alexandre Gaillard and Sumudu Kankanamge and Ozgur Karabulut and Hoang Nguyen
-        </li>
-
-    
-        <li>
-        <em>Income inequality and bank funding fragility</em>  &nbsp; by Anni Isojaervi and Sam Jerow
-        </li>
-
-    
-        <li>
-        <em>Disaster Risk and Wealth Inequality</em>  &nbsp; by Alexander Dietrich and Gernot M√ºller and Maximilian Wei√ü
-        </li>
-
-    
-        <li>
-        <em>The Dynamics of Firm-level Pay: Theory and Evidence from Portugal</em>  &nbsp; by Castro, Rui and Clementi, Gian Luca
-        </li>
-
-    
-    </ul>
-
-    </div>
-
-
-    <div class="session">
-
-    <div style="background-color:lightgrey" class="session-card">
-        <a name="s_C4"></a>
-        <tr>
-            <th align="left">
-
-            15:30-17:10 | Room A.451 | Innovation, Market Power, and Growth
-
-            </th>
-
-        </tr>
-    </div>
-
-
-
-    <ul>
-    
-        <li>
-        <em>Materials, Technology and Growth: Quantifying the Costs of Circularity</em>  &nbsp; by Marcelo Arbex and Zachary Mahone
-        </li>
-
-    
-        <li>
-        <em>Endogenous Firm Divergence and Increasing Concentration as a Feature of Long-Run Growth</em>  &nbsp; by Peter Funk and Oliver Gansfort
-        </li>
-
-    
-        <li>
-        <em>Financial Frictions, Market Power, and Innovation</em>  &nbsp; by Pedro Armada
-        </li>
-
-    
-        <li>
-        <em>Experimental and applied R&amp;D investment under liquidity constraints</em>  &nbsp; by SAMSON AKLOBO  AND  PAVEL SEVCIK
-        </li>
-
-    
-    </ul>
-
-    </div>
-
-
-    <div class="session">
-
-    <div style="background-color:lightgrey" class="session-card">
-        <a name="s_C2"></a>
-        <tr>
-            <th align="left">
-
-            15:30-17:10 | Room C.403 | Sovereign Debt and Default
-
-            </th>
-
-        </tr>
-    </div>
-
-
-
-    <ul>
-    
-        <li>
-        <em>Sovereign exposure to the Global Financial Cycle and unconventional monetary policy in emerging markets</em>  &nbsp; by Anatole Meunier
-        </li>
-
-    
-        <li>
-        <em>Too Much of a Good Thing? Safe Assets, Spillovers, and the Lack of Fiscal Policy Coordination</em>  &nbsp; by Matthieu Bellon and Matthias Gnewuch and Jacopo Orlandi and Luca Zavalloni
-        </li>
-
-    
-        <li>
-        <em>Irreversibility, Lumpy Investment, and the Dynamics of Public Capital and Sovereign Debt</em>  &nbsp; by Alok Johri and Shunzhe Zhong
-        </li>
-
-    
-        <li>
-        <em>The Role of Market Liquidity in Public Debt Sustainability</em>  &nbsp; by Pierre-Edouard Collignon
-        </li>
-
-    
-    </ul>
-
-    </div>
-
-
-    <div class="session">
-
-    <div style="background-color:lightgrey" class="session-card">
-        <a name="s_C1"></a>
-        <tr>
-            <th align="left">
-
-            15:30-17:10 | Room C.409 | Dynamic Trade
-
-            </th>
-
-        </tr>
-    </div>
-
-
-
-    <ul>
-    
-        <li>
-        <em>Trade Risk and Food Security</em>  &nbsp; by Tasso Adamopoulos
-        </li>
-
-    
-        <li>
-        <em>Fiscal Limits to Protectionism: The 2025 US Tariff Laffer Curve</em>  &nbsp; by Pau Pujolas
-        </li>
-
-    
-        <li>
-        <em>The Tariff Tax Cut: Tariffs as Revenue</em>  &nbsp; by Carter Mix
-        </li>
-
-    
-        <li>
-        <em>Recovering Credible Trade Elasticities from Incredible Trade Reforms</em>  &nbsp; by Joseph Steinberg
-        </li>
-
-    
-    </ul>
-
-    </div>
-
-
-
-    <div style="background-color:lightblue">
-        Parallel Sessions D
-    </div>
-
-    <p></p>
-
-    <div class="session">
-
-    <div style="background-color:lightgrey" class="session-card">
-        <a name="s_D4"></a>
-        <tr>
-            <th align="left">
-
-            9:00-10:40 | Room A.449 | Taxation and Labour Supply
-
-            </th>
-
-        </tr>
-    </div>
-
-
-
-    <ul>
-    
-        <li>
-        <em>Cohabitation, Marriage, and Tax Policy in the United States</em>  &nbsp; by Viola Garstenauer
-        </li>
-
-    
-        <li>
-        <em>Income Taxes and Entrepreneurship</em>  &nbsp; by Anmol Bhandari, David Evans, Ellen McGrattan and Yuki Yao
-        </li>
-
-    
-        <li>
-        <em>LABOR M ARKET FLUIDITY, SKILL ACCUMULATION AND THE INSURANCE EFFECTS FROM TAXES</em>  &nbsp; by German Cubas, Musab Kurnaz, Pedro Silos, Terry Yip
-        </li>
-
-    
-        <li>
-        <em>Tax Design with Transition</em>  &nbsp; by Christopher Sleet
-        </li>
-
-    
-    </ul>
-
-    </div>
-
-
-    <div class="session">
-
-    <div style="background-color:lightgrey" class="session-card">
-        <a name="s_D5"></a>
-        <tr>
-            <th align="left">
-
-            9:00-10:40 | Room A.451 | Production Networks
-
-            </th>
-
-        </tr>
-    </div>
-
-
-
-    <ul>
-    
-        <li>
-        <em>Tax Rules for Distorted Production Networks</em>  &nbsp; by Marek Kapicka
-        </li>
-
-    
-        <li>
-        <em>Markups Accounting</em>  &nbsp; by Juan Holguin and Sergio Ocampo and Sergio Salgado
-        </li>
-
-    
-        <li>
-        <em>Industrial Policy Wars and Inequality: Who Loses and When?</em>  &nbsp; by Adam Hal Spencer (Bonn) and Zinan Wang (Tianjin University)
-        </li>
-
-    
-        <li>
-        <em>The Transmission of Foreign Shocks in a Networked Economy</em>  &nbsp; by Pablo Aguilar and Jose-Elias Gallegos and Ruben Dominguez-Diaz and Javier Quintana
-        </li>
-
-    
-    </ul>
-
-    </div>
-
-
-    <div class="session">
-
-    <div style="background-color:lightgrey" class="session-card">
-        <a name="s_D3"></a>
-        <tr>
-            <th align="left">
-
-            9:00-10:40 | Room C.403 | Heterogeneous Agents and Household Decisions
-
-            </th>
-
-        </tr>
-    </div>
-
-
-
-    <ul>
-    
-        <li>
-        <em>Aging, Monetary Policy and Wealth Inequality</em>  &nbsp; by Christian Bustamante and Heejeong Kim and Eunseong Ma
-        </li>
-
-    
-        <li>
-        <em>On the Effects of Inflation on Real Earnings Risk, Aggregate Demand, and Welfare</em>  &nbsp; by Alexander Matusche
-        </li>
-
-    
-        <li>
-        <em>Income uncertainty, nonlinear dynamics and consumption: a subjective income expectations framework</em>  &nbsp; by Henrique S. Basso and Olympia Bover and Julio Galvez and Laura Hospido
-        </li>
-
-    
-        <li>
-        <em>A Quantitative Model for Evaluating Changes in the Duration of Secondary School with an Application to the G8 Reform in Germany</em>  &nbsp; by Lara Klein
-        </li>
-
-    
-    </ul>
-
-    </div>
-
-
-    <div class="session">
-
-    <div style="background-color:lightgrey" class="session-card">
-        <a name="s_D1"></a>
-        <tr>
-            <th align="left">
-
-            9:00-10:40 | Room C.406 | Young Economists Session
-
-            </th>
-
-        </tr>
-    </div>
-
-
-
-    <ul>
-    
-        <li>
-        <em>FX Market Depth and Exchange Rate Volatility</em>  &nbsp; by Oliver Vogt
-        </li>
-
-    
-        <li>
-        <em>Private Buffers, Public Fragility: Liquidity Requirements and the Interbank Market</em>  &nbsp; by Rafael Berriel
-        </li>
-
-    
-        <li>
-        <em>Strategic Macroeconomic Policymaking: When does cooperation pay off?</em>  &nbsp; by Camilo Granados
-        </li>
-
-    
-    </ul>
-
-    </div>
-
-
-    <div class="session">
-
-    <div style="background-color:lightgrey" class="session-card">
-        <a name="s_D2"></a>
-        <tr>
-            <th align="left">
-
-            9:00-10:40 | Room C.409 | Monetary Policy Communication
-
-            </th>
-
-        </tr>
-    </div>
-
-
-
-    <ul>
-    
-        <li>
-        <em>Building Central Bank Credibility: The Role of Forecast Performance</em>  &nbsp; by Michael McMahon and Ryan Rholes
-        </li>
-
-    
-        <li>
-        <em>Consumers’ Attention to Monetary Policy: The Importance of Having “Skin in the Game”</em>  &nbsp; by Ina Hajdini and Edward Knotek and Mathieu Pedemonte and James Mitchell and Taylor Shiroff
-        </li>
-
-    
-        <li>
-        <em>Communicating Policy Under Uncertainty</em>  &nbsp; by Thorsten Drautzburg and Igor Livshits and Makoto Nakajima
-        </li>
-
-    
-        <li>
-        <em>Beyond the Actual: The Macroeconomic Implications of the Perceived Taylor Rule</em>  &nbsp; by Husang Kim
-        </li>
-
-    
-    </ul>
-
-    </div>
-
-
-
-    <div style="background-color:lightblue">
-        Parallel Sessions E
-    </div>
-
-    <p></p>
-
-    <div class="session">
-
-    <div style="background-color:lightgrey" class="session-card">
-        <a name="s_E3"></a>
-        <tr>
-            <th align="left">
-
-            11:00-12:40 | Room A.449 | Climate, Disasters, and Macroeconomic Stability
-
-            </th>
-
-        </tr>
-    </div>
-
-
-
-    <ul>
-    
-        <li>
-        <em>The new Keynesian climate model</em>  &nbsp; by Jean-Guillaume Sahuc and Frank Smets and Gauthier Vermandel
-        </li>
-
-    
-        <li>
-        <em>Climate Policy, Job Reallocation, and Unemployment Fluctuations in a Multi-Sector Economy</em>  &nbsp; by John Gibson and Garth Heutel and Lilia Karnizova
-        </li>
-
-    
-        <li>
-        <em>Stabilization vs. Growth</em>  &nbsp; by Juan M. Sanchez
-        </li>
-
-    
-        <li>
-        <em>Why is Flood Insurance Take-Up Low? Insights from a Dynamic Model</em>  &nbsp; by Daniel Jonas Schmidt
-        </li>
-
-    
-    </ul>
-
-    </div>
-
-
-    <div class="session">
-
-    <div style="background-color:lightgrey" class="session-card">
-        <a name="s_E4"></a>
-        <tr>
-            <th align="left">
-
-            11:00-12:40 | Room A.451 | International Finance and Capital Flows
-
-            </th>
-
-        </tr>
-    </div>
-
-
-
-    <ul>
-    
-        <li>
-        <em>Quantitative Easing in Heterogeneous Monetary Union</em>  &nbsp; by Nastasia Henry
-        </li>
-
-    
-        <li>
-        <em>U.S. Stablecoins and the Global Safe Asset Channel: Private Money Meets Public Debt</em>  &nbsp; by Massimo Ferrari Minesso and Daniele Siena
-        </li>
-
-    
-        <li>
-        <em>World Cycles Revisited: Diverging Trends in Prices and Quantities</em>  &nbsp; by Antoine Camous
-        </li>
-
-    
-        <li>
-        <em>Short-Run and Long-Run News: Evidence from Giant Commodity Discoveries</em>  &nbsp; by Jean-Paul L‚ÄôHuillier and Kirill Shakhnov and Laure Simon
-        </li>
-
-    
-    </ul>
-
-    </div>
-
-
-    <div class="session">
-
-    <div style="background-color:lightgrey" class="session-card">
-        <a name="s_E2"></a>
-        <tr>
-            <th align="left">
-
-            11:00-12:40 | Room C.403 | Asset Prices and Financial Markets
-
-            </th>
-
-        </tr>
-    </div>
-
-
-
-    <ul>
-    
-        <li>
-        <em>Hysteresis in Asset Liquidity</em>  &nbsp; by Lu Wang
-        </li>
-
-    
-        <li>
-        <em>The Effect of Market Power on the Risk-free rate and the Equity Premium</em>  &nbsp; by Shubhdeep Deb, Jan Eeckhout, Jose Lores-Diz
-        </li>
-
-    
-        <li>
-        <em>The Return on Capital in Disaggregated Economies: Theory and Measurement</em>  &nbsp; by Julia Faltermeier and Sampreet Goraya
-        </li>
-
-    
-        <li>
-        <em>Firm Heterogeneity and Adverse Selection in External Finance: Micro Evidence and Macro Implications</em>  &nbsp; by Xing Guo, Pablo Ottonello, Thomas Winberry, and Toni Whited
-        </li>
-
-    
-    </ul>
-
-    </div>
-
-
-    <div class="session">
-
-    <div style="background-color:lightgrey" class="session-card">
-        <a name="s_E5"></a>
-        <tr>
-            <th align="left">
-
-            11:00-12:40 | Room C.406 | Misallocation and Aggregate Productivity
-
-            </th>
-
-        </tr>
-    </div>
-
-
-
-    <ul>
-    
-        <li>
-        <em>Supply-Side Misallocation Within and Across Farms: Evidence from Italy</em>  &nbsp; by Michele Battisti and Valentino Dardanoni and Scott Orr and Swapnika Rachapalli
-        </li>
-
-    
-        <li>
-        <em>Publicly-Listed Firms, Capital Misallocation, and Aggregate Productivity</em>  &nbsp; by Ayerst, Stephen and Robsinson, Baxter
-        </li>
-
-    
-        <li>
-        <em>Bigger and bigger...but also less connected to their hinterland? An anatomy of the economic linkages of large cities</em>  &nbsp; by Florian Mayneris, Gonzague Vannoorenberghe and Daniele Verdini
-        </li>
-
-    
-    </ul>
-
-    </div>
-
-
-    <div class="session">
-
-    <div style="background-color:lightgrey" class="session-card">
-        <a name="s_E1"></a>
-        <tr>
-            <th align="left">
-
-            11:00-12:40 | Room C.409 | Information and Business Cycles
-
-            </th>
-
-        </tr>
-    </div>
-
-
-
-    <ul>
-    
-        <li>
-        <em>Market Signals and the Effects of Nominal Disturbances</em>  &nbsp; by Ryan Chahrour
-        </li>
-
-    
-        <li>
-        <em>The News that Moves Inflation Expectations</em>  &nbsp; by Jane Ryngaert
-        </li>
-
-    
-        <li>
-        <em>Mirrleesian Carbon Taxation</em>  &nbsp; by Alex Kohlhas
-        </li>
-
-    
-        <li>
-        <em>Contagious Business Cycles</em>  &nbsp; by Karthik Sastry
-        </li>
-
-    
-    </ul>
-
-    </div>
-
-
-
-    <div style="background-color:lightblue">
-        Parallel Sessions F
-    </div>
-
-    <p></p>
-
-    <div class="session">
-
-    <div style="background-color:lightgrey" class="session-card">
-        <a name="s_F3"></a>
-        <tr>
-            <th align="left">
-
-            15:30-17:10 | Room A.449 | Household Finance and Credit Markets
-
-            </th>
-
-        </tr>
-    </div>
-
-
-
-    <ul>
-    
-        <li>
-        <em>The Changing Value of Employment</em>  &nbsp; by Davide Alonzo and Giovanni Gallipoli
-        </li>
-
-    
-        <li>
-        <em>Signaling and Temptation</em>  &nbsp; by Joaquin Saldain and Xuan Tam and Eric Young
-        </li>
-
-    
-        <li>
-        <em>Rethinking Mortgage Design: The Trade-off Between Household Insurance and Financial Stability*</em>  &nbsp; by Yavuz Arslan and Bulent Guler
-        </li>
-
-    
-        <li>
-        <em>Explaining Contract Heterogeneity in the Credit Card Market</em>  &nbsp; by Satyajit Chatterjee and Burcu Eyigungor
-        </li>
-
-    
-    </ul>
-
-    </div>
-
-
-    <div class="session">
-
-    <div style="background-color:lightgrey" class="session-card">
-        <a name="s_F2"></a>
-        <tr>
-            <th align="left">
-
-            15:30-17:10 | Room C.403 | Financial Frictions and Business Cycles
-
-            </th>
-
-        </tr>
-    </div>
-
-
-
-    <ul>
-    
-        <li>
-        <em>Aggregate Capital and Informality in High Inflation Economies</em>  &nbsp; by Gabriel Devoto
-        </li>
-
-    
-        <li>
-        <em>Dry Firms, Deep Recessions: Corporate Payouts and Aggregate Dynamics</em>  &nbsp; by Miguel H. Ferreira, Timo Haber, Hanbaek Lee
-        </li>
-
-    
-        <li>
-        <em>Asset Purchases in a Monetary Union with Default and Liquidity Risks</em>  &nbsp; by Nora Traum
-        </li>
-
-    
-        <li>
-        <em>Firm Cyclicality and Financial Frictions</em>  &nbsp; by Alex Clymo and Filip Rozsypal
-        </li>
-
-    
-    </ul>
-
-    </div>
-
-
-    <div class="session">
-
-    <div style="background-color:lightgrey" class="session-card">
-        <a name="s_F4"></a>
-        <tr>
-            <th align="left">
-
-            15:30-17:10 | Room C.406 | Monetary Policy: Rules and Transmission
-
-            </th>
-
-        </tr>
-    </div>
-
-
-
-    <ul>
-    
-        <li>
-        <em>License to Ease: Competition andMonetary Policy Interaction</em>  &nbsp; by Antoine Camous, Basile Grassi, Matteo Samarani
-        </li>
-
-    
-        <li>
-        <em>Do Monetary Policy Shocks Affect the Neutral Rate of Interest?</em>  &nbsp; by Danilo Leiva-Leon, Rodrigo Sekkel, Luis Uzeda
-        </li>
-
-    
-        <li>
-        <em>Inventories matter for the transmission of monetary policy: uncovering the cost-of-carry channel</em>  &nbsp; by Diego Rodrigues and Tim Willems
-        </li>
-
-    
-    </ul>
-
-    </div>
-
-
-    <div class="session">
-
-    <div style="background-color:lightgrey" class="session-card">
-        <a name="s_F1"></a>
-        <tr>
-            <th align="left">
-
-            15:30-17:10 | Room C.409 | Optimal Monetary Policy
-
-            </th>
-
-        </tr>
-    </div>
-
-
-
-    <ul>
-    
-        <li>
-        <em>The Third Mandate</em>  &nbsp; by Francois Gourio
-        </li>
-
-    
-        <li>
-        <em>On looking through sectoral shocks: The role of (de-)anchored inflation expectations</em>  &nbsp; by Rafael Gerke and Joost Roettger
-        </li>
-
-    
-        <li>
-        <em>Ramsey Optimal Inflation with Heterogeneous Firms</em>  &nbsp; by Anton Nakov and Henning Weber
-        </li>
-
-    
-        <li>
-        <em>Central  Bank Losses and Inflation: 350 Years of Evidence</em>  &nbsp; by Anna Grodecka-Messi and Martin Kliem and Gernot J. M√ºller
-        </li>
-
-    
-    </ul>
-
-    </div>
+<div class="parallel-title">Parallel Sessions A</div>
+<div class="session-card" id="s_A5">
+  <div class="session-head">
+    <div>June 2nd · 9:00-10:40 · Room A.414 · Expectations and Beliefs</div>
+    <a class="top-link" href="#top">Back to top ↑</a>
+  </div>
+  <ul>
+    <li><em>News, Noise, and Uncertainty</em></li>
+    <li><em>A Behavioral Foundation for the Investment Wedge</em></li>
+    <li><em>Behavioral Expectations</em></li>
+    <li><em>Kalshi and the Rise of Macro Markets</em></li>
+  </ul>
+</div>
+<div class="session-card" id="s_A3">
+  <div class="session-head">
+    <div>June 2nd · 9:00-10:40 · Room A.449 · Firm Dynamics</div>
+    <a class="top-link" href="#top">Back to top ↑</a>
+  </div>
+  <ul>
+    <li><em>Ownership Changes and Firm Dynamics</em></li>
+    <li><em>Demand-Driven Stagnation: Customer Acquisition and Persistent Firm Growth Slowdowns</em></li>
+    <li><em>Born Different: Entrepreneurship through Inventor Mobility, Innovation, and Growth</em></li>
+    <li><em>Communication Friction, Managerial Expectation, and Firm Dynamics</em></li>
+  </ul>
+</div>
+<div class="session-card" id="s_A4">
+  <div class="session-head">
+    <div>June 2nd · 9:00-10:40 · Room A.451 · Housing Markets</div>
+    <a class="top-link" href="#top">Back to top ↑</a>
+  </div>
+  <ul>
+    <li><em>Mortgage interest rate risk and the propagation of shocks</em> &nbsp; by Matias Vieyra</li>
+    <li><em>Matching People to Properties: A Matching Function for the Housing Market</em></li>
+    <li><em>Some Apples Fall Far: Skill Premium, Housing Indivisibility, and the Rising Price-to-Rent Ratio</em></li>
+    <li><em>United in Booms, Divided in Busts: Regional House Price Cycles and Monetary Policy</em></li>
+  </ul>
+</div>
+<div class="session-card" id="s_A2">
+  <div class="session-head">
+    <div>June 2nd · 9:00-10:40 · Room C.403 · Labour Search and Matching</div>
+    <a class="top-link" href="#top">Back to top ↑</a>
+  </div>
+  <ul>
+    <li><em>The Micro and Macro Implications of Early Career Skills Mismatch</em></li>
+    <li><em>Signals, Interviews, and Hiring in Labor Market Equilibrium</em> &nbsp; by Ronald Wolthoff</li>
+    <li><em>Job Search, Job Finding and the Role of Unemployment Insurance History</em></li>
+    <li><em>Networks, Sorting, and the Productivity Implications of Immigrant Assimilation</em></li>
+  </ul>
+</div>
+<div class="session-card" id="s_A1">
+  <div class="session-head">
+    <div>June 2nd · 9:00-10:40 · Room C.409 · Automation, AI, and Labour Markets</div>
+    <a class="top-link" href="#top">Back to top ↑</a>
+  </div>
+  <ul>
+    <li><em>From Farm to Factory: Agricultural Mechanization and Occupational Outcomes in Early Twentieth Century America</em> &nbsp; by Henry Siu</li>
+    <li><em>Will AI Adoption Intensify or Weaken Market Competition?</em> &nbsp; by Zheng Liu</li>
+    <li><em>The Demand for Tasks in the Age of AI</em> &nbsp; by Paul Gaggl</li>
+    <li><em>AI in the Office and the Factory: Evidence from Administrative Software Registry Data</em> &nbsp; by Gustavo da Souza</li>
+  </ul>
+</div>
+<div class="parallel-title">Parallel Sessions B</div>
+<div class="session-card" id="s_B5">
+  <div class="session-head">
+    <div>June 2nd · 13:30-15:10 · Room A.414 · Labour Markets</div>
+    <a class="top-link" href="#top">Back to top ↑</a>
+  </div>
+  <ul>
+    <li><em>When Neighbors Stop Knocking: The Impact of Canada&#x27;s 2025 Tourism Decline on U.S. Local Labor Markets</em></li>
+    <li><em>Furloughs, Employment, and Worker Reallocation in Normal Times</em></li>
+    <li><em>Waiting to Hire and the Business Cycle</em></li>
+    <li><em>Non-Competes, Worker Mobility, and Productivity Growth: Theory and Evidence</em></li>
+  </ul>
+</div>
+<div class="session-card" id="s_B3">
+  <div class="session-head">
+    <div>June 2nd · 13:30-15:10 · Room A.449 · Inflation Dynamics</div>
+    <a class="top-link" href="#top">Back to top ↑</a>
+  </div>
+  <ul>
+    <li><em>A Decomposition of the Phillips Curve&#x27;s Flattening</em></li>
+    <li><em>The Cost shocks pass-through and the aggregate price volatility</em></li>
+    <li><em>State-dependent pass-through with heterogeneous exposure to common shocks</em></li>
+    <li><em>Retail inventories and inflation dynamics: The price margin channel</em></li>
+  </ul>
+</div>
+<div class="session-card" id="s_B4">
+  <div class="session-head">
+    <div>June 2nd · 13:30-15:10 · Room A.451 · Fiscal Policy and Household Behavior</div>
+    <a class="top-link" href="#top">Back to top ↑</a>
+  </div>
+  <ul>
+    <li><em>Inflation vs Inclusion: Stabilization Policy in the Wake of the Pandemic</em></li>
+    <li><em>Welfare and Spending Effects of Consumption Stimulus Policies</em></li>
+    <li><em>How Ricardian Are We?</em></li>
+    <li><em>Fiscal Uncertainty in Habit-Forming and Lumpy Economies</em></li>
+  </ul>
+</div>
+<div class="session-card" id="s_B2">
+  <div class="session-head">
+    <div>June 2nd · 13:30-15:10 · Room C.403 · Monetary Policy Transmission</div>
+    <a class="top-link" href="#top">Back to top ↑</a>
+  </div>
+  <ul>
+    <li><em>Structural Changes in Investment and the Waning Power of Monetary Policy</em></li>
+    <li><em>Do Capacity Constraints Affect the Pass-Through of Monetary Policy to Prices?</em> &nbsp; by Edvin Ahlander</li>
+    <li><em>The Power of Persistence</em></li>
+    <li><em>Decomposing the Investment Channel of Monetary Policy</em></li>
+  </ul>
+</div>
+<div class="session-card" id="s_B1">
+  <div class="session-head">
+    <div>June 2nd · 13:30-15:10 · Room C.409 · Macroeconomic Development</div>
+    <a class="top-link" href="#top">Back to top ↑</a>
+  </div>
+  <ul>
+    <li><em>The Role of Services as a Driver of Cross-Country Aggregate Productivity Dynamics</em> &nbsp; by Diego Restuccia</li>
+    <li><em>Why AI Reduces Human Capital: Choosing Paychecks Over Diplomas</em> &nbsp; by Santiago Caicedo</li>
+    <li><em>The Macroeconomics of Poverty across Countries</em> &nbsp; by Duc Nguyen</li>
+    <li><em>Land Property Rights, Financial Frictions, and Resource Allocation in Developing Countries</em> &nbsp; by Kristina Manysheva</li>
+  </ul>
+</div>
+<div class="parallel-title">Parallel Sessions C</div>
+<div class="session-card highlight" id="s_C5">
+  <div class="session-head">
+    <div>June 2nd · 15:30-17:10 · Room A.414 · Exchange Rates and Open Economy (5 talks)</div>
+    <a class="top-link" href="#top">Back to top ↑</a>
+  </div>
+  <ul>
+    <li><em>Productivity and Wedges: Economic Convergence and the Real Exchange Rate</em> &nbsp; by Michael Devereux</li>
+    <li><em>Insurability and Premia in Foreign Exchange Markets</em></li>
+    <li><em>Trade, specialization and inflation</em></li>
+    <li><em>Monetary and Financial Spillovers: New Historical Evidence from Germany</em></li>
+    <li><em>Productivity and Wedges: Economic Convergence and the Real Exchange Rate</em></li>
+  </ul>
+</div>
+<div class="session-card" id="s_C3">
+  <div class="session-head">
+    <div>June 2nd · 15:30-17:10 · Room A.449 · Inequality and Wealth Dynamics</div>
+    <a class="top-link" href="#top">Back to top ↑</a>
+  </div>
+  <ul>
+    <li><em>Serial Entrepreneurship: Rethinking Top Wealth Dynamics</em></li>
+    <li><em>Income inequality and bank funding fragility</em></li>
+    <li><em>Disaster Risk and Wealth Inequality</em></li>
+    <li><em>The Dynamics of Firm-level Pay: Theory and Evidence from Portugal</em></li>
+  </ul>
+</div>
+<div class="session-card" id="s_C4">
+  <div class="session-head">
+    <div>June 2nd · 15:30-17:10 · Room A.451 · Innovation, Market Power, and Growth</div>
+    <a class="top-link" href="#top">Back to top ↑</a>
+  </div>
+  <ul>
+    <li><em>Materials, Technology and Growth: Quantifying the Costs of Circularity</em></li>
+    <li><em>Endogenous Firm Divergence and Increasing Concentration as a Feature of Long-Run Growth</em></li>
+    <li><em>Financial Frictions, Market Power, and Innovation</em></li>
+    <li><em>Experimental and applied R&amp;D investment under liquidity constraints</em></li>
+  </ul>
+</div>
+<div class="session-card" id="s_C2">
+  <div class="session-head">
+    <div>June 2nd · 15:30-17:10 · Room C.403 · Sovereign Debt and Default</div>
+    <a class="top-link" href="#top">Back to top ↑</a>
+  </div>
+  <ul>
+    <li><em>Sovereign exposure to the Global Financial Cycle and unconventional monetary policy in emerging markets</em></li>
+    <li><em>Too Much of a Good Thing? Safe Assets, Spillovers, and the Lack of Fiscal Policy Coordination</em></li>
+    <li><em>Irreversibility, Lumpy Investment, and the Dynamics of Public Capital and Sovereign Debt</em></li>
+    <li><em>The Role of Market Liquidity in Public Debt Sustainability</em></li>
+  </ul>
+</div>
+<div class="session-card" id="s_C1">
+  <div class="session-head">
+    <div>June 2nd · 15:30-17:10 · Room C.409 · Dynamic Trade</div>
+    <a class="top-link" href="#top">Back to top ↑</a>
+  </div>
+  <ul>
+    <li><em>Trade Risk and Food Security</em> &nbsp; by Tasso Adamopoulos</li>
+    <li><em>Fiscal Limits to Protectionism: The 2025 US Tariff Laffer Curve</em> &nbsp; by Pau Pujolas</li>
+    <li><em>The Tariff Tax Cut: Tariffs as Revenue</em> &nbsp; by Carter Mix</li>
+    <li><em>Recovering Credible Trade Elasticities from Incredible Trade Reforms</em> &nbsp; by Joseph Steinberg</li>
+  </ul>
+</div>
+<div class="parallel-title">Parallel Sessions D</div>
+<div class="session-card" id="s_D4">
+  <div class="session-head">
+    <div>June 3rd · 9:00-10:40 · Room A.449 · Taxation and Labour Supply</div>
+    <a class="top-link" href="#top">Back to top ↑</a>
+  </div>
+  <ul>
+    <li><em>Cohabitation, Marriage, and Tax Policy in the United States</em></li>
+    <li><em>Income Taxes and Entrepreneurship</em></li>
+    <li><em>LABOR M ARKET FLUIDITY, SKILL ACCUMULATION AND THE INSURANCE EFFECTS FROM TAXES</em></li>
+    <li><em>Tax Design with Transition</em></li>
+  </ul>
+</div>
+<div class="session-card" id="s_D5">
+  <div class="session-head">
+    <div>June 3rd · 9:00-10:40 · Room A.451 · Production Networks</div>
+    <a class="top-link" href="#top">Back to top ↑</a>
+  </div>
+  <ul>
+    <li><em>Tax Rules for Distorted Production Networks</em></li>
+    <li><em>Markups Accounting</em></li>
+    <li><em>Industrial Policy Wars and Inequality: Who Loses and When?</em></li>
+    <li><em>The Transmission of Foreign Shocks in a Networked Economy</em></li>
+  </ul>
+</div>
+<div class="session-card" id="s_D3">
+  <div class="session-head">
+    <div>June 3rd · 9:00-10:40 · Room C.403 · Heterogeneous Agents and Household Decisions</div>
+    <a class="top-link" href="#top">Back to top ↑</a>
+  </div>
+  <ul>
+    <li><em>Aging, Monetary Policy and Wealth Inequality</em></li>
+    <li><em>On the Effects of Inflation on Real Earnings Risk, Aggregate Demand, and Welfare</em></li>
+    <li><em>Income uncertainty, nonlinear dynamics and consumption: a subjective income expectations framework</em></li>
+    <li><em>A Quantitative Model for Evaluating Changes in the Duration of Secondary School with an Application to the G8 Reform in Germany</em></li>
+  </ul>
+</div>
+<div class="session-card" id="s_D1">
+  <div class="session-head">
+    <div>June 3rd · 9:00-10:40 · Room C.406 · Young Economists Session</div>
+    <a class="top-link" href="#top">Back to top ↑</a>
+  </div>
+  <ul>
+    <li><em>FX Market Depth and Exchange Rate Volatility</em> &nbsp; by Oliver Vogt</li>
+    <li><em>Private Buffers, Public Fragility: Liquidity Requirements and the Interbank Market</em> &nbsp; by Rafael Berriel</li>
+    <li><em>Strategic Macroeconomic Policymaking: When does cooperation pay off?</em> &nbsp; by Camilo Granados</li>
+  </ul>
+</div>
+<div class="session-card" id="s_D2">
+  <div class="session-head">
+    <div>June 3rd · 9:00-10:40 · Room C.409 · Monetary Policy Communication</div>
+    <a class="top-link" href="#top">Back to top ↑</a>
+  </div>
+  <ul>
+    <li><em>Building Central Bank Credibility: The Role of Forecast Performance</em></li>
+    <li><em>Consumers’ Attention to Monetary Policy: The Importance of Having “Skin in the Game”</em></li>
+    <li><em>Communicating Policy Under Uncertainty</em></li>
+    <li><em>Beyond the Actual: The Macroeconomic Implications of the Perceived Taylor Rule</em></li>
+  </ul>
+</div>
+<div class="parallel-title">Parallel Sessions E</div>
+<div class="session-card" id="s_E3">
+  <div class="session-head">
+    <div>June 3rd · 11:00-12:40 · Room A.449 · Climate, Disasters, and Macroeconomic Stability</div>
+    <a class="top-link" href="#top">Back to top ↑</a>
+  </div>
+  <ul>
+    <li><em>The new Keynesian climate model</em></li>
+    <li><em>Climate Policy, Job Reallocation, and Unemployment Fluctuations in a Multi-Sector Economy</em></li>
+    <li><em>Stabilization vs. Growth</em> &nbsp; by Juan M. Sanchez</li>
+    <li><em>Why is Flood Insurance Take-Up Low? Insights from a Dynamic Model</em></li>
+  </ul>
+</div>
+<div class="session-card" id="s_E4">
+  <div class="session-head">
+    <div>June 3rd · 11:00-12:40 · Room A.451 · International Finance and Capital Flows</div>
+    <a class="top-link" href="#top">Back to top ↑</a>
+  </div>
+  <ul>
+    <li><em>Quantitative Easing in Heterogeneous Monetary Union</em></li>
+    <li><em>U.S. Stablecoins and the Global Safe Asset Channel: Private Money Meets Public Debt</em></li>
+    <li><em>World Cycles Revisited: Diverging Trends in Prices and Quantities</em> &nbsp; by Antoine Camous</li>
+    <li><em>Short-Run and Long-Run News: Evidence from Giant Commodity Discoveries</em></li>
+  </ul>
+</div>
+<div class="session-card" id="s_E2">
+  <div class="session-head">
+    <div>June 3rd · 11:00-12:40 · Room C.403 · Asset Prices and Financial Markets</div>
+    <a class="top-link" href="#top">Back to top ↑</a>
+  </div>
+  <ul>
+    <li><em>Hysteresis in Asset Liquidity</em></li>
+    <li><em>The Effect of Market Power on the Risk-free rate and the Equity Premium</em></li>
+    <li><em>The Return on Capital in Disaggregated Economies: Theory and Measurement</em></li>
+    <li><em>Firm Heterogeneity and Adverse Selection in External Finance: Micro Evidence and Macro Implications</em></li>
+  </ul>
+</div>
+<div class="session-card" id="s_E5">
+  <div class="session-head">
+    <div>June 3rd · 11:00-12:40 · Room C.406 · Misallocation and Aggregate Productivity</div>
+    <a class="top-link" href="#top">Back to top ↑</a>
+  </div>
+  <ul>
+    <li><em>Supply-Side Misallocation Within and Across Farms: Evidence from Italy</em></li>
+    <li><em>Publicly-Listed Firms, Capital Misallocation, and Aggregate Productivity</em></li>
+    <li><em>Bigger and bigger...but also less connected to their hinterland? An anatomy of the economic linkages of large cities</em></li>
+  </ul>
+</div>
+<div class="session-card" id="s_E1">
+  <div class="session-head">
+    <div>June 3rd · 11:00-12:40 · Room C.409 · Information and Business Cycles</div>
+    <a class="top-link" href="#top">Back to top ↑</a>
+  </div>
+  <ul>
+    <li><em>Market Signals and the Effects of Nominal Disturbances</em> &nbsp; by Ryan Chahrour</li>
+    <li><em>The News that Moves Inflation Expectations</em> &nbsp; by Jane Ryngaert</li>
+    <li><em>Mirrleesian Carbon Taxation</em> &nbsp; by Alex Kohlhas</li>
+    <li><em>Contagious Business Cycles</em> &nbsp; by Karthik Sastry</li>
+  </ul>
+</div>
+<div class="parallel-title">Parallel Sessions F</div>
+<div class="session-card" id="s_F3">
+  <div class="session-head">
+    <div>June 3rd · 15:30-17:10 · Room A.449 · Household Finance and Credit Markets</div>
+    <a class="top-link" href="#top">Back to top ↑</a>
+  </div>
+  <ul>
+    <li><em>The Changing Value of Employment</em></li>
+    <li><em>Signaling and Temptation</em></li>
+    <li><em>Rethinking Mortgage Design: The Trade-off Between Household Insurance and Financial Stability*</em></li>
+    <li><em>Explaining Contract Heterogeneity in the Credit Card Market</em></li>
+  </ul>
+</div>
+<div class="session-card" id="s_F2">
+  <div class="session-head">
+    <div>June 3rd · 15:30-17:10 · Room C.403 · Financial Frictions and Business Cycles</div>
+    <a class="top-link" href="#top">Back to top ↑</a>
+  </div>
+  <ul>
+    <li><em>Aggregate Capital and Informality in High Inflation Economies</em></li>
+    <li><em>Dry Firms, Deep Recessions: Corporate Payouts and Aggregate Dynamics</em></li>
+    <li><em>Asset Purchases in a Monetary Union with Default and Liquidity Risks</em> &nbsp; by Nora Traum</li>
+    <li><em>Firm Cyclicality and Financial Frictions</em></li>
+  </ul>
+</div>
+<div class="session-card" id="s_F4">
+  <div class="session-head">
+    <div>June 3rd · 15:30-17:10 · Room C.406 · Monetary Policy: Rules and Transmission</div>
+    <a class="top-link" href="#top">Back to top ↑</a>
+  </div>
+  <ul>
+    <li><em>License to Ease: Competition andMonetary Policy Interaction</em></li>
+    <li><em>Do Monetary Policy Shocks Affect the Neutral Rate of Interest?</em></li>
+    <li><em>Inventories matter for the transmission of monetary policy: uncovering the cost-of-carry channel</em></li>
+  </ul>
+</div>
+<div class="session-card" id="s_F1">
+  <div class="session-head">
+    <div>June 3rd · 15:30-17:10 · Room C.409 · Optimal Monetary Policy</div>
+    <a class="top-link" href="#top">Back to top ↑</a>
+  </div>
+  <ul>
+    <li><em>The Third Mandate</em></li>
+    <li><em>On looking through sectoral shocks: The role of (de-)anchored inflation expectations</em></li>
+    <li><em>Ramsey Optimal Inflation with Heterogeneous Firms</em></li>
+    <li><em>Central  Bank Losses and Inflation: 350 Years of Evidence</em></li>
+  </ul>
+</div>
+</section>
+<section class="participants-section">
 <h2>Participants</h2>
-<ul>
-  <li>Alex Kohlhas — <a href="#s_E1">Information and Business Cycles</a></li>
-  <li>Antoine Camous — <a href="#s_E4">International Finance and Capital Flows</a></li>
-  <li>Camilo Granados — <a href="#s_D1">Young Economists Session</a></li>
-  <li>Carter Mix — <a href="#s_C1">Dynamic Trade</a></li>
-  <li>Diego Restuccia — <a href="#s_B1">Macroeconomic Development</a></li>
-  <li>Duc Nguyen — <a href="#s_B1">Macroeconomic Development</a></li>
-  <li>Edvin Ahlander — <a href="#s_B2">Monetary Policy Transmission</a></li>
-  <li>Gustavo da Souza — <a href="#s_A1">Automation, AI, and Labour Markets</a></li>
-  <li>Henry Siu — <a href="#s_A1">Automation, AI, and Labour Markets</a></li>
-  <li>Jane Ryngaert — <a href="#s_E1">Information and Business Cycles</a></li>
-  <li>Joseph Steinberg — <a href="#s_C1">Dynamic Trade</a></li>
-  <li>Juan M. Sanchez — <a href="#s_E3">Climate, Disasters, and Macroeconomic Stability</a></li>
-  <li>Karthik Sastry — <a href="#s_E1">Information and Business Cycles</a></li>
-  <li>Kristina Manysheva — <a href="#s_B1">Macroeconomic Development</a></li>
-  <li>Matias Vieyra — <a href="#s_A4">Housing Markets</a></li>
-  <li>Michael Devereux — <a href="#s_C5">Exchange Rates and Open Economy</a></li>
-  <li>Nora Traum — <a href="#s_F2">Financial Frictions and Business Cycles</a></li>
-  <li>Oliver Vogt — <a href="#s_D1">Young Economists Session</a></li>
-  <li>Pau Pujolas — <a href="#s_C1">Dynamic Trade</a></li>
-  <li>Paul Gaggl — <a href="#s_A1">Automation, AI, and Labour Markets</a></li>
-  <li>Rafael Berriel — <a href="#s_D1">Young Economists Session</a></li>
-  <li>Ronald Wolthoff — <a href="#s_A2">Labour Search and Matching</a></li>
-  <li>Ryan Chahrour — <a href="#s_E1">Information and Business Cycles</a></li>
-  <li>Santiago Caicedo — <a href="#s_B1">Macroeconomic Development</a></li>
-  <li>Tasso Adamopoulos — <a href="#s_C1">Dynamic Trade</a></li>
-  <li>Zheng Liu — <a href="#s_A1">Automation, AI, and Labour Markets</a></li>
-</ul>
+<div class="participants-grid">
+  <div class="participant-card">
+    <div class="participant-name">Alex Kohlhas</div>
+    <div class="participant-sessions"><a href="#s_E1">Information and Business Cycles (E1)</a></div>
+  </div>
+  <div class="participant-card">
+    <div class="participant-name">Antoine Camous</div>
+    <div class="participant-sessions"><a href="#s_E4">International Finance and Capital Flows (E4)</a></div>
+  </div>
+  <div class="participant-card">
+    <div class="participant-name">Camilo Granados</div>
+    <div class="participant-sessions"><a href="#s_D1">Young Economists Session (D1)</a></div>
+  </div>
+  <div class="participant-card">
+    <div class="participant-name">Carter Mix</div>
+    <div class="participant-sessions"><a href="#s_C1">Dynamic Trade (C1)</a></div>
+  </div>
+  <div class="participant-card">
+    <div class="participant-name">Diego Restuccia</div>
+    <div class="participant-sessions"><a href="#s_B1">Macroeconomic Development (B1)</a></div>
+  </div>
+  <div class="participant-card">
+    <div class="participant-name">Duc Nguyen</div>
+    <div class="participant-sessions"><a href="#s_B1">Macroeconomic Development (B1)</a></div>
+  </div>
+  <div class="participant-card">
+    <div class="participant-name">Edvin Ahlander</div>
+    <div class="participant-sessions"><a href="#s_B2">Monetary Policy Transmission (B2)</a></div>
+  </div>
+  <div class="participant-card">
+    <div class="participant-name">Gustavo da Souza</div>
+    <div class="participant-sessions"><a href="#s_A1">Automation, AI, and Labour Markets (A1)</a></div>
+  </div>
+  <div class="participant-card">
+    <div class="participant-name">Henry Siu</div>
+    <div class="participant-sessions"><a href="#s_A1">Automation, AI, and Labour Markets (A1)</a></div>
+  </div>
+  <div class="participant-card">
+    <div class="participant-name">Jane Ryngaert</div>
+    <div class="participant-sessions"><a href="#s_E1">Information and Business Cycles (E1)</a></div>
+  </div>
+  <div class="participant-card">
+    <div class="participant-name">Joseph Steinberg</div>
+    <div class="participant-sessions"><a href="#s_C1">Dynamic Trade (C1)</a></div>
+  </div>
+  <div class="participant-card">
+    <div class="participant-name">Juan M. Sanchez</div>
+    <div class="participant-sessions"><a href="#s_E3">Climate, Disasters, and Macroeconomic Stability (E3)</a></div>
+  </div>
+  <div class="participant-card">
+    <div class="participant-name">Karthik Sastry</div>
+    <div class="participant-sessions"><a href="#s_E1">Information and Business Cycles (E1)</a></div>
+  </div>
+  <div class="participant-card">
+    <div class="participant-name">Kristina Manysheva</div>
+    <div class="participant-sessions"><a href="#s_B1">Macroeconomic Development (B1)</a></div>
+  </div>
+  <div class="participant-card">
+    <div class="participant-name">Matias Vieyra</div>
+    <div class="participant-sessions"><a href="#s_A4">Housing Markets (A4)</a></div>
+  </div>
+  <div class="participant-card">
+    <div class="participant-name">Michael Devereux</div>
+    <div class="participant-sessions"><a href="#s_C5">Exchange Rates and Open Economy (C5)</a></div>
+  </div>
+  <div class="participant-card">
+    <div class="participant-name">Nora Traum</div>
+    <div class="participant-sessions"><a href="#s_F2">Financial Frictions and Business Cycles (F2)</a></div>
+  </div>
+  <div class="participant-card">
+    <div class="participant-name">Oliver Vogt</div>
+    <div class="participant-sessions"><a href="#s_D1">Young Economists Session (D1)</a></div>
+  </div>
+  <div class="participant-card">
+    <div class="participant-name">Pau Pujolas</div>
+    <div class="participant-sessions"><a href="#s_C1">Dynamic Trade (C1)</a></div>
+  </div>
+  <div class="participant-card">
+    <div class="participant-name">Paul Gaggl</div>
+    <div class="participant-sessions"><a href="#s_A1">Automation, AI, and Labour Markets (A1)</a></div>
+  </div>
+  <div class="participant-card">
+    <div class="participant-name">Rafael Berriel</div>
+    <div class="participant-sessions"><a href="#s_D1">Young Economists Session (D1)</a></div>
+  </div>
+  <div class="participant-card">
+    <div class="participant-name">Ronald Wolthoff</div>
+    <div class="participant-sessions"><a href="#s_A2">Labour Search and Matching (A2)</a></div>
+  </div>
+  <div class="participant-card">
+    <div class="participant-name">Ryan Chahrour</div>
+    <div class="participant-sessions"><a href="#s_E1">Information and Business Cycles (E1)</a></div>
+  </div>
+  <div class="participant-card">
+    <div class="participant-name">Santiago Caicedo</div>
+    <div class="participant-sessions"><a href="#s_B1">Macroeconomic Development (B1)</a></div>
+  </div>
+  <div class="participant-card">
+    <div class="participant-name">Tasso Adamopoulos</div>
+    <div class="participant-sessions"><a href="#s_C1">Dynamic Trade (C1)</a></div>
+  </div>
+  <div class="participant-card">
+    <div class="participant-name">Zheng Liu</div>
+    <div class="participant-sessions"><a href="#s_A1">Automation, AI, and Labour Markets (A1)</a></div>
+  </div>
+</div>
+</section>
+</div>
