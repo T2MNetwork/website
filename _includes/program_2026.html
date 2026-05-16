@@ -12,8 +12,9 @@
   .session-chip { display: block; padding: 10px 12px; border: 1px solid #ddd; border-radius: 12px; background: #fff; text-decoration: none; color: inherit; box-shadow: 0 1px 0 rgba(0,0,0,.03); }
   .session-chip:hover { border-color: #bbb; background: #fafafa; }
   .session-chip.highlight { background: #ffbe55; border-color: #f0a000; }
-  .session-chip .room { display:block; font-weight: 700; }
+  .session-chip .session-title { display:block; font-weight: 700; }
   .session-tag.invited { display:inline-block; margin-left:8px; padding:2px 8px; border-radius:999px; background:#2d6cdf; color:#fff; font-size:.78rem; font-weight:800; vertical-align:middle; }
+  .session-tag.parallel { display:inline-block; margin-right:8px; padding:2px 8px; border-radius:999px; background:#444; color:#fff; font-size:.78rem; font-weight:800; vertical-align:middle; }
   .parallel-title { background: #b7dce8; padding: 8px 10px; border-radius: 8px; font-weight: 700; margin: 18px 0 10px; }
   .session-card { border: 1px solid #ddd; border-radius: 14px; background: #fff; overflow: hidden; margin: 0 0 14px 0; }
   .session-card.highlight { border-color: #f0a000; box-shadow: 0 0 0 2px rgba(255,190,85,.25) inset; }
@@ -38,53 +39,53 @@
 <h3 class="day-title">June 2nd</h3>
 <div class="time-row"><span class="time-pill">9:00-10:40</span>
 <div class="overview-grid">
-<a class="session-chip" href="#s_A1"><span class="room">C.409 · A · Automation, AI, and Labour Markets</span> <span class="session-tag invited">Invited</span></a>
-<a class="session-chip" href="#s_A2"><span class="room">C.403 · A · Monetary Policy Communication</span></a>
-<a class="session-chip" href="#s_A3"><span class="room">A.449 · A · Firm Dynamics</span></a>
-<a class="session-chip" href="#s_A4"><span class="room">A.451 · B · Labour Markets</span></a>
-<a class="session-chip" href="#s_A5"><span class="room">A.414 · A · Expectations and Beliefs</span></a>
+<a class="session-chip" href="#s_A1"><span class="session-title">Automation, AI, and Labour Markets</span> <span class="session-tag invited">Invited</span></a>
+<a class="session-chip" href="#s_A2"><span class="session-title">Monetary Policy Communication</span></a>
+<a class="session-chip" href="#s_A3"><span class="session-title">Firm Dynamics</span></a>
+<a class="session-chip" href="#s_A4"><span class="session-title">Labour Markets</span></a>
+<a class="session-chip" href="#s_A5"><span class="session-title">Expectations and Beliefs</span></a>
 </div></div>
 <div class="time-row"><span class="time-pill">13:30-15:10</span>
 <div class="overview-grid">
-<a class="session-chip" href="#s_B1"><span class="room">C.409 · B · Macroeconomic Development</span> <span class="session-tag invited">Invited</span></a>
-<a class="session-chip" href="#s_B2"><span class="room">C.403 · B · Monetary Policy I</span></a>
-<a class="session-chip" href="#s_B3"><span class="room">A.449 · B · Inflation Dynamics</span></a>
-<a class="session-chip" href="#s_B4"><span class="room">A.451 · B · Fiscal Policy and Household Behavior</span></a>
-<a class="session-chip" href="#s_B5"><span class="room">A.414 · A · Housing Markets</span></a>
-<a class="session-chip" href="#s_B6"><span class="room">C.406 · B · Labour Search and Matching</span></a>
+<a class="session-chip" href="#s_B1"><span class="session-title">Macroeconomic Development</span> <span class="session-tag invited">Invited</span></a>
+<a class="session-chip" href="#s_B2"><span class="session-title">Monetary Policy I</span></a>
+<a class="session-chip" href="#s_B3"><span class="session-title">Inflation Dynamics</span></a>
+<a class="session-chip" href="#s_B4"><span class="session-title">Fiscal Policy and Household Behavior</span></a>
+<a class="session-chip" href="#s_B5"><span class="session-title">Housing Markets</span></a>
+<a class="session-chip" href="#s_B6"><span class="session-title">Labour Search and Matching</span></a>
 </div></div>
 <div class="time-row"><span class="time-pill">15:30-17:10</span>
 <div class="overview-grid">
-<a class="session-chip" href="#s_C1"><span class="room">C.409 · C · Dynamic Trade</span> <span class="session-tag invited">Invited</span></a>
-<a class="session-chip" href="#s_C3"><span class="room">C.403 · C · Inequality and Wealth Dynamics</span></a>
-<a class="session-chip" href="#s_C4"><span class="room">A.449 · C · Innovation, Market Power, and Growth</span></a>
-<a class="session-chip highlight" href="#s_C5"><span class="room">A.451 · C · Exchange Rates and Open Economy • 5 talks</span></a>
-<a class="session-chip" href="#s_C6"><span class="room">A.414 · C · Monetary Policy II</span></a>
+<a class="session-chip" href="#s_C1"><span class="session-title">Dynamic Trade</span> <span class="session-tag invited">Invited</span></a>
+<a class="session-chip" href="#s_C3"><span class="session-title">Inequality and Wealth Dynamics</span></a>
+<a class="session-chip" href="#s_C4"><span class="session-title">Innovation, Market Power, and Growth</span></a>
+<a class="session-chip highlight" href="#s_C5"><span class="session-title">Exchange Rates and Open Economy</span> <span class="session-tag parallel">5 talks</span></a>
+<a class="session-chip" href="#s_C6"><span class="session-title">Monetary Policy II</span></a>
 </div></div>
 </div>
 <div class="day-block">
 <h3 class="day-title">June 3rd</h3>
 <div class="time-row"><span class="time-pill">9:00-10:40</span>
 <div class="overview-grid">
-<a class="session-chip" href="#s_D1"><span class="room">C.406 · D · Young Economists Session</span> <span class="session-tag invited">Invited</span></a>
-<a class="session-chip" href="#s_D3"><span class="room">C.409 · D · Heterogeneous Agents and Household Decisions</span></a>
-<a class="session-chip" href="#s_D4"><span class="room">C.403 · D · Taxation and Labour Supply</span></a>
-<a class="session-chip" href="#s_D5"><span class="room">A.449 · D · Production Networks</span></a>
-<a class="session-chip" href="#s_E3"><span class="room">A.414 · E · Climate, Disasters, and Macroeconomic Stability</span></a>
+<a class="session-chip" href="#s_D1"><span class="session-title">Young Economists Session</span> <span class="session-tag invited">Invited</span></a>
+<a class="session-chip" href="#s_D3"><span class="session-title">Heterogeneous Agents and Household Decisions</span></a>
+<a class="session-chip" href="#s_D4"><span class="session-title">Taxation and Labour Supply</span></a>
+<a class="session-chip" href="#s_D5"><span class="session-title">Production Networks</span></a>
+<a class="session-chip" href="#s_E3"><span class="session-title">Climate, Disasters, and Macroeconomic Stability</span></a>
 </div></div>
 <div class="time-row"><span class="time-pill">11:00-12:40</span>
 <div class="overview-grid">
-<a class="session-chip" href="#s_E1"><span class="room">C.409 · E · Information and Expectations in Macro</span> <span class="session-tag invited">Invited</span></a>
-<a class="session-chip" href="#s_E2"><span class="room">C.403 · E · Asset Prices and Financial Markets</span></a>
-<a class="session-chip" href="#s_E4"><span class="room">A.451 · E · International Finance and Capital Flows</span></a>
-<a class="session-chip" href="#s_E5"><span class="room">A.414 · E · Misallocation and Aggregate Productivity</span></a>
-<a class="session-chip" href="#s_E6"><span class="room">C.406 · E · Sovereign Debt and Default</span></a>
+<a class="session-chip" href="#s_E1"><span class="session-title">Information and Expectations in Macro</span> <span class="session-tag invited">Invited</span></a>
+<a class="session-chip" href="#s_E2"><span class="session-title">Asset Prices and Financial Markets</span></a>
+<a class="session-chip" href="#s_E4"><span class="session-title">International Finance and Capital Flows</span></a>
+<a class="session-chip" href="#s_E5"><span class="session-title">Misallocation and Aggregate Productivity</span></a>
+<a class="session-chip" href="#s_E6"><span class="session-title">Sovereign Debt and Default</span></a>
 </div></div>
 <div class="time-row"><span class="time-pill">15:30-17:10</span>
 <div class="overview-grid">
-<a class="session-chip" href="#s_F1"><span class="room">C.409 · F · Optimal Monetary Policy</span></a>
-<a class="session-chip" href="#s_F2"><span class="room">C.403 · F · Financial Frictions and Business Cycles</span></a>
-<a class="session-chip" href="#s_F3"><span class="room">A.449 · F · Household Finance and Credit Markets</span></a>
+<a class="session-chip" href="#s_F1"><span class="session-title">Optimal Monetary Policy</span></a>
+<a class="session-chip" href="#s_F2"><span class="session-title">Financial Frictions and Business Cycles</span></a>
+<a class="session-chip" href="#s_F3"><span class="session-title">Household Finance and Credit Markets</span></a>
 </div></div>
 </div>
 </section>
@@ -93,7 +94,7 @@
 <div class="parallel-title">Parallel Sessions A</div>
 <div class="session-card" id="s_A1">
 <div class="session-head">
-<div>June 2nd · 9:00-10:40 · Room C.409 · Automation, AI, and Labour Markets <span class="session-tag invited">Invited</span></div>
+<div>June 2nd · 9:00-10:40 · <span class="session-tag parallel">A</span> · Automation, AI, and Labour Markets <span class="session-tag invited">Invited</span></div>
 <a class="top-link" href="#top">Back to top ↑</a>
 </div>
 <ul>
@@ -104,7 +105,7 @@
 </ul></div>
 <div class="session-card" id="s_A2">
 <div class="session-head">
-<div>June 2nd · 9:00-10:40 · Room C.403 · Monetary Policy Communication</div>
+<div>June 2nd · 9:00-10:40 · <span class="session-tag parallel">A</span> · Monetary Policy Communication</div>
 <a class="top-link" href="#top">Back to top ↑</a>
 </div>
 <ul>
@@ -115,7 +116,7 @@
 </ul></div>
 <div class="session-card" id="s_A3">
 <div class="session-head">
-<div>June 2nd · 9:00-10:40 · Room A.449 · Firm Dynamics</div>
+<div>June 2nd · 9:00-10:40 · <span class="session-tag parallel">A</span> · Firm Dynamics</div>
 <a class="top-link" href="#top">Back to top ↑</a>
 </div>
 <ul>
@@ -126,7 +127,7 @@
 </ul></div>
 <div class="session-card" id="s_A5">
 <div class="session-head">
-<div>June 2nd · 9:00-10:40 · Room A.414 · Expectations and Beliefs</div>
+<div>June 2nd · 9:00-10:40 · <span class="session-tag parallel">A</span> · Expectations and Beliefs</div>
 <a class="top-link" href="#top">Back to top ↑</a>
 </div>
 <ul>
@@ -137,7 +138,7 @@
 </ul></div>
 <div class="session-card" id="s_B5">
 <div class="session-head">
-<div>June 2nd · 13:30-15:10 · Room A.414 · Housing Markets</div>
+<div>June 2nd · 13:30-15:10 · <span class="session-tag parallel">B</span> · Housing Markets</div>
 <a class="top-link" href="#top">Back to top ↑</a>
 </div>
 <ul>
@@ -149,7 +150,7 @@
 <div class="parallel-title">Parallel Sessions B</div>
 <div class="session-card" id="s_A4">
 <div class="session-head">
-<div>June 2nd · 9:00-10:40 · Room A.451 · Labour Markets</div>
+<div>June 2nd · 9:00-10:40 · <span class="session-tag parallel">A</span> · Labour Markets</div>
 <a class="top-link" href="#top">Back to top ↑</a>
 </div>
 <ul>
@@ -160,7 +161,7 @@
 </ul></div>
 <div class="session-card" id="s_B1">
 <div class="session-head">
-<div>June 2nd · 13:30-15:10 · Room C.409 · Macroeconomic Development <span class="session-tag invited">Invited</span></div>
+<div>June 2nd · 13:30-15:10 · <span class="session-tag parallel">B</span> · Macroeconomic Development <span class="session-tag invited">Invited</span></div>
 <a class="top-link" href="#top">Back to top ↑</a>
 </div>
 <ul>
@@ -171,7 +172,7 @@
 </ul></div>
 <div class="session-card" id="s_B2">
 <div class="session-head">
-<div>June 2nd · 13:30-15:10 · Room C.403 · Monetary Policy I</div>
+<div>June 2nd · 13:30-15:10 · <span class="session-tag parallel">B</span> · Monetary Policy I</div>
 <a class="top-link" href="#top">Back to top ↑</a>
 </div>
 <ul>
@@ -182,7 +183,7 @@
 </ul></div>
 <div class="session-card" id="s_B3">
 <div class="session-head">
-<div>June 2nd · 13:30-15:10 · Room A.449 · Inflation Dynamics</div>
+<div>June 2nd · 13:30-15:10 · <span class="session-tag parallel">B</span> · Inflation Dynamics</div>
 <a class="top-link" href="#top">Back to top ↑</a>
 </div>
 <ul>
@@ -193,7 +194,7 @@
 </ul></div>
 <div class="session-card" id="s_B4">
 <div class="session-head">
-<div>June 2nd · 13:30-15:10 · Room A.451 · Fiscal Policy and Household Behavior</div>
+<div>June 2nd · 13:30-15:10 · <span class="session-tag parallel">B</span> · Fiscal Policy and Household Behavior</div>
 <a class="top-link" href="#top">Back to top ↑</a>
 </div>
 <ul>
@@ -204,7 +205,7 @@
 </ul></div>
 <div class="session-card" id="s_B6">
 <div class="session-head">
-<div>June 2nd · 13:30-15:10 · Room C.406 · Labour Search and Matching</div>
+<div>June 2nd · 13:30-15:10 · <span class="session-tag parallel">B</span> · Labour Search and Matching</div>
 <a class="top-link" href="#top">Back to top ↑</a>
 </div>
 <ul>
@@ -216,7 +217,7 @@
 <div class="parallel-title">Parallel Sessions C</div>
 <div class="session-card" id="s_C1">
 <div class="session-head">
-<div>June 2nd · 15:30-17:10 · Room C.409 · Dynamic Trade <span class="session-tag invited">Invited</span></div>
+<div>June 2nd · 15:30-17:10 · <span class="session-tag parallel">C</span> · Dynamic Trade <span class="session-tag invited">Invited</span></div>
 <a class="top-link" href="#top">Back to top ↑</a>
 </div>
 <ul>
@@ -227,7 +228,7 @@
 </ul></div>
 <div class="session-card" id="s_C3">
 <div class="session-head">
-<div>June 2nd · 15:30-17:10 · Room C.403 · Inequality and Wealth Dynamics</div>
+<div>June 2nd · 15:30-17:10 · <span class="session-tag parallel">C</span> · Inequality and Wealth Dynamics</div>
 <a class="top-link" href="#top">Back to top ↑</a>
 </div>
 <ul>
@@ -238,7 +239,7 @@
 </ul></div>
 <div class="session-card" id="s_C4">
 <div class="session-head">
-<div>June 2nd · 15:30-17:10 · Room A.449 · Innovation, Market Power, and Growth</div>
+<div>June 2nd · 15:30-17:10 · <span class="session-tag parallel">C</span> · Innovation, Market Power, and Growth</div>
 <a class="top-link" href="#top">Back to top ↑</a>
 </div>
 <ul>
@@ -249,7 +250,7 @@
 </ul></div>
 <div class="session-card highlight" id="s_C5">
 <div class="session-head">
-<div>June 2nd · 15:30-17:10 · Room A.451 · Exchange Rates and Open Economy (5 talks)</div>
+<div>June 2nd · 15:30-17:10 · <span class="session-tag parallel">C</span> · Exchange Rates and Open Economy</div>
 <a class="top-link" href="#top">Back to top ↑</a>
 </div>
 <ul>
@@ -261,7 +262,7 @@
 </ul></div>
 <div class="session-card" id="s_C6">
 <div class="session-head">
-<div>June 2nd · 15:30-17:10 · Room A.414 · Monetary Policy II</div>
+<div>June 2nd · 15:30-17:10 · <span class="session-tag parallel">C</span> · Monetary Policy II</div>
 <a class="top-link" href="#top">Back to top ↑</a>
 </div>
 <ul>
@@ -272,7 +273,7 @@
 <div class="parallel-title">Parallel Sessions D</div>
 <div class="session-card" id="s_D1">
 <div class="session-head">
-<div>June 3rd · 9:00-10:40 · Room C.406 · Young Economists Session <span class="session-tag invited">Invited</span></div>
+<div>June 3rd · 9:00-10:40 · <span class="session-tag parallel">D</span> · Young Economists Session <span class="session-tag invited">Invited</span></div>
 <a class="top-link" href="#top">Back to top ↑</a>
 </div>
 <ul>
@@ -282,7 +283,7 @@
 </ul></div>
 <div class="session-card" id="s_D3">
 <div class="session-head">
-<div>June 3rd · 9:00-10:40 · Room C.409 · Heterogeneous Agents and Household Decisions</div>
+<div>June 3rd · 9:00-10:40 · <span class="session-tag parallel">D</span> · Heterogeneous Agents and Household Decisions</div>
 <a class="top-link" href="#top">Back to top ↑</a>
 </div>
 <ul>
@@ -293,7 +294,7 @@
 </ul></div>
 <div class="session-card" id="s_D4">
 <div class="session-head">
-<div>June 3rd · 9:00-10:40 · Room C.403 · Taxation and Labour Supply</div>
+<div>June 3rd · 9:00-10:40 · <span class="session-tag parallel">D</span> · Taxation and Labour Supply</div>
 <a class="top-link" href="#top">Back to top ↑</a>
 </div>
 <ul>
@@ -304,7 +305,7 @@
 </ul></div>
 <div class="session-card" id="s_D5">
 <div class="session-head">
-<div>June 3rd · 9:00-10:40 · Room A.449 · Production Networks</div>
+<div>June 3rd · 9:00-10:40 · <span class="session-tag parallel">D</span> · Production Networks</div>
 <a class="top-link" href="#top">Back to top ↑</a>
 </div>
 <ul>
@@ -316,7 +317,7 @@
 <div class="parallel-title">Parallel Sessions E</div>
 <div class="session-card" id="s_E3">
 <div class="session-head">
-<div>June 3rd · 9:00-10:40 · Room A.414 · Climate, Disasters, and Macroeconomic Stability</div>
+<div>June 3rd · 9:00-10:40 · <span class="session-tag parallel">E</span> · Climate, Disasters, and Macroeconomic Stability</div>
 <a class="top-link" href="#top">Back to top ↑</a>
 </div>
 <ul>
@@ -327,7 +328,7 @@
 </ul></div>
 <div class="session-card" id="s_E1">
 <div class="session-head">
-<div>June 3rd · 11:00-12:40 · Room C.409 · Information and Expectations in Macro <span class="session-tag invited">Invited</span></div>
+<div>June 3rd · 11:00-12:40 · <span class="session-tag parallel">E</span> · Information and Expectations in Macro <span class="session-tag invited">Invited</span></div>
 <a class="top-link" href="#top">Back to top ↑</a>
 </div>
 <ul>
@@ -338,7 +339,7 @@
 </ul></div>
 <div class="session-card" id="s_E2">
 <div class="session-head">
-<div>June 3rd · 11:00-12:40 · Room C.403 · Asset Prices and Financial Markets</div>
+<div>June 3rd · 11:00-12:40 · <span class="session-tag parallel">E</span> · Asset Prices and Financial Markets</div>
 <a class="top-link" href="#top">Back to top ↑</a>
 </div>
 <ul>
@@ -349,7 +350,7 @@
 </ul></div>
 <div class="session-card" id="s_E4">
 <div class="session-head">
-<div>June 3rd · 11:00-12:40 · Room A.451 · International Finance and Capital Flows</div>
+<div>June 3rd · 11:00-12:40 · <span class="session-tag parallel">E</span> · International Finance and Capital Flows</div>
 <a class="top-link" href="#top">Back to top ↑</a>
 </div>
 <ul>
@@ -360,7 +361,7 @@
 </ul></div>
 <div class="session-card" id="s_E5">
 <div class="session-head">
-<div>June 3rd · 11:00-12:40 · Room A.414 · Misallocation and Aggregate Productivity</div>
+<div>June 3rd · 11:00-12:40 · <span class="session-tag parallel">E</span> · Misallocation and Aggregate Productivity</div>
 <a class="top-link" href="#top">Back to top ↑</a>
 </div>
 <ul>
@@ -371,7 +372,7 @@
 </ul></div>
 <div class="session-card" id="s_E6">
 <div class="session-head">
-<div>June 3rd · 11:00-12:40 · Room C.406 · Sovereign Debt and Default</div>
+<div>June 3rd · 11:00-12:40 · <span class="session-tag parallel">E</span> · Sovereign Debt and Default</div>
 <a class="top-link" href="#top">Back to top ↑</a>
 </div>
 <ul>
@@ -383,7 +384,7 @@
 <div class="parallel-title">Parallel Sessions F</div>
 <div class="session-card" id="s_F1">
 <div class="session-head">
-<div>June 3rd · 15:30-17:10 · Room C.409 · Optimal Monetary Policy</div>
+<div>June 3rd · 15:30-17:10 · <span class="session-tag parallel">F</span> · Optimal Monetary Policy</div>
 <a class="top-link" href="#top">Back to top ↑</a>
 </div>
 <ul>
@@ -394,7 +395,7 @@
 </ul></div>
 <div class="session-card" id="s_F2">
 <div class="session-head">
-<div>June 3rd · 15:30-17:10 · Room C.403 · Financial Frictions and Business Cycles</div>
+<div>June 3rd · 15:30-17:10 · <span class="session-tag parallel">F</span> · Financial Frictions and Business Cycles</div>
 <a class="top-link" href="#top">Back to top ↑</a>
 </div>
 <ul>
@@ -405,7 +406,7 @@
 </ul></div>
 <div class="session-card" id="s_F3">
 <div class="session-head">
-<div>June 3rd · 15:30-17:10 · Room A.449 · Household Finance and Credit Markets</div>
+<div>June 3rd · 15:30-17:10 · <span class="session-tag parallel">F</span> · Household Finance and Credit Markets</div>
 <a class="top-link" href="#top">Back to top ↑</a>
 </div>
 <ul>
