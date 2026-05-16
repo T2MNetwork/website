@@ -22,10 +22,12 @@
   .top-link { white-space: nowrap; font-size: .95rem; text-decoration: none; }
   .session-card ul { margin: 10px 0 12px; padding: 0 18px 0 34px; }
   .session-card li { margin: 7px 0; }
-  .participants-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 10px; }
+  .participants-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); gap: 10px; }
   .participant-card { border: 1px solid #ddd; border-radius: 12px; background: #fff; padding: 10px 12px; }
   .participant-name { font-weight: 700; }
+  .participant-meta { margin-top: 4px; color: #555; font-size: .95rem; }
   .participant-sessions { margin-top: 6px; color: #1a4f8b; }
+  .participant-empty { margin-top: 6px; color: #666; font-style: italic; }
   .back-to-top { position: fixed; right: 16px; bottom: 16px; z-index: 999; background: #111; color: #fff; padding: 10px 12px; border-radius: 999px; text-decoration: none; box-shadow: 0 6px 20px rgba(0,0,0,.18); }
   .back-to-top:hover { background: #000; }
   @media (max-width: 760px) { .program-page { padding: 0 2px; } .session-head { flex-direction: column; } .back-to-top { bottom: 12px; right: 12px; font-size: .95rem; } }
@@ -34,528 +36,1144 @@
 <section class="program-overview">
 <h2>Program overview</h2>
 <div class="day-block">
-  <h3 class="day-title">June 2nd</h3>
-  <div class="time-row"><span class="time-pill">9:00-10:40</span>
-    <div class="overview-grid">
-      <a class="session-chip" href="#s_A5"><span class="room">A.414 · A · Expectations and Beliefs</span></a>
-      <a class="session-chip" href="#s_A3"><span class="room">A.449 · A · Firm Dynamics</span></a>
-      <a class="session-chip" href="#s_A4"><span class="room">A.451 · A · Housing Markets</span></a>
-      <a class="session-chip" href="#s_A2"><span class="room">C.403 · A · Monetary Policy Communication</span></a>
-      <a class="session-chip" href="#s_A1"><span class="room">C.409 · A · Automation, AI, and Labour Markets</span> <span class="session-tag invited">Invited</span></a>
-    </div>
-  </div>
-  <div class="time-row"><span class="time-pill">13:30-15:10</span>
-    <div class="overview-grid">
-      <a class="session-chip" href="#s_B5"><span class="room">A.414 · B · Labour Markets</span></a>
-      <a class="session-chip" href="#s_B3"><span class="room">A.449 · B · Inflation Dynamics</span></a>
-      <a class="session-chip" href="#s_B4"><span class="room">A.451 · B · Fiscal Policy and Household Behavior</span></a>
-      <a class="session-chip" href="#s_B2"><span class="room">C.403 · B · Monetary Policy I</span></a>
-      <a class="session-chip" href="#s_B6"><span class="room">C.406 · B · Labour Search and Matching</span></a>
-      <a class="session-chip" href="#s_B1"><span class="room">C.409 · B · Macroeconomic Development</span> <span class="session-tag invited">Invited</span></a>
-    </div>
-  </div>
-  <div class="time-row"><span class="time-pill">15:30-17:10</span>
-    <div class="overview-grid">
-      <a class="session-chip" href="#s_C6"><span class="room">A.414 · C · Monetary Policy II</span></a>
-      <a class="session-chip" href="#s_C4"><span class="room">A.449 · C · Innovation, Market Power, and Growth</span></a>
-      <a class="session-chip highlight" href="#s_C5"><span class="room">A.451 · C · Exchange Rates and Open Economy • 5 talks</span></a>
-      <a class="session-chip" href="#s_C3"><span class="room">C.403 · C · Inequality and Wealth Dynamics</span></a>
-      <a class="session-chip" href="#s_C1"><span class="room">C.409 · C · Dynamic Trade</span> <span class="session-tag invited">Invited</span></a>
-    </div>
-  </div>
+<h3 class="day-title">June 2nd</h3>
+<div class="time-row"><span class="time-pill">9:00-10:40</span>
+<div class="overview-grid">
+<a class="session-chip" href="#s_A1"><span class="room">C.409 · A · Automation, AI, and Labour Markets</span> <span class="session-tag invited">Invited</span></a>
+<a class="session-chip" href="#s_A2"><span class="room">C.403 · A · Monetary Policy Communication</span></a>
+<a class="session-chip" href="#s_A3"><span class="room">A.449 · A · Firm Dynamics</span></a>
+<a class="session-chip" href="#s_A4"><span class="room">A.451 · A · Housing Markets</span></a>
+<a class="session-chip" href="#s_A5"><span class="room">A.414 · A · Expectations and Beliefs</span></a>
+</div></div>
+<div class="time-row"><span class="time-pill">13:30-15:10</span>
+<div class="overview-grid">
+<a class="session-chip" href="#s_B1"><span class="room">C.409 · B · Macroeconomic Development</span> <span class="session-tag invited">Invited</span></a>
+<a class="session-chip" href="#s_B2"><span class="room">C.403 · B · Monetary Policy I</span></a>
+<a class="session-chip" href="#s_B3"><span class="room">A.449 · B · Inflation Dynamics</span></a>
+<a class="session-chip" href="#s_B4"><span class="room">A.451 · B · Fiscal Policy and Household Behavior</span></a>
+<a class="session-chip" href="#s_B5"><span class="room">A.414 · B · Labour Markets</span></a>
+<a class="session-chip" href="#s_B6"><span class="room">C.406 · B · Labour Search and Matching</span></a>
+</div></div>
+<div class="time-row"><span class="time-pill">15:30-17:10</span>
+<div class="overview-grid">
+<a class="session-chip" href="#s_C1"><span class="room">C.409 · C · Dynamic Trade</span> <span class="session-tag invited">Invited</span></a>
+<a class="session-chip" href="#s_C3"><span class="room">C.403 · C · Inequality and Wealth Dynamics</span></a>
+<a class="session-chip" href="#s_C4"><span class="room">A.449 · C · Innovation, Market Power, and Growth</span></a>
+<a class="session-chip highlight" href="#s_C5"><span class="room">A.451 · C · Exchange Rates and Open Economy • 5 talks</span></a>
+<a class="session-chip" href="#s_C6"><span class="room">A.414 · C · Monetary Policy II</span></a>
+</div></div>
 </div>
 <div class="day-block">
-  <h3 class="day-title">June 3rd</h3>
-  <div class="time-row"><span class="time-pill">9:00-10:40</span>
-    <div class="overview-grid">
-      <a class="session-chip" href="#s_D5"><span class="room">A.449 · D · Production Networks</span></a>
-      <a class="session-chip" href="#s_D4"><span class="room">C.403 · D · Taxation and Labour Supply</span></a>
-      <a class="session-chip" href="#s_D1"><span class="room">C.406 · D · Young Economists Session</span> <span class="session-tag invited">Invited</span></a>
-      <a class="session-chip" href="#s_D3"><span class="room">C.409 · D · Heterogeneous Agents and Household Decisions</span></a>
-    </div>
-  </div>
-  <div class="time-row"><span class="time-pill">11:00-12:40</span>
-    <div class="overview-grid">
-      <a class="session-chip" href="#s_E5"><span class="room">A.414 · E · Misallocation and Aggregate Productivity</span></a>
-      <a class="session-chip" href="#s_E3"><span class="room">A.449 · E · Climate, Disasters, and Macroeconomic Stability</span></a>
-      <a class="session-chip" href="#s_E4"><span class="room">A.451 · E · International Finance and Capital Flows</span></a>
-      <a class="session-chip" href="#s_E2"><span class="room">C.403 · E · Asset Prices and Financial Markets</span></a>
-      <a class="session-chip" href="#s_E6"><span class="room">C.406 · E · Sovereign Debt and Default</span></a>
-      <a class="session-chip" href="#s_E1"><span class="room">C.409 · E · Information and Expectations in Macro</span> <span class="session-tag invited">Invited</span></a>
-    </div>
-  </div>
-  <div class="time-row"><span class="time-pill">15:30-17:10</span>
-    <div class="overview-grid">
-      <a class="session-chip" href="#s_F3"><span class="room">A.449 · F · Household Finance and Credit Markets</span></a>
-      <a class="session-chip" href="#s_F2"><span class="room">C.403 · F · Financial Frictions and Business Cycles</span></a>
-      <a class="session-chip" href="#s_F1"><span class="room">C.409 · F · Optimal Monetary Policy</span></a>
-    </div>
-  </div>
+<h3 class="day-title">June 3rd</h3>
+<div class="time-row"><span class="time-pill">9:00-10:40</span>
+<div class="overview-grid">
+<a class="session-chip" href="#s_D1"><span class="room">C.406 · D · Young Economists Session</span> <span class="session-tag invited">Invited</span></a>
+<a class="session-chip" href="#s_D3"><span class="room">C.409 · D · Heterogeneous Agents and Household Decisions</span></a>
+<a class="session-chip" href="#s_D4"><span class="room">C.403 · D · Taxation and Labour Supply</span></a>
+<a class="session-chip" href="#s_D5"><span class="room">A.449 · D · Production Networks</span></a>
+</div></div>
+<div class="time-row"><span class="time-pill">11:00-12:40</span>
+<div class="overview-grid">
+<a class="session-chip" href="#s_E1"><span class="room">C.409 · E · Information and Expectations in Macro</span> <span class="session-tag invited">Invited</span></a>
+<a class="session-chip" href="#s_E2"><span class="room">C.403 · E · Asset Prices and Financial Markets</span></a>
+<a class="session-chip" href="#s_E3"><span class="room">A.449 · E · Climate, Disasters, and Macroeconomic Stability</span></a>
+<a class="session-chip" href="#s_E4"><span class="room">A.451 · E · International Finance and Capital Flows</span></a>
+<a class="session-chip" href="#s_E5"><span class="room">A.414 · E · Misallocation and Aggregate Productivity</span></a>
+<a class="session-chip" href="#s_E6"><span class="room">C.406 · E · Sovereign Debt and Default</span></a>
+</div></div>
+<div class="time-row"><span class="time-pill">15:30-17:10</span>
+<div class="overview-grid">
+<a class="session-chip" href="#s_F1"><span class="room">C.409 · F · Optimal Monetary Policy</span></a>
+<a class="session-chip" href="#s_F2"><span class="room">C.403 · F · Financial Frictions and Business Cycles</span></a>
+<a class="session-chip" href="#s_F3"><span class="room">A.449 · F · Household Finance and Credit Markets</span></a>
+</div></div>
 </div>
 </section>
 <section class="session-section">
 <h2>Sessions</h2>
 <div class="parallel-title">Parallel Sessions A</div>
-<div class="session-card" id="s_A5">
-  <div class="session-head">
-    <div>June 2nd · 9:00-10:40 · Room A.414 · Expectations and Beliefs</div>
-    <a class="top-link" href="#top">Back to top ↑</a>
-  </div>
-  <ul>
-    <li><em>Signals, Interviews, and Hiring in Labor Market Equilibrium</em> &nbsp; by <a href="#p_ronald-wolthoff">Ronald Wolthoff</a></li>
-    <li><em>A Behavioral Foundation for the Investment Wedge </em></li>
-    <li><em>Behavioral Expectations </em></li>
-    <li><em>Kalshi and the Rise of Macro Markets </em></li>
-  </ul>
+<div class="session-card" id="s_A1">
+<div class="session-head">
+<div>June 2nd · 9:00-10:40 · Room C.409 · Automation, AI, and Labour Markets <span class="session-tag invited">Invited</span></div>
+<a class="top-link" href="#top">Back to top ↑</a>
 </div>
-<div class="session-card" id="s_A3">
-  <div class="session-head">
-    <div>June 2nd · 9:00-10:40 · Room A.449 · Firm Dynamics</div>
-    <a class="top-link" href="#top">Back to top ↑</a>
-  </div>
-  <ul>
-    <li><em>Ownership Changes and Firm Dynamics </em></li>
-    <li><em>Demand-Driven Stagnation: Customer Acquisition and Persistent Firm Growth Slowdowns </em></li>
-    <li><em>Born Different: Entrepreneurship through Inventor Mobility, Innovation, and Growth </em></li>
-    <li><em>Communication Friction, Managerial Expectation, and Firm Dynamics </em></li>
-  </ul>
-</div>
-<div class="session-card" id="s_A4">
-  <div class="session-head">
-    <div>June 2nd · 9:00-10:40 · Room A.451 · Housing Markets</div>
-    <a class="top-link" href="#top">Back to top ↑</a>
-  </div>
-  <ul>
-    <li><em>Mortgage interest rate risk and the propagation of shocks</em> &nbsp; by <a href="#p_matias-vieyra">Matias Vieyra</a></li>
-    <li><em>Matching People to Properties: A Matching Function for the Housing Market </em></li>
-    <li><em>Some Apples Fall Far: Skill Premium, Housing Indivisibility, and the Rising Price-to-Rent Ratio </em></li>
-    <li><em>United in Booms, Divided in Busts: Regional House Price Cycles and Monetary Policy </em></li>
-  </ul>
+<ul>
+<li><em>From Farm to Factory: Agricultural Mechanization and Occupational Outcomes in Early Twentieth Century America</em> &nbsp; by Henry Siu</li>
+<li><em>Will AI Adoption Intensify or Weaken Market Competition?</em> &nbsp; by <a href="#p_zheng-liu">Zheng Liu</a></li>
+<li><em>The Demand for Tasks in the Age of AI</em> &nbsp; by Paul Gaggl</li>
+<li><em>AI in the Office and the Factory: Evidence from Administrative Software Registry Data</em> &nbsp; by Gustavo da Souza</li>
+</ul>
 </div>
 <div class="session-card" id="s_A2">
-  <div class="session-head">
-    <div>June 2nd · 9:00-10:40 · Room C.403 · Monetary Policy Communication</div>
-    <a class="top-link" href="#top">Back to top ↑</a>
-  </div>
-  <ul>
-    <li><em>Building Central Bank Credibility: The Role of Forecast Performance </em></li>
-    <li><em>Consumers‚Äô Attention to Monetary Policy: The Importance of Having ‚ÄúSkin in the Game‚Äù </em></li>
-    <li><em>Communicating Policy Under Uncertainty </em></li>
-    <li><em>Beyond the Actual: The Macroeconomic Implications of the Perceived Taylor Rule </em></li>
-  </ul>
+<div class="session-head">
+<div>June 2nd · 9:00-10:40 · Room C.403 · Monetary Policy Communication</div>
+<a class="top-link" href="#top">Back to top ↑</a>
 </div>
-<div class="session-card" id="s_A1">
-  <div class="session-head">
-    <div>June 2nd · 9:00-10:40 · Room C.409 · Automation, AI, and Labour Markets <span class="session-tag invited">Invited</span></div>
-    <a class="top-link" href="#top">Back to top ↑</a>
-  </div>
-  <ul>
-    <li><em>From Farm to Factory: Agricultural Mechanization and Occupational Outcomes in Early Twentieth Century America</em> &nbsp; by <a href="#p_henry-siu">Henry Siu</a></li>
-    <li><em>Will AI Adoption Intensify or Weaken Market Competition?</em> &nbsp; by <a href="#p_zheng-liu">Zheng Liu</a></li>
-    <li><em>The Demand for Tasks in the Age of AI</em> &nbsp; by <a href="#p_paul-gaggl">Paul Gaggl</a></li>
-    <li><em>AI in the Office and the Factory: Evidence from Administrative Software Registry Data</em> &nbsp; by <a href="#p_gustavo-da-souza">Gustavo da Souza</a></li>
-  </ul>
+<ul>
+<li><em>Building Central Bank Credibility: The Role of Forecast Performance</em> &nbsp; by <a href="#p_michael-mcmahon">Michael McMahon</a></li>
+<li><em>Consumers‚Äô Attention to Monetary Policy: The Importance of Having ‚ÄúSkin in the Game‚Äù</em> &nbsp; by <a href="#p_ina-hajdini">Ina Hajdini</a></li>
+<li><em>Communicating Policy Under Uncertainty</em> &nbsp; by <a href="#p_thorsten-drautzburg">Thorsten Drautzburg</a></li>
+<li><em>Beyond the Actual: The Macroeconomic Implications of the Perceived Taylor Rule</em> &nbsp; by <a href="#p_husang-kim">Husang Kim</a></li>
+</ul>
+</div>
+<div class="session-card" id="s_A3">
+<div class="session-head">
+<div>June 2nd · 9:00-10:40 · Room A.449 · Firm Dynamics</div>
+<a class="top-link" href="#top">Back to top ↑</a>
+</div>
+<ul>
+<li><em>Ownership Changes and Firm Dynamics</em> &nbsp; by <a href="#p_bettina-brueggemann">Bettina Brueggemann</a></li>
+<li><em>Demand-Driven Stagnation: Customer Acquisition and Persistent Firm Growth Slowdowns</em> &nbsp; by <a href="#p_thomas-lazarowicz">Thomas Lazarowicz</a></li>
+<li><em>Born Different: Entrepreneurship through Inventor Mobility, Innovation, and Growth</em></li>
+<li><em>Communication Friction, Managerial Expectation, and Firm Dynamics</em> &nbsp; by <a href="#p_haoran-wang">Haoran Wang</a></li>
+</ul>
+</div>
+<div class="session-card" id="s_A4">
+<div class="session-head">
+<div>June 2nd · 9:00-10:40 · Room A.451 · Housing Markets</div>
+<a class="top-link" href="#top">Back to top ↑</a>
+</div>
+<ul>
+<li><em>Mortgage interest rate risk and the propagation of shocks</em> &nbsp; by <a href="#p_matias-vieyra">Matías Vieyra</a></li>
+<li><em>Matching People to Properties: A Matching Function for the Housing Market</em> &nbsp; by <a href="#p_kevin-sheedy">Kevin Sheedy</a></li>
+<li><em>Some Apples Fall Far: Skill Premium, Housing Indivisibility, and the Rising Price-to-Rent Ratio</em> &nbsp; by <a href="#p_alexey-khazanov">Alexey Khazanov</a></li>
+<li><em>United in Booms, Divided in Busts: Regional House Price Cycles and Monetary Policy</em> &nbsp; by <a href="#p_hannes-twieling">Hannes Twieling</a></li>
+</ul>
+</div>
+<div class="session-card" id="s_A5">
+<div class="session-head">
+<div>June 2nd · 9:00-10:40 · Room A.414 · Expectations and Beliefs</div>
+<a class="top-link" href="#top">Back to top ↑</a>
+</div>
+<ul>
+<li><em>Signals, Interviews, and Hiring in Labor Market Equilibrium</em> &nbsp; by <a href="#p_ronald-wolthoff">Ronald Wolthoff</a></li>
+<li><em>A Behavioral Foundation for the Investment Wedge</em> &nbsp; by <a href="#p_jean-paul-l-huillier">Jean-Paul L&#x27;Huillier</a></li>
+<li><em>Behavioral Expectations</em> &nbsp; by <a href="#p_miguel-santana">Miguel Santana</a></li>
+<li><em>Kalshi and the Rise of Macro Markets</em> &nbsp; by <a href="#p_anthony-diercks">Anthony Diercks</a></li>
+</ul>
 </div>
 <div class="parallel-title">Parallel Sessions B</div>
-<div class="session-card" id="s_B5">
-  <div class="session-head">
-    <div>June 2nd · 13:30-15:10 · Room A.414 · Labour Markets</div>
-    <a class="top-link" href="#top">Back to top ↑</a>
-  </div>
-  <ul>
-    <li><em>When Neighbors Stop Knocking: The Impact of Canada&#x27;s 2025 Tourism Decline on U.S. Local Labor Markets </em></li>
-    <li><em>Furloughs, Employment, and Worker Reallocation in Normal Times </em></li>
-    <li><em>Waiting to Hire and the Business Cycle </em></li>
-    <li><em>Non-Competes, Worker Mobility, and Productivity Growth: Theory and Evidence </em></li>
-  </ul>
+<div class="session-card" id="s_B1">
+<div class="session-head">
+<div>June 2nd · 13:30-15:10 · Room C.409 · Macroeconomic Development <span class="session-tag invited">Invited</span></div>
+<a class="top-link" href="#top">Back to top ↑</a>
 </div>
-<div class="session-card" id="s_B3">
-  <div class="session-head">
-    <div>June 2nd · 13:30-15:10 · Room A.449 · Inflation Dynamics</div>
-    <a class="top-link" href="#top">Back to top ↑</a>
-  </div>
-  <ul>
-    <li><em>A Decomposition of the Phillips Curve&#x27;s Flattening </em></li>
-    <li><em>The Cost shocks pass-through and the aggregate price volatility </em></li>
-    <li><em>State-dependent pass-through with heterogeneous exposure to common shocks </em></li>
-    <li><em>Retail inventories and inflation dynamics: The price margin channel </em></li>
-  </ul>
-</div>
-<div class="session-card" id="s_B4">
-  <div class="session-head">
-    <div>June 2nd · 13:30-15:10 · Room A.451 · Fiscal Policy and Household Behavior</div>
-    <a class="top-link" href="#top">Back to top ↑</a>
-  </div>
-  <ul>
-    <li><em>Inflation vs Inclusion: Stabilization Policy in the Wake of the Pandemic </em></li>
-    <li><em>Welfare and Spending Effects of Consumption Stimulus Policies </em></li>
-    <li><em>How Ricardian Are We? </em></li>
-    <li><em>Fiscal Uncertainty in Habit-Forming and Lumpy Economies </em></li>
-  </ul>
+<ul>
+<li><em>The Role of Services as a Driver of Cross-Country Aggregate Productivity Dynamics</em> &nbsp; by Diego Restuccia</li>
+<li><em>Why AI Reduces Human Capital: Choosing Paychecks Over Diplomas</em> &nbsp; by Santiago Caicedo</li>
+<li><em>The Macroeconomics of Poverty across Countries</em> &nbsp; by Duc Nguyen</li>
+<li><em>Land Property Rights, Financial Frictions, and Resource Allocation in Developing Countries</em> &nbsp; by Kristina Manysheva</li>
+</ul>
 </div>
 <div class="session-card" id="s_B2">
-  <div class="session-head">
-    <div>June 2nd · 13:30-15:10 · Room C.403 · Monetary Policy I</div>
-    <a class="top-link" href="#top">Back to top ↑</a>
-  </div>
-  <ul>
-    <li><em>Structural Changes in Investment and the Waning Power of Monetary Policy </em></li>
-    <li><em>Do Capacity Constraints Affect the Pass-Through of Monetary Policy to Prices?</em> &nbsp; by <a href="#p_edvin-ahlander">Edvin Ahlander</a></li>
-    <li><em>The Power of Persistence </em></li>
-    <li><em>Decomposing the Investment Channel of Monetary Policy </em></li>
-  </ul>
+<div class="session-head">
+<div>June 2nd · 13:30-15:10 · Room C.403 · Monetary Policy I</div>
+<a class="top-link" href="#top">Back to top ↑</a>
+</div>
+<ul>
+<li><em>Structural Changes in Investment and the Waning Power of Monetary Policy</em></li>
+<li><em>Do Capacity Constraints Affect the Pass-Through of Monetary Policy to Prices?</em> &nbsp; by <a href="#p_edvin-ahlander">Edvin Ahlander</a></li>
+<li><em>The Power of Persistence</em></li>
+<li><em>Decomposing the Investment Channel of Monetary Policy</em> &nbsp; by <a href="#p_lennart-niermann">Lennart Niermann</a></li>
+</ul>
+</div>
+<div class="session-card" id="s_B3">
+<div class="session-head">
+<div>June 2nd · 13:30-15:10 · Room A.449 · Inflation Dynamics</div>
+<a class="top-link" href="#top">Back to top ↑</a>
+</div>
+<ul>
+<li><em>A Decomposition of the Phillips Curve&#x27;s Flattening</em> &nbsp; by <a href="#p_william-dupor">William Dupor</a></li>
+<li><em>The Cost shocks pass-through and the aggregate price volatility</em> &nbsp; by <a href="#p_lucia-veraldi">Lucia veraldi</a></li>
+<li><em>State-dependent pass-through with heterogeneous exposure to common shocks</em> &nbsp; by <a href="#p_julien-martin">Julien Martin</a></li>
+<li><em>Retail inventories and inflation dynamics: The price margin channel</em> &nbsp; by <a href="#p_julio-ortiz">Julio Ortiz</a></li>
+</ul>
+</div>
+<div class="session-card" id="s_B4">
+<div class="session-head">
+<div>June 2nd · 13:30-15:10 · Room A.451 · Fiscal Policy and Household Behavior</div>
+<a class="top-link" href="#top">Back to top ↑</a>
+</div>
+<ul>
+<li><em>Inflation vs Inclusion: Stabilization Policy in the Wake of the Pandemic</em> &nbsp; by <a href="#p_felipe-alduino-alves">Felipe Alduino Alves</a></li>
+<li><em>Welfare and Spending Effects of Consumption Stimulus Policies</em></li>
+<li><em>How Ricardian Are We?</em> &nbsp; by <a href="#p_jonathan-adams">Jonathan Adams</a></li>
+<li><em>Fiscal Uncertainty in Habit-Forming and Lumpy Economies</em> &nbsp; by <a href="#p_roy-zilberman">Roy Zilberman</a></li>
+</ul>
+</div>
+<div class="session-card" id="s_B5">
+<div class="session-head">
+<div>June 2nd · 13:30-15:10 · Room A.414 · Labour Markets</div>
+<a class="top-link" href="#top">Back to top ↑</a>
+</div>
+<ul>
+<li><em>When Neighbors Stop Knocking: The Impact of Canada&#x27;s 2025 Tourism Decline on U.S. Local Labor Markets</em> &nbsp; by <a href="#p_etienne-lale">Etienne Lalé</a></li>
+<li><em>Furloughs, Employment, and Worker Reallocation in Normal Times</em> &nbsp; by <a href="#p_oskari-vahamaa">Oskari Vähämaa</a></li>
+<li><em>Waiting to Hire and the Business Cycle</em> &nbsp; by <a href="#p_edouard-challe">Edouard CHALLE</a></li>
+<li><em>Non-Competes, Worker Mobility, and Productivity Growth: Theory and Evidence</em> &nbsp; by <a href="#p_hyejin-park">Hyejin Park</a></li>
+</ul>
 </div>
 <div class="session-card" id="s_B6">
-  <div class="session-head">
-    <div>June 2nd · 13:30-15:10 · Room C.406 · Labour Search and Matching</div>
-    <a class="top-link" href="#top">Back to top ↑</a>
-  </div>
-  <ul>
-    <li><em>The Micro and Macro Implications of Early Career Skills Mismatch </em></li>
-    <li><em>The Active Search Premium </em></li>
-    <li><em>Job Search, Job Finding and the Role of Unemployment Insurance History </em></li>
-    <li><em>Networks, Sorting, and the Productivity Implications of Immigrant Assimilation </em></li>
-  </ul>
+<div class="session-head">
+<div>June 2nd · 13:30-15:10 · Room C.406 · Labour Search and Matching</div>
+<a class="top-link" href="#top">Back to top ↑</a>
 </div>
-<div class="session-card" id="s_B1">
-  <div class="session-head">
-    <div>June 2nd · 13:30-15:10 · Room C.409 · Macroeconomic Development <span class="session-tag invited">Invited</span></div>
-    <a class="top-link" href="#top">Back to top ↑</a>
-  </div>
-  <ul>
-    <li><em>The Role of Services as a Driver of Cross-Country Aggregate Productivity Dynamics</em> &nbsp; by <a href="#p_diego-restuccia">Diego Restuccia</a></li>
-    <li><em>Why AI Reduces Human Capital: Choosing Paychecks Over Diplomas</em> &nbsp; by <a href="#p_santiago-caicedo">Santiago Caicedo</a></li>
-    <li><em>The Macroeconomics of Poverty across Countries</em> &nbsp; by <a href="#p_duc-nguyen">Duc Nguyen</a></li>
-    <li><em>Land Property Rights, Financial Frictions, and Resource Allocation in Developing Countries</em> &nbsp; by <a href="#p_kristina-manysheva">Kristina Manysheva</a></li>
-  </ul>
+<ul>
+<li><em>The Micro and Macro Implications of Early Career Skills Mismatch</em> &nbsp; by <a href="#p_piero-de-dominicis">Piero De Dominicis</a></li>
+<li><em>The Active Search Premium</em></li>
+<li><em>Job Search, Job Finding and the Role of Unemployment Insurance History</em> &nbsp; by <a href="#p_similan-rujiwattanapong">Similan Rujiwattanapong</a></li>
+<li><em>Networks, Sorting, and the Productivity Implications of Immigrant Assimilation</em> &nbsp; by <a href="#p_luke-rawling">Luke Rawling</a></li>
+</ul>
 </div>
 <div class="parallel-title">Parallel Sessions C</div>
-<div class="session-card" id="s_C6">
-  <div class="session-head">
-    <div>June 2nd · 15:30-17:10 · Room A.414 · Monetary Policy II</div>
-    <a class="top-link" href="#top">Back to top ↑</a>
-  </div>
-  <ul>
-    <li><em>License to Ease: Competition andMonetary Policy Interaction </em></li>
-    <li><em>Do Monetary Policy Shocks Affect the Neutral Rate of Interest? </em></li>
-    <li><em>Inventories matter for the transmission of monetary policy: uncovering the cost-of-carry channel </em></li>
-  </ul>
+<div class="session-card" id="s_C1">
+<div class="session-head">
+<div>June 2nd · 15:30-17:10 · Room C.409 · Dynamic Trade <span class="session-tag invited">Invited</span></div>
+<a class="top-link" href="#top">Back to top ↑</a>
 </div>
-<div class="session-card" id="s_C4">
-  <div class="session-head">
-    <div>June 2nd · 15:30-17:10 · Room A.449 · Innovation, Market Power, and Growth</div>
-    <a class="top-link" href="#top">Back to top ↑</a>
-  </div>
-  <ul>
-    <li><em>Materials, Technology and Growth: Quantifying the Costs of Circularity </em></li>
-    <li><em>Endogenous Firm Divergence and Increasing Concentration as a Feature of Long-Run Growth </em></li>
-    <li><em>Financial Frictions, Market Power, and Innovation </em></li>
-    <li><em>Experimental and applied R&amp;D investment under liquidity constraints </em></li>
-  </ul>
-</div>
-<div class="session-card highlight" id="s_C5">
-  <div class="session-head">
-    <div>June 2nd · 15:30-17:10 · Room A.451 · Exchange Rates and Open Economy (5 talks)</div>
-    <a class="top-link" href="#top">Back to top ↑</a>
-  </div>
-  <ul>
-    <li><em>Tariffs, Automation, and Business Dynamism</em> &nbsp; by <a href="#p_michael-devereux">Michael Devereux</a></li>
-    <li><em>Insurability and Premia in Foreign Exchange Markets </em></li>
-    <li><em>Trade, specialization and inflation </em></li>
-    <li><em>Monetary and Financial Spillovers: New Historical Evidence from Germany </em></li>
-    <li><em>Productivity and Wedges: Economic Convergence and the Real Exchange Rate </em></li>
-  </ul>
+<ul>
+<li><em>Trade Risk and Food Security</em> &nbsp; by Tasso Adamopoulos</li>
+<li><em>Fiscal Limits to Protectionism: The 2025 US Tariff Laffer Curve</em> &nbsp; by <a href="#p_pau-pujolas">Pau Pujolas</a></li>
+<li><em>The Tariff Tax Cut: Tariffs as Revenue</em> &nbsp; by <a href="#p_carter-mix">Carter Mix</a></li>
+<li><em>Recovering Credible Trade Elasticities from Incredible Trade Reforms</em> &nbsp; by Joseph Steinberg</li>
+</ul>
 </div>
 <div class="session-card" id="s_C3">
-  <div class="session-head">
-    <div>June 2nd · 15:30-17:10 · Room C.403 · Inequality and Wealth Dynamics</div>
-    <a class="top-link" href="#top">Back to top ↑</a>
-  </div>
-  <ul>
-    <li><em>Serial Entrepreneurship: Rethinking Top Wealth Dynamics </em></li>
-    <li><em>Income inequality and bank funding fragility </em></li>
-    <li><em>Disaster Risk and Wealth Inequality </em></li>
-    <li><em>The Dynamics of Firm-level Pay: Theory and Evidence from Portugal </em></li>
-  </ul>
+<div class="session-head">
+<div>June 2nd · 15:30-17:10 · Room C.403 · Inequality and Wealth Dynamics</div>
+<a class="top-link" href="#top">Back to top ↑</a>
 </div>
-<div class="session-card" id="s_C1">
-  <div class="session-head">
-    <div>June 2nd · 15:30-17:10 · Room C.409 · Dynamic Trade <span class="session-tag invited">Invited</span></div>
-    <a class="top-link" href="#top">Back to top ↑</a>
-  </div>
-  <ul>
-    <li><em>Trade Risk and Food Security</em> &nbsp; by <a href="#p_tasso-adamopoulos">Tasso Adamopoulos</a></li>
-    <li><em>Fiscal Limits to Protectionism: The 2025 US Tariff Laffer Curve</em> &nbsp; by <a href="#p_pau-pujolas">Pau Pujolas</a></li>
-    <li><em>The Tariff Tax Cut: Tariffs as Revenue</em> &nbsp; by <a href="#p_carter-mix">Carter Mix</a></li>
-    <li><em>Recovering Credible Trade Elasticities from Incredible Trade Reforms</em> &nbsp; by <a href="#p_joseph-steinberg">Joseph Steinberg</a></li>
-  </ul>
+<ul>
+<li><em>Serial Entrepreneurship: Rethinking Top Wealth Dynamics</em> &nbsp; by <a href="#p_ozgur-karabulut">Ozgur Karabulut</a></li>
+<li><em>Income inequality and bank funding fragility</em> &nbsp; by <a href="#p_anni-isojaervi">Anni Isojaervi</a></li>
+<li><em>Disaster Risk and Wealth Inequality</em> &nbsp; by <a href="#p_maximilian-wei">Maximilian Weiß</a></li>
+<li><em>The Dynamics of Firm-level Pay: Theory and Evidence from Portugal</em> &nbsp; by <a href="#p_rui-castro">Rui Castro</a></li>
+</ul>
+</div>
+<div class="session-card" id="s_C4">
+<div class="session-head">
+<div>June 2nd · 15:30-17:10 · Room A.449 · Innovation, Market Power, and Growth</div>
+<a class="top-link" href="#top">Back to top ↑</a>
+</div>
+<ul>
+<li><em>Materials, Technology and Growth: Quantifying the Costs of Circularity</em> &nbsp; by <a href="#p_zachary-mahone">Zachary Mahone</a></li>
+<li><em>Endogenous Firm Divergence and Increasing Concentration as a Feature of Long-Run Growth</em> &nbsp; by <a href="#p_oliver-gansfort">Oliver Gansfort</a></li>
+<li><em>Financial Frictions, Market Power, and Innovation</em> &nbsp; by <a href="#p_pedro-armada">Pedro Armada</a></li>
+<li><em>Experimental and applied R&amp;D investment under liquidity constraints</em></li>
+</ul>
+</div>
+<div class="session-card highlight" id="s_C5">
+<div class="session-head">
+<div>June 2nd · 15:30-17:10 · Room A.451 · Exchange Rates and Open Economy (5 talks)</div>
+<a class="top-link" href="#top">Back to top ↑</a>
+</div>
+<ul>
+<li><em>Tariffs, Automation, and Business Dynamism</em> &nbsp; by Michael Devereux</li>
+<li><em>Insurability and Premia in Foreign Exchange Markets</em> &nbsp; by <a href="#p_suman-basu">Suman Basu</a></li>
+<li><em>Trade, specialization and inflation</em></li>
+<li><em>Monetary and Financial Spillovers: New Historical Evidence from Germany</em></li>
+<li><em>Productivity and Wedges: Economic Convergence and the Real Exchange Rate</em> &nbsp; by <a href="#p_camilo-granados">Camilo Granados</a></li>
+</ul>
+</div>
+<div class="session-card" id="s_C6">
+<div class="session-head">
+<div>June 2nd · 15:30-17:10 · Room A.414 · Monetary Policy II</div>
+<a class="top-link" href="#top">Back to top ↑</a>
+</div>
+<ul>
+<li><em>License to Ease: Competition andMonetary Policy Interaction</em></li>
+<li><em>Do Monetary Policy Shocks Affect the Neutral Rate of Interest?</em> &nbsp; by <a href="#p_rodrigo-sekkel">Rodrigo Sekkel</a></li>
+<li><em>Inventories matter for the transmission of monetary policy: uncovering the cost-of-carry channel</em> &nbsp; by <a href="#p_diego-de-sousa-rodrigues">Diego de Sousa Rodrigues</a></li>
+</ul>
 </div>
 <div class="parallel-title">Parallel Sessions D</div>
-<div class="session-card" id="s_D5">
-  <div class="session-head">
-    <div>June 3rd · 9:00-10:40 · Room A.449 · Production Networks</div>
-    <a class="top-link" href="#top">Back to top ↑</a>
-  </div>
-  <ul>
-    <li><em>Tax Rules for Distorted Production Networks </em></li>
-    <li><em>Markups Accounting </em></li>
-    <li><em>Industrial Policy Wars and Inequality: Who Loses and When? </em></li>
-    <li><em>The Transmission of Foreign Shocks in a Networked Economy </em></li>
-  </ul>
-</div>
-<div class="session-card" id="s_D4">
-  <div class="session-head">
-    <div>June 3rd · 9:00-10:40 · Room C.403 · Taxation and Labour Supply</div>
-    <a class="top-link" href="#top">Back to top ↑</a>
-  </div>
-  <ul>
-    <li><em>Cohabitation, Marriage, and Tax Policy in the United States </em></li>
-    <li><em>Income Taxes and Entrepreneurship </em></li>
-    <li><em>LABOR M ARKET FLUIDITY, SKILL ACCUMULATION AND THE INSURANCE EFFECTS FROM TAXES </em></li>
-    <li><em>Tax Design with Transition </em></li>
-  </ul>
-</div>
 <div class="session-card" id="s_D1">
-  <div class="session-head">
-    <div>June 3rd · 9:00-10:40 · Room C.406 · Young Economists Session <span class="session-tag invited">Invited</span></div>
-    <a class="top-link" href="#top">Back to top ↑</a>
-  </div>
-  <ul>
-    <li><em>FX Market Depth and Exchange Rate Volatility</em> &nbsp; by <a href="#p_oliver-vogt">Oliver Vogt</a></li>
-    <li><em>Private Buffers, Public Fragility: Liquidity Requirements and the Interbank Market</em> &nbsp; by <a href="#p_rafael-berriel">Rafael Berriel</a></li>
-    <li><em>Strategic Macroeconomic Policymaking: When does cooperation pay off?</em> &nbsp; by <a href="#p_camilo-granados">Camilo Granados</a></li>
-  </ul>
+<div class="session-head">
+<div>June 3rd · 9:00-10:40 · Room C.406 · Young Economists Session <span class="session-tag invited">Invited</span></div>
+<a class="top-link" href="#top">Back to top ↑</a>
+</div>
+<ul>
+<li><em>FX Market Depth and Exchange Rate Volatility</em> &nbsp; by <a href="#p_oliver-vogt">Oliver Vogt</a></li>
+<li><em>Private Buffers, Public Fragility: Liquidity Requirements and the Interbank Market</em> &nbsp; by <a href="#p_rafael-berriel">Rafael Berriel</a></li>
+<li><em>Strategic Macroeconomic Policymaking: When does cooperation pay off?</em> &nbsp; by <a href="#p_camilo-granados">Camilo Granados</a></li>
+</ul>
 </div>
 <div class="session-card" id="s_D3">
-  <div class="session-head">
-    <div>June 3rd · 9:00-10:40 · Room C.409 · Heterogeneous Agents and Household Decisions</div>
-    <a class="top-link" href="#top">Back to top ↑</a>
-  </div>
-  <ul>
-    <li><em>Aging, Monetary Policy and Wealth Inequality </em></li>
-    <li><em>On the Effects of Inflation on Real Earnings Risk, Aggregate Demand, and Welfare </em></li>
-    <li><em>Income uncertainty, nonlinear dynamics and consumption: a subjective income expectations framework </em></li>
-    <li><em>RATIONALLY INATTENTIVE HETEROGENOUS AGENTS </em></li>
-  </ul>
+<div class="session-head">
+<div>June 3rd · 9:00-10:40 · Room C.409 · Heterogeneous Agents and Household Decisions</div>
+<a class="top-link" href="#top">Back to top ↑</a>
+</div>
+<ul>
+<li><em>Aging, Monetary Policy and Wealth Inequality</em></li>
+<li><em>On the Effects of Inflation on Real Earnings Risk, Aggregate Demand, and Welfare</em> &nbsp; by <a href="#p_alexander-matusche">Alexander Matusche</a></li>
+<li><em>Income uncertainty, nonlinear dynamics and consumption: a subjective income expectations framework</em> &nbsp; by <a href="#p_julio-galvez">Julio Galvez</a></li>
+<li><em>RATIONALLY INATTENTIVE HETEROGENOUS AGENTS</em> &nbsp; by <a href="#p_etienne-briand">Etienne Briand</a></li>
+</ul>
+</div>
+<div class="session-card" id="s_D4">
+<div class="session-head">
+<div>June 3rd · 9:00-10:40 · Room C.403 · Taxation and Labour Supply</div>
+<a class="top-link" href="#top">Back to top ↑</a>
+</div>
+<ul>
+<li><em>Cohabitation, Marriage, and Tax Policy in the United States</em> &nbsp; by <a href="#p_viola-garstenauer">Viola Garstenauer</a></li>
+<li><em>Income Taxes and Entrepreneurship</em> &nbsp; by <a href="#p_yuki-yao">Yuki Yao</a></li>
+<li><em>LABOR M ARKET FLUIDITY, SKILL ACCUMULATION AND THE INSURANCE EFFECTS FROM TAXES</em> &nbsp; by <a href="#p_pedro-silos">Pedro Silos</a></li>
+<li><em>Tax Design with Transition</em> &nbsp; by <a href="#p_musab-kurnaz">Musab Kurnaz</a></li>
+</ul>
+</div>
+<div class="session-card" id="s_D5">
+<div class="session-head">
+<div>June 3rd · 9:00-10:40 · Room A.449 · Production Networks</div>
+<a class="top-link" href="#top">Back to top ↑</a>
+</div>
+<ul>
+<li><em>Tax Rules for Distorted Production Networks</em></li>
+<li><em>Markups Accounting</em> &nbsp; by <a href="#p_sergio-ocampo">Sergio Ocampo</a></li>
+<li><em>Industrial Policy Wars and Inequality: Who Loses and When?</em> &nbsp; by <a href="#p_ziran-ding">Ziran Ding</a></li>
+<li><em>The Transmission of Foreign Shocks in a Networked Economy</em> &nbsp; by <a href="#p_jose-elias-gallegos">José-Elías Gallegos</a></li>
+</ul>
 </div>
 <div class="parallel-title">Parallel Sessions E</div>
-<div class="session-card" id="s_E5">
-  <div class="session-head">
-    <div>June 3rd · 11:00-12:40 · Room A.414 · Misallocation and Aggregate Productivity</div>
-    <a class="top-link" href="#top">Back to top ↑</a>
-  </div>
-  <ul>
-    <li><em>Supply-Side Misallocation Within and Across Farms: Evidence from Italy </em></li>
-    <li><em>Publicly-Listed Firms, Capital Misallocation, and Aggregate Productivity </em></li>
-    <li><em>Bigger and bigger...but also less connected to their hinterland? An anatomy of the economic linkages of large cities </em></li>
-    <li><em>A Quantitative Model for Evaluating Changes in the Duration of Secondary School with an Application to the G8 Reform in Germany </em></li>
-  </ul>
+<div class="session-card" id="s_E1">
+<div class="session-head">
+<div>June 3rd · 11:00-12:40 · Room C.409 · Information and Expectations in Macro <span class="session-tag invited">Invited</span></div>
+<a class="top-link" href="#top">Back to top ↑</a>
 </div>
-<div class="session-card" id="s_E3">
-  <div class="session-head">
-    <div>June 3rd · 11:00-12:40 · Room A.449 · Climate, Disasters, and Macroeconomic Stability</div>
-    <a class="top-link" href="#top">Back to top ↑</a>
-  </div>
-  <ul>
-    <li><em>The new Keynesian climate model </em></li>
-    <li><em>Climate Policy, Job Reallocation, and Unemployment Fluctuations in a Multi-Sector Economy </em></li>
-    <li><em>Stabilization vs. Growth</em> &nbsp; by <a href="#p_juan-m-sanchez">Juan M. Sanchez</a></li>
-    <li><em>Why is Flood Insurance Take-Up Low? Insights from a Dynamic Model </em></li>
-  </ul>
-</div>
-<div class="session-card" id="s_E4">
-  <div class="session-head">
-    <div>June 3rd · 11:00-12:40 · Room A.451 · International Finance and Capital Flows</div>
-    <a class="top-link" href="#top">Back to top ↑</a>
-  </div>
-  <ul>
-    <li><em>Quantitative Easing in Heterogeneous Monetary Union </em></li>
-    <li><em>U.S. Stablecoins and the Global Safe Asset Channel: Private Money Meets Public Debt </em></li>
-    <li><em>World Cycles Revisited: Diverging Trends in Prices and Quantities</em> &nbsp; by <a href="#p_antoine-camous">Antoine Camous</a></li>
-    <li><em>Short-Run and Long-Run News: Evidence from Giant Commodity Discoveries </em></li>
-  </ul>
+<ul>
+<li><em>Market Signals and the Effects of Nominal Disturbances</em> &nbsp; by Ryan Chahrour</li>
+<li><em>The News that Moves Inflation Expectations</em> &nbsp; by <a href="#p_jane-ryngaert">Jane Ryngaert</a></li>
+<li><em>Mirrleesian Carbon Taxation</em> &nbsp; by Alex Kohlhas</li>
+<li><em>Contagious Business Cycles</em> &nbsp; by <a href="#p_karthik-sastry">Karthik Sastry</a></li>
+</ul>
 </div>
 <div class="session-card" id="s_E2">
-  <div class="session-head">
-    <div>June 3rd · 11:00-12:40 · Room C.403 · Asset Prices and Financial Markets</div>
-    <a class="top-link" href="#top">Back to top ↑</a>
-  </div>
-  <ul>
-    <li><em>Hysteresis in Asset Liquidity </em></li>
-    <li><em>The Effect of Market Power on the Risk-free rate and the Equity Premium </em></li>
-    <li><em>The Return on Capital in Disaggregated Economies: Theory and Measurement </em></li>
-    <li><em>Firm Heterogeneity and Adverse Selection in External Finance: Micro Evidence and Macro Implications </em></li>
-  </ul>
+<div class="session-head">
+<div>June 3rd · 11:00-12:40 · Room C.403 · Asset Prices and Financial Markets</div>
+<a class="top-link" href="#top">Back to top ↑</a>
+</div>
+<ul>
+<li><em>Hysteresis in Asset Liquidity</em> &nbsp; by <a href="#p_lu-wang">Lu Wang</a></li>
+<li><em>The Effect of Market Power on the Risk-free rate and the Equity Premium</em></li>
+<li><em>The Return on Capital in Disaggregated Economies: Theory and Measurement</em> &nbsp; by <a href="#p_andrea-chiavari">andrea chiavari</a></li>
+<li><em>Firm Heterogeneity and Adverse Selection in External Finance: Micro Evidence and Macro Implications</em> &nbsp; by <a href="#p_xing-guo">Xing Guo</a></li>
+</ul>
+</div>
+<div class="session-card" id="s_E3">
+<div class="session-head">
+<div>June 3rd · 11:00-12:40 · Room A.449 · Climate, Disasters, and Macroeconomic Stability</div>
+<a class="top-link" href="#top">Back to top ↑</a>
+</div>
+<ul>
+<li><em>The new Keynesian climate model</em></li>
+<li><em>Climate Policy, Job Reallocation, and Unemployment Fluctuations in a Multi-Sector Economy</em> &nbsp; by <a href="#p_lilia-karnizova">Lilia Karnizova</a></li>
+<li><em>Stabilization vs. Growth</em> &nbsp; by <a href="#p_juan-m-sanchez">Juan M. Sanchez</a></li>
+<li><em>Why is Flood Insurance Take-Up Low? Insights from a Dynamic Model</em> &nbsp; by <a href="#p_daniel-jonas-schmidt">Daniel Jonas Schmidt</a></li>
+</ul>
+</div>
+<div class="session-card" id="s_E4">
+<div class="session-head">
+<div>June 3rd · 11:00-12:40 · Room A.451 · International Finance and Capital Flows</div>
+<a class="top-link" href="#top">Back to top ↑</a>
+</div>
+<ul>
+<li><em>Quantitative Easing in Heterogeneous Monetary Union</em> &nbsp; by <a href="#p_nastasia-henry">Nastasia Henry</a></li>
+<li><em>U.S. Stablecoins and the Global Safe Asset Channel: Private Money Meets Public Debt</em> &nbsp; by <a href="#p_daniele-siena">Daniele Siena</a></li>
+<li><em>World Cycles Revisited: Diverging Trends in Prices and Quantities</em> &nbsp; by <a href="#p_antoine-camous">Antoine Camous</a></li>
+<li><em>Short-Run and Long-Run News: Evidence from Giant Commodity Discoveries</em> &nbsp; by <a href="#p_laure-simon">Laure Simon</a></li>
+</ul>
+</div>
+<div class="session-card" id="s_E5">
+<div class="session-head">
+<div>June 3rd · 11:00-12:40 · Room A.414 · Misallocation and Aggregate Productivity</div>
+<a class="top-link" href="#top">Back to top ↑</a>
+</div>
+<ul>
+<li><em>Supply-Side Misallocation Within and Across Farms: Evidence from Italy</em> &nbsp; by <a href="#p_swapnika-rachapalli">Swapnika Rachapalli</a></li>
+<li><em>Publicly-Listed Firms, Capital Misallocation, and Aggregate Productivity</em> &nbsp; by <a href="#p_stephen-ayerst">Stephen Ayerst</a></li>
+<li><em>Bigger and bigger...but also less connected to their hinterland? An anatomy of the economic linkages of large cities</em> &nbsp; by <a href="#p_florian-mayneris">Florian Mayneris</a></li>
+<li><em>A Quantitative Model for Evaluating Changes in the Duration of Secondary School with an Application to the G8 Reform in Germany</em> &nbsp; by <a href="#p_lara-klein">Lara Klein</a></li>
+</ul>
 </div>
 <div class="session-card" id="s_E6">
-  <div class="session-head">
-    <div>June 3rd · 11:00-12:40 · Room C.406 · Sovereign Debt and Default</div>
-    <a class="top-link" href="#top">Back to top ↑</a>
-  </div>
-  <ul>
-    <li><em>Sovereign exposure to the Global Financial Cycle and unconventional monetary policy in emerging markets </em></li>
-    <li><em>Too Much of a Good Thing? Safe Assets, Spillovers, and the Lack of Fiscal Policy Coordination </em></li>
-    <li><em>Irreversibility, Lumpy Investment, and the Dynamics of Public Capital and Sovereign Debt </em></li>
-    <li><em>The Role of Market Liquidity in Public Debt Sustainability </em></li>
-  </ul>
+<div class="session-head">
+<div>June 3rd · 11:00-12:40 · Room C.406 · Sovereign Debt and Default</div>
+<a class="top-link" href="#top">Back to top ↑</a>
 </div>
-<div class="session-card" id="s_E1">
-  <div class="session-head">
-    <div>June 3rd · 11:00-12:40 · Room C.409 · Information and Expectations in Macro <span class="session-tag invited">Invited</span></div>
-    <a class="top-link" href="#top">Back to top ↑</a>
-  </div>
-  <ul>
-    <li><em>Market Signals and the Effects of Nominal Disturbances</em> &nbsp; by <a href="#p_ryan-chahrour">Ryan Chahrour</a></li>
-    <li><em>The News that Moves Inflation Expectations</em> &nbsp; by <a href="#p_jane-ryngaert">Jane Ryngaert</a></li>
-    <li><em>Mirrleesian Carbon Taxation</em> &nbsp; by <a href="#p_alex-kohlhas">Alex Kohlhas</a></li>
-    <li><em>Contagious Business Cycles</em> &nbsp; by <a href="#p_karthik-sastry">Karthik Sastry</a></li>
-  </ul>
+<ul>
+<li><em>Sovereign exposure to the Global Financial Cycle and unconventional monetary policy in emerging markets</em> &nbsp; by <a href="#p_anatole-meunier">Anatole Meunier</a></li>
+<li><em>Too Much of a Good Thing? Safe Assets, Spillovers, and the Lack of Fiscal Policy Coordination</em></li>
+<li><em>Irreversibility, Lumpy Investment, and the Dynamics of Public Capital and Sovereign Debt</em> &nbsp; by <a href="#p_alok-johri">Alok Johri</a></li>
+<li><em>The Role of Market Liquidity in Public Debt Sustainability</em> &nbsp; by <a href="#p_pierre-edouard-collignon">Pierre-Edouard Collignon</a></li>
+</ul>
 </div>
 <div class="parallel-title">Parallel Sessions F</div>
-<div class="session-card" id="s_F3">
-  <div class="session-head">
-    <div>June 3rd · 15:30-17:10 · Room A.449 · Household Finance and Credit Markets</div>
-    <a class="top-link" href="#top">Back to top ↑</a>
-  </div>
-  <ul>
-    <li><em>The Changing Value of Employment </em></li>
-    <li><em>Signaling and Temptation </em></li>
-    <li><em>Rethinking Mortgage Design: The Trade-off Between Household Insurance and Financial Stability* </em></li>
-    <li><em>Explaining Contract Heterogeneity in the Credit Card Market </em></li>
-  </ul>
+<div class="session-card" id="s_F1">
+<div class="session-head">
+<div>June 3rd · 15:30-17:10 · Room C.409 · Optimal Monetary Policy</div>
+<a class="top-link" href="#top">Back to top ↑</a>
+</div>
+<ul>
+<li><em>The Third Mandate</em></li>
+<li><em>On looking through sectoral shocks: The role of (de-)anchored inflation expectations</em> &nbsp; by <a href="#p_joost-roettger">Joost Roettger</a></li>
+<li><em>Ramsey Optimal Inflation with Heterogeneous Firms</em> &nbsp; by <a href="#p_henning-weber">Henning Weber</a></li>
+<li><em>Central  Bank Losses and Inflation: 350 Years of Evidence</em> &nbsp; by <a href="#p_martin-kliem">Martin Kliem</a></li>
+</ul>
 </div>
 <div class="session-card" id="s_F2">
-  <div class="session-head">
-    <div>June 3rd · 15:30-17:10 · Room C.403 · Financial Frictions and Business Cycles</div>
-    <a class="top-link" href="#top">Back to top ↑</a>
-  </div>
-  <ul>
-    <li><em>Aggregate Capital and Informality in High Inflation Economies </em></li>
-    <li><em>Dry Firms, Deep Recessions: Corporate Payouts and Aggregate Dynamics </em></li>
-    <li><em>Asset Purchases in a Monetary Union with Default and Liquidity Risks</em> &nbsp; by <a href="#p_nora-traum">Nora Traum</a></li>
-    <li><em>Firm Cyclicality and Financial Frictions </em></li>
-  </ul>
+<div class="session-head">
+<div>June 3rd · 15:30-17:10 · Room C.403 · Financial Frictions and Business Cycles</div>
+<a class="top-link" href="#top">Back to top ↑</a>
 </div>
-<div class="session-card" id="s_F1">
-  <div class="session-head">
-    <div>June 3rd · 15:30-17:10 · Room C.409 · Optimal Monetary Policy</div>
-    <a class="top-link" href="#top">Back to top ↑</a>
-  </div>
-  <ul>
-    <li><em>The Third Mandate </em></li>
-    <li><em>On looking through sectoral shocks: The role of (de-)anchored inflation expectations </em></li>
-    <li><em>Ramsey Optimal Inflation with Heterogeneous Firms </em></li>
-    <li><em>Central  Bank Losses and Inflation: 350 Years of Evidence </em></li>
-  </ul>
+<ul>
+<li><em>Aggregate Capital and Informality in High Inflation Economies</em> &nbsp; by <a href="#p_gabriel-devoto">Gabriel Devoto</a></li>
+<li><em>Dry Firms, Deep Recessions: Corporate Payouts and Aggregate Dynamics</em></li>
+<li><em>Asset Purchases in a Monetary Union with Default and Liquidity Risks</em> &nbsp; by Nora Traum</li>
+<li><em>Firm Cyclicality and Financial Frictions</em> &nbsp; by <a href="#p_filip-rozsypal">Filip Rozsypal</a></li>
+</ul>
+</div>
+<div class="session-card" id="s_F3">
+<div class="session-head">
+<div>June 3rd · 15:30-17:10 · Room A.449 · Household Finance and Credit Markets</div>
+<a class="top-link" href="#top">Back to top ↑</a>
+</div>
+<ul>
+<li><em>The Changing Value of Employment</em> &nbsp; by <a href="#p_davide-alonzo">Davide Alonzo</a></li>
+<li><em>Signaling and Temptation</em> &nbsp; by <a href="#p_joaquin-saldain">Joaquin Saldain</a></li>
+<li><em>Rethinking Mortgage Design: The Trade-off Between Household Insurance and Financial Stability*</em> &nbsp; by <a href="#p_bulent-guler">Bulent Guler</a></li>
+<li><em>Explaining Contract Heterogeneity in the Credit Card Market</em> &nbsp; by <a href="#p_burcu-eyigungor">Burcu Eyigungor</a></li>
+</ul>
 </div>
 </section>
 <section class="participants-section">
 <h2>Participants</h2>
 <div class="participants-grid">
-  <div class="participant-card" id="p_alex-kohlhas">
-    <div class="participant-name">Alex Kohlhas</div>
-    <div class="participant-sessions"><a href="#s_E1">Information and Expectations in Macro (E1)</a></div>
-  </div>
-  <div class="participant-card" id="p_antoine-camous">
-    <div class="participant-name">Antoine Camous</div>
-    <div class="participant-sessions"><a href="#s_E4">International Finance and Capital Flows (E4)</a></div>
-  </div>
-  <div class="participant-card" id="p_camilo-granados">
-    <div class="participant-name">Camilo Granados</div>
-    <div class="participant-sessions"><a href="#s_D1">Young Economists Session (D1)</a></div>
-  </div>
-  <div class="participant-card" id="p_carter-mix">
-    <div class="participant-name">Carter Mix</div>
-    <div class="participant-sessions"><a href="#s_C1">Dynamic Trade (C1)</a></div>
-  </div>
-  <div class="participant-card" id="p_diego-restuccia">
-    <div class="participant-name">Diego Restuccia</div>
-    <div class="participant-sessions"><a href="#s_B1">Macroeconomic Development (B1)</a></div>
-  </div>
-  <div class="participant-card" id="p_duc-nguyen">
-    <div class="participant-name">Duc Nguyen</div>
-    <div class="participant-sessions"><a href="#s_B1">Macroeconomic Development (B1)</a></div>
-  </div>
-  <div class="participant-card" id="p_edvin-ahlander">
-    <div class="participant-name">Edvin Ahlander</div>
-    <div class="participant-sessions"><a href="#s_B2">Monetary Policy I (B2)</a></div>
-  </div>
-  <div class="participant-card" id="p_gustavo-da-souza">
-    <div class="participant-name">Gustavo da Souza</div>
-    <div class="participant-sessions"><a href="#s_A1">Automation, AI, and Labour Markets (A1)</a></div>
-  </div>
-  <div class="participant-card" id="p_henry-siu">
-    <div class="participant-name">Henry Siu</div>
-    <div class="participant-sessions"><a href="#s_A1">Automation, AI, and Labour Markets (A1)</a></div>
-  </div>
-  <div class="participant-card" id="p_jane-ryngaert">
-    <div class="participant-name">Jane Ryngaert</div>
-    <div class="participant-sessions"><a href="#s_E1">Information and Expectations in Macro (E1)</a></div>
-  </div>
-  <div class="participant-card" id="p_joseph-steinberg">
-    <div class="participant-name">Joseph Steinberg</div>
-    <div class="participant-sessions"><a href="#s_C1">Dynamic Trade (C1)</a></div>
-  </div>
-  <div class="participant-card" id="p_juan-m-sanchez">
-    <div class="participant-name">Juan M. Sanchez</div>
-    <div class="participant-sessions"><a href="#s_E3">Climate, Disasters, and Macroeconomic Stability (E3)</a></div>
-  </div>
-  <div class="participant-card" id="p_karthik-sastry">
-    <div class="participant-name">Karthik Sastry</div>
-    <div class="participant-sessions"><a href="#s_E1">Information and Expectations in Macro (E1)</a></div>
-  </div>
-  <div class="participant-card" id="p_kristina-manysheva">
-    <div class="participant-name">Kristina Manysheva</div>
-    <div class="participant-sessions"><a href="#s_B1">Macroeconomic Development (B1)</a></div>
-  </div>
-  <div class="participant-card" id="p_matias-vieyra">
-    <div class="participant-name">Matias Vieyra</div>
-    <div class="participant-sessions"><a href="#s_A4">Housing Markets (A4)</a></div>
-  </div>
-  <div class="participant-card" id="p_michael-devereux">
-    <div class="participant-name">Michael Devereux</div>
-    <div class="participant-sessions"><a href="#s_C5">Exchange Rates and Open Economy (C5)</a></div>
-  </div>
-  <div class="participant-card" id="p_nora-traum">
-    <div class="participant-name">Nora Traum</div>
-    <div class="participant-sessions"><a href="#s_F2">Financial Frictions and Business Cycles (F2)</a></div>
-  </div>
-  <div class="participant-card" id="p_oliver-vogt">
-    <div class="participant-name">Oliver Vogt</div>
-    <div class="participant-sessions"><a href="#s_D1">Young Economists Session (D1)</a></div>
-  </div>
-  <div class="participant-card" id="p_pau-pujolas">
-    <div class="participant-name">Pau Pujolas</div>
-    <div class="participant-sessions"><a href="#s_C1">Dynamic Trade (C1)</a></div>
-  </div>
-  <div class="participant-card" id="p_paul-gaggl">
-    <div class="participant-name">Paul Gaggl</div>
-    <div class="participant-sessions"><a href="#s_A1">Automation, AI, and Labour Markets (A1)</a></div>
-  </div>
-  <div class="participant-card" id="p_rafael-berriel">
-    <div class="participant-name">Rafael Berriel</div>
-    <div class="participant-sessions"><a href="#s_D1">Young Economists Session (D1)</a></div>
-  </div>
-  <div class="participant-card" id="p_ronald-wolthoff">
-    <div class="participant-name">Ronald Wolthoff</div>
-    <div class="participant-sessions"><a href="#s_A5">Expectations and Beliefs (A5)</a></div>
-  </div>
-  <div class="participant-card" id="p_ryan-chahrour">
-    <div class="participant-name">Ryan Chahrour</div>
-    <div class="participant-sessions"><a href="#s_E1">Information and Expectations in Macro (E1)</a></div>
-  </div>
-  <div class="participant-card" id="p_santiago-caicedo">
-    <div class="participant-name">Santiago Caicedo</div>
-    <div class="participant-sessions"><a href="#s_B1">Macroeconomic Development (B1)</a></div>
-  </div>
-  <div class="participant-card" id="p_tasso-adamopoulos">
-    <div class="participant-name">Tasso Adamopoulos</div>
-    <div class="participant-sessions"><a href="#s_C1">Dynamic Trade (C1)</a></div>
-  </div>
-  <div class="participant-card" id="p_zheng-liu">
-    <div class="participant-name">Zheng Liu</div>
-    <div class="participant-sessions"><a href="#s_A1">Automation, AI, and Labour Markets (A1)</a></div>
-  </div>
+<div class="participant-card" id="p_jonathan-adams">
+<div class="participant-name">Jonathan Adams</div>
+<div class="participant-meta">Federal Reserve Bank of Kansas City</div>
+<div class="participant-meta"><a href="mailto:adamsjonathanj@gmail.com">adamsjonathanj@gmail.com</a></div>
+<div class="participant-sessions"><a href="#s_B4">Fiscal Policy and Household Behavior (B4)</a></div>
+</div>
+<div class="participant-card" id="p_edvin-ahlander">
+<div class="participant-name">Edvin Ahlander</div>
+<div class="participant-meta">IIES, Stockholm University</div>
+<div class="participant-meta"><a href="mailto:edvin.ahlander@iies.su.se">edvin.ahlander@iies.su.se</a></div>
+<div class="participant-sessions"><a href="#s_B2">Monetary Policy I (B2)</a></div>
+</div>
+<div class="participant-card" id="p_samson-aklobo">
+<div class="participant-name">Samson Aklobo</div>
+<div class="participant-meta">Université du Québec à Montréal (UQAM)</div>
+<div class="participant-meta"><a href="mailto:aklobo.mawutondji_samson_corneil@courrier.uqam.ca">aklobo.mawutondji_samson_corneil@courrier.uqam.ca</a></div>
+<div class="participant-empty">No linked paper in the program.</div>
+</div>
+<div class="participant-card" id="p_felipe-alduino-alves">
+<div class="participant-name">Felipe Alduino Alves</div>
+<div class="participant-meta">Bank of Canada</div>
+<div class="participant-meta"><a href="mailto:felipe.a.alves0@gmail.com">felipe.a.alves0@gmail.com</a></div>
+<div class="participant-sessions"><a href="#s_B4">Fiscal Policy and Household Behavior (B4)</a></div>
+</div>
+<div class="participant-card" id="p_davide-alonzo">
+<div class="participant-name">Davide Alonzo</div>
+<div class="participant-meta">Université de Montréal</div>
+<div class="participant-meta"><a href="mailto:davidealonzo03@gmail.com">davidealonzo03@gmail.com</a></div>
+<div class="participant-sessions"><a href="#s_F3">Household Finance and Credit Markets (F3)</a></div>
+</div>
+<div class="participant-card" id="p_pedro-armada">
+<div class="participant-name">Pedro Armada</div>
+<div class="participant-meta">Halle Institute for Economic Research (IWH)</div>
+<div class="participant-meta"><a href="mailto:pedro.armada@iwh-halle.de">pedro.armada@iwh-halle.de</a></div>
+<div class="participant-sessions"><a href="#s_C4">Innovation, Market Power, and Growth (C4)</a></div>
+</div>
+<div class="participant-card" id="p_stephen-ayerst">
+<div class="participant-name">Stephen Ayerst</div>
+<div class="participant-meta">international monetary fund</div>
+<div class="participant-meta"><a href="mailto:stephen.b.ayerst@gmail.com">stephen.b.ayerst@gmail.com</a></div>
+<div class="participant-sessions"><a href="#s_E5">Misallocation and Aggregate Productivity (E5)</a></div>
+</div>
+<div class="participant-card" id="p_dipankar-basnet">
+<div class="participant-name">Dipankar Basnet</div>
+<div class="participant-meta">HEC Montréal</div>
+<div class="participant-meta"><a href="mailto:dipankar.basnet@hec.ca">dipankar.basnet@hec.ca</a></div>
+<div class="participant-meta">Dietary: Vegetarian - No Egg - But dairy is fine</div>
+<div class="participant-empty">No linked paper in the program.</div>
+</div>
+<div class="participant-card" id="p_suman-basu">
+<div class="participant-name">Suman Basu</div>
+<div class="participant-meta">International Monetary Fund</div>
+<div class="participant-meta"><a href="mailto:sbasu2@imf.org">sbasu2@imf.org</a></div>
+<div class="participant-sessions"><a href="#s_C5">Exchange Rates and Open Economy (C5)</a></div>
+</div>
+<div class="participant-card" id="p_rafael-berriel">
+<div class="participant-name">Rafael Berriel</div>
+<div class="participant-meta">Stanford University</div>
+<div class="participant-meta"><a href="mailto:rberriel@stanford.edu">rberriel@stanford.edu</a></div>
+<div class="participant-sessions"><a href="#s_D1">Young Economists Session (D1)</a></div>
+</div>
+<div class="participant-card" id="p_etienne-briand">
+<div class="participant-name">Etienne Briand</div>
+<div class="participant-meta">Université du Québec à Montréal (UQAM)</div>
+<div class="participant-meta"><a href="mailto:etiennebriand1@gmail.com">etiennebriand1@gmail.com</a></div>
+<div class="participant-sessions"><a href="#s_D3">Heterogeneous Agents and Household Decisions (D3)</a></div>
+</div>
+<div class="participant-card" id="p_bettina-brueggemann">
+<div class="participant-name">Bettina Brueggemann</div>
+<div class="participant-meta">McMaster University</div>
+<div class="participant-meta"><a href="mailto:brueggeb@mcmaster.ca">brueggeb@mcmaster.ca</a></div>
+<div class="participant-sessions"><a href="#s_A3">Firm Dynamics (A3)</a></div>
+</div>
+<div class="participant-card" id="p_christian-bustamante">
+<div class="participant-name">Christian Bustamante</div>
+<div class="participant-meta">Banque du Canada</div>
+<div class="participant-meta"><a href="mailto:cbustaam@gmail.com">cbustaam@gmail.com</a></div>
+<div class="participant-empty">No linked paper in the program.</div>
+</div>
+<div class="participant-card" id="p_antoine-camous">
+<div class="participant-name">Antoine Camous</div>
+<div class="participant-meta">Banque de France</div>
+<div class="participant-meta"><a href="mailto:cantoine06@hotmail.com">cantoine06@hotmail.com</a></div>
+<div class="participant-sessions"><a href="#s_E4">International Finance and Capital Flows (E4)</a></div>
+</div>
+<div class="participant-card" id="p_rui-castro">
+<div class="participant-name">Rui Castro</div>
+<div class="participant-meta">McGill University</div>
+<div class="participant-meta"><a href="mailto:rui.castro@mcgill.ca">rui.castro@mcgill.ca</a></div>
+<div class="participant-sessions"><a href="#s_C3">Inequality and Wealth Dynamics (C3)</a></div>
+</div>
+<div class="participant-card" id="p_edouard-challe">
+<div class="participant-name">Edouard CHALLE</div>
+<div class="participant-meta">Paris School of Economics</div>
+<div class="participant-meta"><a href="mailto:edouard.challe@gmail.com">edouard.challe@gmail.com</a></div>
+<div class="participant-sessions"><a href="#s_B5">Labour Markets (B5)</a></div>
+</div>
+<div class="participant-card" id="p_andrea-chiavari">
+<div class="participant-name">andrea chiavari</div>
+<div class="participant-meta">University of Oxford</div>
+<div class="participant-meta"><a href="mailto:andrea.chiavari.private@gmail.com">andrea.chiavari.private@gmail.com</a></div>
+<div class="participant-sessions"><a href="#s_E2">Asset Prices and Financial Markets (E2)</a></div>
+</div>
+<div class="participant-card" id="p_edda-claus">
+<div class="participant-name">Edda Claus</div>
+<div class="participant-meta">Wilfrid Laurier University</div>
+<div class="participant-meta"><a href="mailto:eclaus@wlu.ca">eclaus@wlu.ca</a></div>
+<div class="participant-empty">No linked paper in the program.</div>
+</div>
+<div class="participant-card" id="p_pierre-edouard-collignon">
+<div class="participant-name">Pierre-Edouard Collignon</div>
+<div class="participant-meta">Université Laval</div>
+<div class="participant-meta"><a href="mailto:pierre.edouard.collignon@gmail.com">pierre.edouard.collignon@gmail.com</a></div>
+<div class="participant-sessions"><a href="#s_E6">Sovereign Debt and Default (E6)</a></div>
+</div>
+<div class="participant-card" id="p_german-cubas">
+<div class="participant-name">German Cubas</div>
+<div class="participant-meta">University of Houston</div>
+<div class="participant-meta"><a href="mailto:germancubas@gmail.com">germancubas@gmail.com</a></div>
+<div class="participant-empty">No linked paper in the program.</div>
+</div>
+<div class="participant-card" id="p_piero-de-dominicis">
+<div class="participant-name">Piero De Dominicis</div>
+<div class="participant-meta">Bocconi University</div>
+<div class="participant-meta"><a href="mailto:piero.dedominicis@phd.unibocconi.it">piero.dedominicis@phd.unibocconi.it</a></div>
+<div class="participant-sessions"><a href="#s_B6">Labour Search and Matching (B6)</a></div>
+</div>
+<div class="participant-card" id="p_diego-de-sousa-rodrigues">
+<div class="participant-name">Diego de Sousa Rodrigues</div>
+<div class="participant-meta">Université du Québec à Montréal (UQAM)</div>
+<div class="participant-meta"><a href="mailto:de_sousa_rodrigues.diego@uqam.ca">de_sousa_rodrigues.diego@uqam.ca</a></div>
+<div class="participant-sessions"><a href="#s_C6">Monetary Policy II (C6)</a></div>
+</div>
+<div class="participant-card" id="p_gabriel-devoto">
+<div class="participant-name">Gabriel Devoto</div>
+<div class="participant-meta">International Monetary Fund</div>
+<div class="participant-meta"><a href="mailto:gdevoto@imf.org">gdevoto@imf.org</a></div>
+<div class="participant-sessions"><a href="#s_F2">Financial Frictions and Business Cycles (F2)</a></div>
+</div>
+<div class="participant-card" id="p_awa-djibo-diango">
+<div class="participant-name">Awa Djibo Diango</div>
+<div class="participant-meta">Université du Québec à Montréal (UQAM)</div>
+<div class="participant-meta"><a href="mailto:diango.awa_djibo@courrier.uqam.ca">diango.awa_djibo@courrier.uqam.ca</a></div>
+<div class="participant-meta">Halal.</div>
+<div class="participant-empty">No linked paper in the program.</div>
+</div>
+<div class="participant-card" id="p_anthony-diercks">
+<div class="participant-name">Anthony Diercks</div>
+<div class="participant-meta">Board</div>
+<div class="participant-meta"><a href="mailto:anthony.m.diercks@frb.gov">anthony.m.diercks@frb.gov</a></div>
+<div class="participant-sessions"><a href="#s_A5">Expectations and Beliefs (A5)</a></div>
+</div>
+<div class="participant-card" id="p_ziran-ding">
+<div class="participant-name">Ziran Ding</div>
+<div class="participant-meta">University of St Andrews</div>
+<div class="participant-meta"><a href="mailto:josh.ding@st-andrews.ac.uk">josh.ding@st-andrews.ac.uk</a></div>
+<div class="participant-sessions"><a href="#s_D5">Production Networks (D5)</a></div>
+</div>
+<div class="participant-card" id="p_juste-djabakou">
+<div class="participant-name">Juste Djabakou</div>
+<div class="participant-meta">Université de Montréal</div>
+<div class="participant-meta"><a href="mailto:juste.djabakou@umontreal.ca">juste.djabakou@umontreal.ca</a></div>
+<div class="participant-empty">No linked paper in the program.</div>
+</div>
+<div class="participant-card" id="p_kadidiatou-doucoure">
+<div class="participant-name">Kadidiatou Doucoure</div>
+<div class="participant-meta">Loyola University Maryland</div>
+<div class="participant-meta"><a href="mailto:kdoucoure@loyola.edu">kdoucoure@loyola.edu</a></div>
+<div class="participant-empty">No linked paper in the program.</div>
+</div>
+<div class="participant-card" id="p_thorsten-drautzburg">
+<div class="participant-name">Thorsten Drautzburg</div>
+<div class="participant-meta">federal reserve bank of philadelphia</div>
+<div class="participant-meta"><a href="mailto:tdrautzburg@gmail.com">tdrautzburg@gmail.com</a></div>
+<div class="participant-sessions"><a href="#s_A2">Monetary Policy Communication (A2)</a></div>
+</div>
+<div class="participant-card" id="p_william-dupor">
+<div class="participant-name">William Dupor</div>
+<div class="participant-meta">Federal Reserve Bank of St Louis</div>
+<div class="participant-meta"><a href="mailto:billdupor@gmail.com">billdupor@gmail.com</a></div>
+<div class="participant-sessions"><a href="#s_B3">Inflation Dynamics (B3)</a></div>
+</div>
+<div class="participant-card" id="p_burcu-eyigungor">
+<div class="participant-name">Burcu Eyigungor</div>
+<div class="participant-meta">Federal Reserve Bank of Philadelphia</div>
+<div class="participant-meta"><a href="mailto:burcu.eyigungor@gmail.com">burcu.eyigungor@gmail.com</a></div>
+<div class="participant-sessions"><a href="#s_F3">Household Finance and Credit Markets (F3)</a></div>
+</div>
+<div class="participant-card" id="p_jad-falou">
+<div class="participant-name">Jad Falou</div>
+<div class="participant-meta">Université Paris Dauphine – PSL</div>
+<div class="participant-meta"><a href="mailto:jad.falou@dauphine.eu">jad.falou@dauphine.eu</a></div>
+<div class="participant-empty">No linked paper in the program.</div>
+</div>
+<div class="participant-card" id="p_jose-elias-gallegos">
+<div class="participant-name">José-Elías Gallegos</div>
+<div class="participant-meta">Banco de España</div>
+<div class="participant-meta"><a href="mailto:jose.elias.gallegos@bde.es">jose.elias.gallegos@bde.es</a></div>
+<div class="participant-sessions"><a href="#s_D5">Production Networks (D5)</a></div>
+</div>
+<div class="participant-card" id="p_julio-galvez">
+<div class="participant-name">Julio Galvez</div>
+<div class="participant-meta">CUNEF Universidad</div>
+<div class="participant-meta"><a href="mailto:julio.galvez@cunef.edu">julio.galvez@cunef.edu</a></div>
+<div class="participant-sessions"><a href="#s_D3">Heterogeneous Agents and Household Decisions (D3)</a></div>
+</div>
+<div class="participant-card" id="p_oliver-gansfort">
+<div class="participant-name">Oliver Gansfort</div>
+<div class="participant-meta">University of Cologne</div>
+<div class="participant-meta"><a href="mailto:gansfort@wiso.uni-koeln.de">gansfort@wiso.uni-koeln.de</a></div>
+<div class="participant-sessions"><a href="#s_C4">Innovation, Market Power, and Growth (C4)</a></div>
+</div>
+<div class="participant-card" id="p_viola-garstenauer">
+<div class="participant-name">Viola Garstenauer</div>
+<div class="participant-meta">TU Wien</div>
+<div class="participant-meta"><a href="mailto:viola.garstenauer@drei.at">viola.garstenauer@drei.at</a></div>
+<div class="participant-sessions"><a href="#s_D4">Taxation and Labour Supply (D4)</a></div>
+</div>
+<div class="participant-card" id="p_francois-gourio">
+<div class="participant-name">Francois Gourio</div>
+<div class="participant-meta">Federal Reserve Bank of Chicago</div>
+<div class="participant-meta"><a href="mailto:francois.gourio@chi.frb.org">francois.gourio@chi.frb.org</a></div>
+<div class="participant-empty">No linked paper in the program.</div>
+</div>
+<div class="participant-card" id="p_camilo-granados">
+<div class="participant-name">Camilo Granados</div>
+<div class="participant-meta">University of Texas at Dallas</div>
+<div class="participant-meta"><a href="mailto:camilo.granados@utdallas.edu">camilo.granados@utdallas.edu</a></div>
+<div class="participant-sessions"><a href="#s_C5">Exchange Rates and Open Economy (C5)</a> · <a href="#s_D1">Young Economists Session (D1)</a></div>
+</div>
+<div class="participant-card" id="p_bulent-guler">
+<div class="participant-name">Bulent Guler</div>
+<div class="participant-meta">Indiana University</div>
+<div class="participant-meta"><a href="mailto:bguler@iu.edu">bguler@iu.edu</a></div>
+<div class="participant-sessions"><a href="#s_F3">Household Finance and Credit Markets (F3)</a></div>
+</div>
+<div class="participant-card" id="p_xing-guo">
+<div class="participant-name">Xing Guo</div>
+<div class="participant-meta">Banque du Canada</div>
+<div class="participant-meta"><a href="mailto:guoxing.econ@gmail.com">guoxing.econ@gmail.com</a></div>
+<div class="participant-sessions"><a href="#s_E2">Asset Prices and Financial Markets (E2)</a></div>
+</div>
+<div class="participant-card" id="p_timo-haber">
+<div class="participant-name">Timo Haber</div>
+<div class="participant-meta">Dutch Central Bann</div>
+<div class="participant-meta"><a href="mailto:habertimo@gmail.com">habertimo@gmail.com</a></div>
+<div class="participant-empty">No linked paper in the program.</div>
+</div>
+<div class="participant-card" id="p_ina-hajdini">
+<div class="participant-name">Ina Hajdini</div>
+<div class="participant-meta">Federal Reserve Bank of Cleveland</div>
+<div class="participant-meta"><a href="mailto:ina.hajdini@clev.frb.org">ina.hajdini@clev.frb.org</a></div>
+<div class="participant-sessions"><a href="#s_A2">Monetary Policy Communication (A2)</a></div>
+</div>
+<div class="participant-card" id="p_nastasia-henry">
+<div class="participant-name">Nastasia Henry</div>
+<div class="participant-meta">Aix-Marseille University</div>
+<div class="participant-meta"><a href="mailto:Nastasia.henry@univ-amu.fr">Nastasia.henry@univ-amu.fr</a></div>
+<div class="participant-sessions"><a href="#s_E4">International Finance and Capital Flows (E4)</a></div>
+</div>
+<div class="participant-card" id="p_patrick-huertgen">
+<div class="participant-name">Patrick Huertgen</div>
+<div class="participant-meta">Deutsche Bundesbank</div>
+<div class="participant-meta"><a href="mailto:p.huertgen2@gmx.de">p.huertgen2@gmx.de</a></div>
+<div class="participant-meta">strictly gluten-free (celiac disease)</div>
+<div class="participant-empty">No linked paper in the program.</div>
+</div>
+<div class="participant-card" id="p_tomer-ifergane">
+<div class="participant-name">Tomer Ifergane</div>
+<div class="participant-meta">Tel Aviv University</div>
+<div class="participant-meta"><a href="mailto:iftomer@gmail.com">iftomer@gmail.com</a></div>
+<div class="participant-empty">No linked paper in the program.</div>
+</div>
+<div class="participant-card" id="p_anni-isojaervi">
+<div class="participant-name">Anni Isojaervi</div>
+<div class="participant-meta">Federal Reserve Board</div>
+<div class="participant-meta"><a href="mailto:anni.t.isojaervi@frb.gov">anni.t.isojaervi@frb.gov</a></div>
+<div class="participant-sessions"><a href="#s_C3">Inequality and Wealth Dynamics (C3)</a></div>
+</div>
+<div class="participant-card" id="p_raphael-jananji">
+<div class="participant-name">Raphaël Jananji</div>
+<div class="participant-meta">University of Montreal</div>
+<div class="participant-meta"><a href="mailto:raphael.jananji@umontreal.ca">raphael.jananji@umontreal.ca</a></div>
+<div class="participant-meta">I will only be attending the Pre-conference Student Workshop</div>
+<div class="participant-empty">No linked paper in the program.</div>
+</div>
+<div class="participant-card" id="p_alok-johri">
+<div class="participant-name">Alok Johri</div>
+<div class="participant-meta">McMaster University</div>
+<div class="participant-meta"><a href="mailto:johria@mcmaster.ca">johria@mcmaster.ca</a></div>
+<div class="participant-meta">Allergic to yeast so no bread etc thanks.</div>
+<div class="participant-sessions"><a href="#s_E6">Sovereign Debt and Default (E6)</a></div>
+</div>
+<div class="participant-card" id="p_marek-kapicka">
+<div class="participant-name">Marek Kapicka</div>
+<div class="participant-meta">CERGE-EI</div>
+<div class="participant-meta"><a href="mailto:mkapicka@gmail.com">mkapicka@gmail.com</a></div>
+<div class="participant-empty">No linked paper in the program.</div>
+</div>
+<div class="participant-card" id="p_ozgur-karabulut">
+<div class="participant-name">Ozgur Karabulut</div>
+<div class="participant-meta">Le Mans University</div>
+<div class="participant-meta"><a href="mailto:ozgur_ata.karabulut@univ-lemans.fr">ozgur_ata.karabulut@univ-lemans.fr</a></div>
+<div class="participant-sessions"><a href="#s_C3">Inequality and Wealth Dynamics (C3)</a></div>
+</div>
+<div class="participant-card" id="p_lilia-karnizova">
+<div class="participant-name">Lilia Karnizova</div>
+<div class="participant-meta">University of Ottwa</div>
+<div class="participant-meta"><a href="mailto:lkarnizo@uottawa.ca">lkarnizo@uottawa.ca</a></div>
+<div class="participant-sessions"><a href="#s_E3">Climate, Disasters, and Macroeconomic Stability (E3)</a></div>
+</div>
+<div class="participant-card" id="p_alexey-khazanov">
+<div class="participant-name">Alexey Khazanov</div>
+<div class="participant-meta">The Hebrew University</div>
+<div class="participant-meta"><a href="mailto:alexey.khazanov@mail.huji.ac.il">alexey.khazanov@mail.huji.ac.il</a></div>
+<div class="participant-sessions"><a href="#s_A4">Housing Markets (A4)</a></div>
+</div>
+<div class="participant-card" id="p_husang-kim">
+<div class="participant-name">Husang Kim</div>
+<div class="participant-meta">University of Texas at Austin</div>
+<div class="participant-meta"><a href="mailto:hs.kim@utexas.edu">hs.kim@utexas.edu</a></div>
+<div class="participant-meta">.</div>
+<div class="participant-sessions"><a href="#s_A2">Monetary Policy Communication (A2)</a></div>
+</div>
+<div class="participant-card" id="p_jiyoung-kim">
+<div class="participant-name">Jiyoung Kim</div>
+<div class="participant-meta">Université McGill</div>
+<div class="participant-meta"><a href="mailto:jiyoung.kim4@mail.mcgill.ca">jiyoung.kim4@mail.mcgill.ca</a></div>
+<div class="participant-empty">No linked paper in the program.</div>
+</div>
+<div class="participant-card" id="p_lara-klein">
+<div class="participant-name">Lara Klein</div>
+<div class="participant-meta">Vrije Universiteit Amsterdam</div>
+<div class="participant-meta"><a href="mailto:l.klein@vu.nl">l.klein@vu.nl</a></div>
+<div class="participant-meta">Vegetarian, no other dietary restrictions</div>
+<div class="participant-sessions"><a href="#s_E5">Misallocation and Aggregate Productivity (E5)</a></div>
+</div>
+<div class="participant-card" id="p_martin-kliem">
+<div class="participant-name">Martin Kliem</div>
+<div class="participant-meta">Deutsche Bundesbank</div>
+<div class="participant-meta"><a href="mailto:martin.kliem@bundesbank.de">martin.kliem@bundesbank.de</a></div>
+<div class="participant-sessions"><a href="#s_F1">Optimal Monetary Policy (F1)</a></div>
+</div>
+<div class="participant-card" id="p_musab-kurnaz">
+<div class="participant-name">Musab Kurnaz</div>
+<div class="participant-meta">University of North Carolina at Charlotte</div>
+<div class="participant-meta"><a href="mailto:mkurnaz@charlotte.edu">mkurnaz@charlotte.edu</a></div>
+<div class="participant-sessions"><a href="#s_D4">Taxation and Labour Supply (D4)</a></div>
+</div>
+<div class="participant-card" id="p_jean-paul-l-huillier">
+<div class="participant-name">Jean-Paul L&#x27;Huillier</div>
+<div class="participant-meta">Brandeis University</div>
+<div class="participant-meta"><a href="mailto:jplhuillier2010@gmail.com">jplhuillier2010@gmail.com</a></div>
+<div class="participant-sessions"><a href="#s_A5">Expectations and Beliefs (A5)</a></div>
+</div>
+<div class="participant-card" id="p_etienne-lale">
+<div class="participant-name">Etienne Lalé</div>
+<div class="participant-meta">York University</div>
+<div class="participant-meta"><a href="mailto:elale@yorku.ca">elale@yorku.ca</a></div>
+<div class="participant-sessions"><a href="#s_B5">Labour Markets (B5)</a></div>
+</div>
+<div class="participant-card" id="p_etienne-latulippe">
+<div class="participant-name">Etienne Latulippe</div>
+<div class="participant-meta">University of British Columbia</div>
+<div class="participant-meta"><a href="mailto:elatulip@student.ubc.ca">elatulip@student.ubc.ca</a></div>
+<div class="participant-empty">No linked paper in the program.</div>
+</div>
+<div class="participant-card" id="p_thomas-lazarowicz">
+<div class="participant-name">Thomas Lazarowicz</div>
+<div class="participant-meta">UCL</div>
+<div class="participant-meta"><a href="mailto:thomas.lazarowicz.16@ucl.ac.uk">thomas.lazarowicz.16@ucl.ac.uk</a></div>
+<div class="participant-meta">Vegetarian</div>
+<div class="participant-sessions"><a href="#s_A3">Firm Dynamics (A3)</a></div>
+</div>
+<div class="participant-card" id="p_zheng-liu">
+<div class="participant-name">Zheng Liu</div>
+<div class="participant-meta">Federal Reserve Bank of San Francisco</div>
+<div class="participant-meta"><a href="mailto:zheng.liu@sf.frb.org">zheng.liu@sf.frb.org</a></div>
+<div class="participant-sessions"><a href="#s_A1">Automation, AI, and Labour Markets (A1)</a></div>
+</div>
+<div class="participant-card" id="p_zachary-mahone">
+<div class="participant-name">Zachary Mahone</div>
+<div class="participant-meta">McMaster University</div>
+<div class="participant-meta"><a href="mailto:mahonez@mcmaster.ca">mahonez@mcmaster.ca</a></div>
+<div class="participant-meta">None.</div>
+<div class="participant-sessions"><a href="#s_C4">Innovation, Market Power, and Growth (C4)</a></div>
+</div>
+<div class="participant-card" id="p_julien-martin">
+<div class="participant-name">Julien Martin</div>
+<div class="participant-meta">Université du Québec à Montréal (UQAM)</div>
+<div class="participant-meta"><a href="mailto:martin.julien@uqam.ca">martin.julien@uqam.ca</a></div>
+<div class="participant-sessions"><a href="#s_B3">Inflation Dynamics (B3)</a></div>
+</div>
+<div class="participant-card" id="p_alexander-matusche">
+<div class="participant-name">Alexander Matusche</div>
+<div class="participant-meta">Technische Universität Berlin</div>
+<div class="participant-meta"><a href="mailto:matusche@tu-berlin.de">matusche@tu-berlin.de</a></div>
+<div class="participant-sessions"><a href="#s_D3">Heterogeneous Agents and Household Decisions (D3)</a></div>
+</div>
+<div class="participant-card" id="p_dmitry-matveev">
+<div class="participant-name">Dmitry Matveev</div>
+<div class="participant-meta">Banque du Canada</div>
+<div class="participant-meta"><a href="mailto:dmatveev@bank-banque-canada.ca">dmatveev@bank-banque-canada.ca</a></div>
+<div class="participant-empty">No linked paper in the program.</div>
+</div>
+<div class="participant-card" id="p_florian-mayneris">
+<div class="participant-name">Florian Mayneris</div>
+<div class="participant-meta">Université du Québec à Montréal (UQAM)</div>
+<div class="participant-meta"><a href="mailto:mayneris.florian@uqam.ca">mayneris.florian@uqam.ca</a></div>
+<div class="participant-sessions"><a href="#s_E5">Misallocation and Aggregate Productivity (E5)</a></div>
+</div>
+<div class="participant-card" id="p_michael-mcmahon">
+<div class="participant-name">Michael McMahon</div>
+<div class="participant-meta">University of Oxford</div>
+<div class="participant-meta"><a href="mailto:michael.mcmahon@economics.ox.ac.uk">michael.mcmahon@economics.ox.ac.uk</a></div>
+<div class="participant-sessions"><a href="#s_A2">Monetary Policy Communication (A2)</a></div>
+</div>
+<div class="participant-card" id="p_anatole-meunier">
+<div class="participant-name">Anatole Meunier</div>
+<div class="participant-meta">Université Paris-Dauphine</div>
+<div class="participant-meta"><a href="mailto:anatole.meunier@dauphine.psl.eu">anatole.meunier@dauphine.psl.eu</a></div>
+<div class="participant-sessions"><a href="#s_E6">Sovereign Debt and Default (E6)</a></div>
+</div>
+<div class="participant-card" id="p_carter-mix">
+<div class="participant-name">Carter Mix</div>
+<div class="participant-meta">Federal Reserve Board</div>
+<div class="participant-meta"><a href="mailto:carter.b.mix@frb.gov">carter.b.mix@frb.gov</a></div>
+<div class="participant-sessions"><a href="#s_C1">Dynamic Trade (C1)</a></div>
+</div>
+<div class="participant-card" id="p_lennart-niermann">
+<div class="participant-name">Lennart Niermann</div>
+<div class="participant-meta">University of Cambridge</div>
+<div class="participant-meta"><a href="mailto:lcn29@cam.ac.uk">lcn29@cam.ac.uk</a></div>
+<div class="participant-sessions"><a href="#s_B2">Monetary Policy I (B2)</a></div>
+</div>
+<div class="participant-card" id="p_sergio-ocampo">
+<div class="participant-name">Sergio Ocampo</div>
+<div class="participant-meta">University of Western Ontario</div>
+<div class="participant-meta"><a href="mailto:socampod@uwo.ca">socampod@uwo.ca</a></div>
+<div class="participant-sessions"><a href="#s_D5">Production Networks (D5)</a></div>
+</div>
+<div class="participant-card" id="p_jacopo-orlandi">
+<div class="participant-name">Jacopo Orlandi</div>
+<div class="participant-meta">Bank of Italy</div>
+<div class="participant-meta"><a href="mailto:jacopo.orlandi2@bancaditalia.it">jacopo.orlandi2@bancaditalia.it</a></div>
+<div class="participant-meta">Vegetarian</div>
+<div class="participant-empty">No linked paper in the program.</div>
+</div>
+<div class="participant-card" id="p_julio-ortiz">
+<div class="participant-name">Julio Ortiz</div>
+<div class="participant-meta">Federal Reserve Board</div>
+<div class="participant-meta"><a href="mailto:julio.l.ortiz@frb.gov">julio.l.ortiz@frb.gov</a></div>
+<div class="participant-sessions"><a href="#s_B3">Inflation Dynamics (B3)</a></div>
+</div>
+<div class="participant-card" id="p_bayram-oruc">
+<div class="participant-name">Bayram Oruc</div>
+<div class="participant-meta">University of Erfurt</div>
+<div class="participant-meta"><a href="mailto:baoruc@web.de">baoruc@web.de</a></div>
+<div class="participant-empty">No linked paper in the program.</div>
+</div>
+<div class="participant-card" id="p_yacouba-ouattara">
+<div class="participant-name">Yacouba OUATTARA</div>
+<div class="participant-meta">Université de Sherbrooke</div>
+<div class="participant-meta"><a href="mailto:yacouba.ouattara@usherbrooke.ca">yacouba.ouattara@usherbrooke.ca</a></div>
+<div class="participant-meta">Non.</div>
+<div class="participant-empty">No linked paper in the program.</div>
+</div>
+<div class="participant-card" id="p_ke-pang">
+<div class="participant-name">Ke Pang</div>
+<div class="participant-meta">Wilfrid Laurier Univeristy</div>
+<div class="participant-meta"><a href="mailto:kpang@wlu.ca">kpang@wlu.ca</a></div>
+<div class="participant-empty">No linked paper in the program.</div>
+</div>
+<div class="participant-card" id="p_hyejin-park">
+<div class="participant-name">Hyejin Park</div>
+<div class="participant-meta">Université de Montréal</div>
+<div class="participant-meta"><a href="mailto:hyejin.park@umontreal.ca">hyejin.park@umontreal.ca</a></div>
+<div class="participant-sessions"><a href="#s_B5">Labour Markets (B5)</a></div>
+</div>
+<div class="participant-card" id="p_alexandre-pavlov">
+<div class="participant-name">Alexandre Pavlov</div>
+<div class="participant-meta">Université de Montréal</div>
+<div class="participant-meta"><a href="mailto:alexandre.pavlov@umontreal.ca">alexandre.pavlov@umontreal.ca</a></div>
+<div class="participant-empty">No linked paper in the program.</div>
+</div>
+<div class="participant-card" id="p_pau-pujolas">
+<div class="participant-name">Pau Pujolas</div>
+<div class="participant-meta">McMaster University</div>
+<div class="participant-meta"><a href="mailto:pujolasp@mcmaster.ca">pujolasp@mcmaster.ca</a></div>
+<div class="participant-sessions"><a href="#s_C1">Dynamic Trade (C1)</a></div>
+</div>
+<div class="participant-card" id="p_swapnika-rachapalli">
+<div class="participant-name">Swapnika Rachapalli</div>
+<div class="participant-meta">University of British Columbia</div>
+<div class="participant-meta"><a href="mailto:s.rachapalli@sauder.ubc.ca">s.rachapalli@sauder.ubc.ca</a></div>
+<div class="participant-sessions"><a href="#s_E5">Misallocation and Aggregate Productivity (E5)</a></div>
+</div>
+<div class="participant-card" id="p_luke-rawling">
+<div class="participant-name">Luke Rawling</div>
+<div class="participant-meta">Queen&#x27;s University</div>
+<div class="participant-meta"><a href="mailto:rawling.luke@queensu.ca">rawling.luke@queensu.ca</a></div>
+<div class="participant-sessions"><a href="#s_B6">Labour Search and Matching (B6)</a></div>
+</div>
+<div class="participant-card" id="p_joost-roettger">
+<div class="participant-name">Joost Roettger</div>
+<div class="participant-meta">Deutsche Bundesbank</div>
+<div class="participant-meta"><a href="mailto:joost.roettger@bundesbank.de">joost.roettger@bundesbank.de</a></div>
+<div class="participant-meta">Vegetarian</div>
+<div class="participant-sessions"><a href="#s_F1">Optimal Monetary Policy (F1)</a></div>
+</div>
+<div class="participant-card" id="p_jean-francois-rouillard">
+<div class="participant-name">Jean-François Rouillard</div>
+<div class="participant-meta">Université de Sherbrooke</div>
+<div class="participant-meta"><a href="mailto:j-f.rouillard@usherbrooke.ca">j-f.rouillard@usherbrooke.ca</a></div>
+<div class="participant-empty">No linked paper in the program.</div>
+</div>
+<div class="participant-card" id="p_filip-rozsypal">
+<div class="participant-name">Filip Rozsypal</div>
+<div class="participant-meta">Danmarks Nationalbank</div>
+<div class="participant-meta"><a href="mailto:filip.rozsypal@gmail.com">filip.rozsypal@gmail.com</a></div>
+<div class="participant-sessions"><a href="#s_F2">Financial Frictions and Business Cycles (F2)</a></div>
+</div>
+<div class="participant-card" id="p_similan-rujiwattanapong">
+<div class="participant-name">Similan Rujiwattanapong</div>
+<div class="participant-meta">Waseda University</div>
+<div class="participant-meta"><a href="mailto:simi.rujiwattanapong@gmail.com">simi.rujiwattanapong@gmail.com</a></div>
+<div class="participant-sessions"><a href="#s_B6">Labour Search and Matching (B6)</a></div>
+</div>
+<div class="participant-card" id="p_jane-ryngaert">
+<div class="participant-name">Jane Ryngaert</div>
+<div class="participant-meta">University of Notre Dame</div>
+<div class="participant-meta"><a href="mailto:jryngaer@nd.edu">jryngaer@nd.edu</a></div>
+<div class="participant-meta">I am unable to travel until June 2 due to childcare constraints.  If possible, it would be best if my session. ( organized by Ryan Charour) was held on the 3rd.</div>
+<div class="participant-sessions"><a href="#s_E1">Information and Expectations in Macro (E1)</a></div>
+</div>
+<div class="participant-card" id="p_joaquin-saldain">
+<div class="participant-name">Joaquin Saldain</div>
+<div class="participant-meta">Banque du Canada</div>
+<div class="participant-meta"><a href="mailto:jsaldain@gmail.com">jsaldain@gmail.com</a></div>
+<div class="participant-sessions"><a href="#s_F3">Household Finance and Credit Markets (F3)</a></div>
+</div>
+<div class="participant-card" id="p_juan-m-sanchez">
+<div class="participant-name">Juan M. Sanchez</div>
+<div class="participant-meta">Federal Reserve Bank of St. Louis</div>
+<div class="participant-meta"><a href="mailto:juan.m.sanchez@stls.frb.org">juan.m.sanchez@stls.frb.org</a></div>
+<div class="participant-meta">My coauthor, Paul, Pascal &lt;Pascal.Paul@sf.frb.org&gt;, submitted the paper</div>
+<div class="participant-sessions"><a href="#s_E3">Climate, Disasters, and Macroeconomic Stability (E3)</a></div>
+</div>
+<div class="participant-card" id="p_miguel-santana">
+<div class="participant-name">Miguel Santana</div>
+<div class="participant-meta">Banque du Canada</div>
+<div class="participant-meta"><a href="mailto:MMoreiraSantanaFreire@bank-banque-canada.ca">MMoreiraSantanaFreire@bank-banque-canada.ca</a></div>
+<div class="participant-sessions"><a href="#s_A5">Expectations and Beliefs (A5)</a></div>
+</div>
+<div class="participant-card" id="p_karthik-sastry">
+<div class="participant-name">Karthik Sastry</div>
+<div class="participant-meta">Princeton University</div>
+<div class="participant-meta"><a href="mailto:ksastry@princeton.edu">ksastry@princeton.edu</a></div>
+<div class="participant-meta">Many apologies for filling out this form multiple times -- only this time have I managed to make the correct payment and registration option, successfully!
+
+Diet: Vegetarian
+Travel plans: I communicated briefly with Giacomo Candian about this. It would be helpful if I could leave Montreal by the evening on the 3rd so I can travel on time to a conference on June 4 in New Haven, CT.  But there do seem to be very many flights from Montreal to New York City airports that are relatively late in the evening, any of which would work for me. Thank you for considering, and of course there is no need to majorly disrupt the schedule to accommodate this.</div>
+<div class="participant-sessions"><a href="#s_E1">Information and Expectations in Macro (E1)</a></div>
+</div>
+<div class="participant-card" id="p_daniel-jonas-schmidt">
+<div class="participant-name">Daniel Jonas Schmidt</div>
+<div class="participant-meta">De Nederlandsche Bank</div>
+<div class="participant-meta"><a href="mailto:d.j.schmidt@dnb.nl">d.j.schmidt@dnb.nl</a></div>
+<div class="participant-meta">Pescetarian (vegetarian food or fish)</div>
+<div class="participant-sessions"><a href="#s_E3">Climate, Disasters, and Macroeconomic Stability (E3)</a></div>
+</div>
+<div class="participant-card" id="p_rodrigo-sekkel">
+<div class="participant-name">Rodrigo Sekkel</div>
+<div class="participant-meta">Banque du Canada</div>
+<div class="participant-meta"><a href="mailto:rsekkel@bankofcanada.ca">rsekkel@bankofcanada.ca</a></div>
+<div class="participant-sessions"><a href="#s_C6">Monetary Policy II (C6)</a></div>
+</div>
+<div class="participant-card" id="p_kevin-sheedy">
+<div class="participant-name">Kevin Sheedy</div>
+<div class="participant-meta">London School of Economics</div>
+<div class="participant-meta"><a href="mailto:k.d.sheedy@lse.ac.uk">k.d.sheedy@lse.ac.uk</a></div>
+<div class="participant-sessions"><a href="#s_A4">Housing Markets (A4)</a></div>
+</div>
+<div class="participant-card" id="p_daniele-siena">
+<div class="participant-name">Daniele Siena</div>
+<div class="participant-meta">Politecnico di Milano</div>
+<div class="participant-meta"><a href="mailto:daniele.siena@polimi.it">daniele.siena@polimi.it</a></div>
+<div class="participant-sessions"><a href="#s_E4">International Finance and Capital Flows (E4)</a></div>
+</div>
+<div class="participant-card" id="p_pedro-silos">
+<div class="participant-name">Pedro Silos</div>
+<div class="participant-meta">Temple University</div>
+<div class="participant-meta"><a href="mailto:pedrosilos@gmail.com">pedrosilos@gmail.com</a></div>
+<div class="participant-sessions"><a href="#s_D4">Taxation and Labour Supply (D4)</a></div>
+</div>
+<div class="participant-card" id="p_laure-simon">
+<div class="participant-name">Laure Simon</div>
+<div class="participant-meta">Banque du Canada</div>
+<div class="participant-meta"><a href="mailto:laure.simon@eui.eu">laure.simon@eui.eu</a></div>
+<div class="participant-sessions"><a href="#s_E4">International Finance and Capital Flows (E4)</a></div>
+</div>
+<div class="participant-card" id="p_stephen-snudden">
+<div class="participant-name">Stephen Snudden</div>
+<div class="participant-meta">Wilfrid Laurier University</div>
+<div class="participant-meta"><a href="mailto:ssnudden@wlu.ca">ssnudden@wlu.ca</a></div>
+<div class="participant-meta">Gluten free</div>
+<div class="participant-empty">No linked paper in the program.</div>
+</div>
+<div class="participant-card" id="p_elliot-spears">
+<div class="participant-name">Elliot Spears</div>
+<div class="participant-meta">university of washington</div>
+<div class="participant-meta"><a href="mailto:espear1@uw.edu">espear1@uw.edu</a></div>
+<div class="participant-empty">No linked paper in the program.</div>
+</div>
+<div class="participant-card" id="p_jean-toupouvogui">
+<div class="participant-name">Jean TOUPOUVOGUI</div>
+<div class="participant-meta">ESSEC Business School &amp; Cy-cergy Paris Université</div>
+<div class="participant-meta"><a href="mailto:jean.toupouvogui@essec.edu">jean.toupouvogui@essec.edu</a></div>
+<div class="participant-empty">No linked paper in the program.</div>
+</div>
+<div class="participant-card" id="p_hannes-twieling">
+<div class="participant-name">Hannes Twieling</div>
+<div class="participant-meta">Banque du Canada</div>
+<div class="participant-meta"><a href="mailto:hannes.twieling@gmx.net">hannes.twieling@gmx.net</a></div>
+<div class="participant-sessions"><a href="#s_A4">Housing Markets (A4)</a></div>
+</div>
+<div class="participant-card" id="p_ia-vardishvili">
+<div class="participant-name">ia vardishvili</div>
+<div class="participant-meta">Auburn University</div>
+<div class="participant-meta"><a href="mailto:izv0013@auburn.edu">izv0013@auburn.edu</a></div>
+<div class="participant-empty">No linked paper in the program.</div>
+</div>
+<div class="participant-card" id="p_lucia-veraldi">
+<div class="participant-name">Lucia veraldi</div>
+<div class="participant-meta">université paris dauphine</div>
+<div class="participant-meta"><a href="mailto:lucia.veraldi@dauphine.eu">lucia.veraldi@dauphine.eu</a></div>
+<div class="participant-sessions"><a href="#s_B3">Inflation Dynamics (B3)</a></div>
+</div>
+<div class="participant-card" id="p_gauthier-vermandel">
+<div class="participant-name">Gauthier Vermandel</div>
+<div class="participant-meta">École polytechnique</div>
+<div class="participant-meta"><a href="mailto:gauthier.vermandel@polytechnique.edu">gauthier.vermandel@polytechnique.edu</a></div>
+<div class="participant-empty">No linked paper in the program.</div>
+</div>
+<div class="participant-card" id="p_matias-vieyra">
+<div class="participant-name">Matías Vieyra</div>
+<div class="participant-meta">Bank of Canada</div>
+<div class="participant-meta"><a href="mailto:mvieyraecon@gmail.com">mvieyraecon@gmail.com</a></div>
+<div class="participant-meta">My coauthor Michael Irwin submitted the application but I will be presenting the paper. No dietary restrictions.</div>
+<div class="participant-sessions"><a href="#s_A4">Housing Markets (A4)</a></div>
+</div>
+<div class="participant-card" id="p_oliver-vogt">
+<div class="participant-name">Oliver Vogt</div>
+<div class="participant-meta">University of British Columbia</div>
+<div class="participant-meta"><a href="mailto:oliver.p.vogt@gmail.com">oliver.p.vogt@gmail.com</a></div>
+<div class="participant-sessions"><a href="#s_D1">Young Economists Session (D1)</a></div>
+</div>
+<div class="participant-card" id="p_oskari-vahamaa">
+<div class="participant-name">Oskari Vähämaa</div>
+<div class="participant-meta">University of Helsinki</div>
+<div class="participant-meta"><a href="mailto:oskari.vahamaa@helsinki.fi">oskari.vahamaa@helsinki.fi</a></div>
+<div class="participant-sessions"><a href="#s_B5">Labour Markets (B5)</a></div>
+</div>
+<div class="participant-card" id="p_haoran-wang">
+<div class="participant-name">Haoran Wang</div>
+<div class="participant-meta">University of Maryland</div>
+<div class="participant-meta"><a href="mailto:hw2688@umd.edu">hw2688@umd.edu</a></div>
+<div class="participant-sessions"><a href="#s_A3">Firm Dynamics (A3)</a></div>
+</div>
+<div class="participant-card" id="p_lu-wang">
+<div class="participant-name">Lu Wang</div>
+<div class="participant-meta">University of Western Australia</div>
+<div class="participant-meta"><a href="mailto:luwang.econ@gmail.com">luwang.econ@gmail.com</a></div>
+<div class="participant-sessions"><a href="#s_E2">Asset Prices and Financial Markets (E2)</a></div>
+</div>
+<div class="participant-card" id="p_henning-weber">
+<div class="participant-name">Henning Weber</div>
+<div class="participant-meta">Deutsche Bundesbank</div>
+<div class="participant-meta"><a href="mailto:henning.weber@bundesbank.de">henning.weber@bundesbank.de</a></div>
+<div class="participant-sessions"><a href="#s_F1">Optimal Monetary Policy (F1)</a></div>
+</div>
+<div class="participant-card" id="p_jacob-weber">
+<div class="participant-name">Jacob Weber</div>
+<div class="participant-meta">Federal Reserve Bank of New York</div>
+<div class="participant-meta"><a href="mailto:jacob_weber@berkeley.edu">jacob_weber@berkeley.edu</a></div>
+<div class="participant-empty">No linked paper in the program.</div>
+</div>
+<div class="participant-card" id="p_maximilian-wei">
+<div class="participant-name">Maximilian Weiß</div>
+<div class="participant-meta">University Tuebingen</div>
+<div class="participant-meta"><a href="mailto:maximilian.weiss@uni-tuebingen.de">maximilian.weiss@uni-tuebingen.de</a></div>
+<div class="participant-sessions"><a href="#s_C3">Inequality and Wealth Dynamics (C3)</a></div>
+</div>
+<div class="participant-card" id="p_andreas-westermark">
+<div class="participant-name">Andreas Westermark</div>
+<div class="participant-meta">Note that, to complete the form, I had to enter a state or province for Canada or the US (using the county where I live in Sweden does not work and gives an error message). Since I&#x27;m living in Sweden, the correct response would be the county Stockholms Lan.</div>
+<div class="participant-meta"><a href="mailto:Sveriges Riksbank">Sveriges Riksbank</a></div>
+<div class="participant-empty">No linked paper in the program.</div>
+</div>
+<div class="participant-card" id="p_ronald-wolthoff">
+<div class="participant-name">Ronald Wolthoff</div>
+<div class="participant-meta">University of Toronto</div>
+<div class="participant-meta"><a href="mailto:ronald.wolthoff@utoronto.ca">ronald.wolthoff@utoronto.ca</a></div>
+<div class="participant-sessions"><a href="#s_A5">Expectations and Beliefs (A5)</a></div>
+</div>
+<div class="participant-card" id="p_yuki-yao">
+<div class="participant-name">Yuki Yao</div>
+<div class="participant-meta">University of Kent</div>
+<div class="participant-meta"><a href="mailto:y.yao@kent.ac.uk">y.yao@kent.ac.uk</a></div>
+<div class="participant-sessions"><a href="#s_D4">Taxation and Labour Supply (D4)</a></div>
+</div>
+<div class="participant-card" id="p_shunzhe-zhong">
+<div class="participant-name">Shunzhe Zhong</div>
+<div class="participant-meta">McMaster University</div>
+<div class="participant-meta"><a href="mailto:zhongs24@mcmaster.ca">zhongs24@mcmaster.ca</a></div>
+<div class="participant-empty">No linked paper in the program.</div>
+</div>
+<div class="participant-card" id="p_roy-zilberman">
+<div class="participant-name">Roy Zilberman</div>
+<div class="participant-meta">Lancaster University</div>
+<div class="participant-meta"><a href="mailto:r.zilberman@lancaster.ac.uk">r.zilberman@lancaster.ac.uk</a></div>
+<div class="participant-sessions"><a href="#s_B4">Fiscal Policy and Household Behavior (B4)</a></div>
+</div>
 </div>
 </section>
+<p style="margin-top:18px;color:#666;font-size:.95rem;">
+Generated from conference_schedule_15_05_2026.xlsx; matched 81 papers to 117 participant records.
+</p>
 </div>
