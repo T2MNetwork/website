@@ -9,6 +9,8 @@ __Monday, 1st__
 
 Phd-Workshop: meet at 11am, HEC Montreal.
 
+[Download the Student Workshop program](/assets/2026/T2M_2026_Student_Workshop_program.pdf)
+
 __Tuesday, 2nd__
 
 |-----------|-----------|----------------------------------------|
