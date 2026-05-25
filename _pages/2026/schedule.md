@@ -22,7 +22,7 @@ __Tuesday, 2nd__
 | 13:30	    | 15:10     | Parallel Sessions B	                 |
 | 15:10	    | 15:30     | Coffee Break                           |
 | 15:30	    | 17:10     | Parallel Sessions C                    |
-| 19:00	    | 22:00     | Conference Dinner                      |
+| 18:30	    | 22:00     | Conference Dinner                      |
 
 __Wednesday, 3rd__
 
