@@ -8,12 +8,12 @@
   .time-row { margin: 0 0 10px; }
   .time-pill { display: inline-block; padding: 7px 10px; margin: 0 0 8px; background: #f1f1f1; border-radius: 999px; font-weight: 700; }
   .overview-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 10px; }
-  .session-chip { display: block; padding: 10px 12px; border: 1px solid #ddd; border-radius: 12px; background: #fff; text-decoration: none; color: inherit; box-shadow: 0 1px 0 rgba(0,0,0,.03); }
+  .session-chip { display: grid; grid-template-columns: 1fr auto; gap: 4px 10px; align-items:end; padding: 10px 12px; border: 1px solid #ddd; border-radius: 12px; background: #fff; text-decoration: none; color: inherit; box-shadow: 0 1px 0 rgba(0,0,0,.03); }
   .session-chip:hover { border-color: #bbb; background: #fafafa; }
   .session-chip.highlight { background: #ffbe55; border-color: #f0a000; }
-  .session-chip .session-title { display:block; font-weight: 700; }
-  .session-chip .session-room { display:block; margin-top:4px; color:#555; font-size:.9rem; }
-  .session-chip .session-tag.invited { display:block; width:max-content; margin:7px 0 0 8px; }
+  .session-chip .session-title { grid-column:1 / -1; font-weight: 700; }
+  .session-chip .session-room { color:#555; font-size:.9rem; }
+  .session-chip .session-tag.invited { justify-self:end; align-self:end; }
   .session-tag.invited { display:inline-block; padding:2px 8px; border-radius:999px; background:#2d6cdf; color:#fff; font-size:.78rem; font-weight:800; vertical-align:middle; }
   .session-tag.parallel { display:inline-block; margin-right:8px; padding:2px 8px; border-radius:999px; background:#444; color:#fff; font-size:.78rem; font-weight:800; vertical-align:middle; }
   .parallel-title { background: #b7dce8; padding: 8px 10px; border-radius: 8px; font-weight: 700; margin: 18px 0 10px; }
