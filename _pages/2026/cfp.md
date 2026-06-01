@@ -21,7 +21,7 @@ __Keynote speakers__:
 __Invited sessions organized by__:
 
 | [Ryan Chahrour](https://www.chahrour.net/) (Cornell University) | Expectations in Macro |	
-| [Michael Devereux](https://economics.ubc.ca/faculty-and-staff/michael-devereux/) (University of British Columbia) | Young Economists Session | 
+| [Édouard Challe](https://sites.google.com/site/edouardchalle/) (CREST-ENSAE) | Young Economists Session | 
 | [Sylvain Leduc](https://www.frbsf.org/our-people/economists/sylvain-leduc/) (San Francisco Fed) and [Henry Siu](https://economics.ubc.ca/faculty-and-staff/henry-siu/) (University of British Columbia)| Innovation and Labor Markets |
 | [Diego Restuccia](https://www.economics.utoronto.ca/diegor/) (University of Toronto) | Firm dynamics |
 | [Joseph Steinberg](https://joesteinberg.com/) (University of Toronto)| Trade and macro 
