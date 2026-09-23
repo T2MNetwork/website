@@ -42,6 +42,35 @@ T2M is an association dedicated to fostering the development and dissemination o
   </tr>
 </table>
 
+
+## Organizing Committee 2027
+
+
+<table style="width:100%" >
+  <tr>
+
+	<th style="background-color: white; width: 200px;text-align: center">
+		<h3 class="team-list-title">Mehdi Bartal</h3>
+		<img src="/assets/2027/mehdi.png"   width="80%" alt="Mehdi Bartal">
+	</th>
+
+
+	<th style="background-color: white; width: 200px; text-align: center">
+		<h3 class="team-list-title">Kenza Benhima</h3>
+		<img src="/assets/2027/kenza.jpg"  width="80%" alt="Kenza Benhima">
+	
+	</th>
+
+	<th style="background-color: white; width: 200px; text-align: center">
+		<h3 class="team-list-title">Francesco Pappadà</h3>
+		<img src="/assets/2027/francesco.jpg" width="80%" alt="Francesco Pappadà">
+	</th>
+
+	
+  </tr>
+
+</table>
+
 ## Organizing Committee 2026
 
 
