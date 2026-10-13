@@ -4,7 +4,7 @@ title: Past Activities
 permalink: /past/
 order: 4
 ---
-- Paris 2025 @ HEC Montréal ( [CfP]({% link _pages/2026/cfp.md %}), [Program]({% link _pages/2026/program.md %}), [Schedule]({% link _pages/2026/schedule.md %}), [Practicalities]({% link _pages/2026/practicalities.md %}) )
+- Paris 2026 @ HEC Montréal ( [CfP]({% link _pages/2026/cfp.md %}), [Program]({% link _pages/2026/program.md %}), [Schedule]({% link _pages/2026/schedule.md %}), [Practicalities]({% link _pages/2026/practicalities.md %}) )
 - Paris 2025 @ CREST ( [CfP]({% link _pages/2025/cfp.md %}), [Program]({% link _pages/2025/program.md %}), [Schedule]({% link _pages/2025/schedule.md %}), [Practicalities]({% link _pages/2025/practicalities.md %}) )
 - Amsterdam 2024 @ UVA ( [CfP]({% link _pages/2024/cfp.md %}), [Program]({% link _pages/2024/program.md %}), [Schedule]({% link _pages/2024/schedule.md %}), [Practicalities]({% link _pages/2024/practicalities.md %}) )
 - Paris 2023 @ ESCP Paris ( [CfP]({% link _pages/2023/cfp.md %}), [Program]({% link _pages/2023/program.md %}), [Schedule]({% link _pages/2023/schedule.md %}), [Practicalities]({% link _pages/2023/practicalities.md %}) )
